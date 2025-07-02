@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-green-breezy: #65EAA1;
+    --color-background-breezy: #E6E4DF;
+    --color-container-breezy: #F4F2E8;
+    --color-child-container-breezy: #FBFAF2;
+    --color-child-child-container-breezy: #FBFAF2;
+    --color-breezy: #222222;
+}
+
+.dark {
+    --color-green-breezy: #017344;
+    --color-background-breezy: #1E1F1C;
+    --color-container-breezy: #2A2B28;
+    --color-child-container-breezy: #353632;
+    --color-child-child-container-breezy: #4f504f;
+    --color-breezy: #FFFFFF;
+}
+
+/* scrollbar commune des childs */
+.scrollbar-child-container-breezy::-webkit-scrollbar {
+    width: 18px;
+}
+
+.scrollbar-child-container-breezy::-webkit-scrollbar-track {
+    background: var(--color-child-container-breezy);
+    border-radius: 20px;
+}
+
+.scrollbar-child-container-breezy::-webkit-scrollbar-thumb {
+    background: var(--color-green-breezy);
+    border-radius: 20px;
+    border: 5px solid var(--color-child-container-breezy);
+}
+
+/* scrollbar pour les childs de childs */
+.scrollbar-child-child-container-breezy::-webkit-scrollbar {
+    width: 18px;
+}
+
+.scrollbar-child-child-container-breezy::-webkit-scrollbar-track {
+    background: var(--color-child-child-container-breezy);
+    border-radius: 20px;
+}
+
+.scrollbar-child-child-container-breezy::-webkit-scrollbar-thumb {
+    background: var(--color-green-breezy);
+    border-radius: 20px;
+    border: 5px solid var(--color-child-child-container-breezy);
+}
+
+.containerDesc {
+    max-height: 8vh;
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.cardDesc {
+    font-size: 0.9rem;
+}
+
+.btnCard {
+    width: 8%;
+}
+
+.modal-backdrop {
+    position: fixed; /* IMPORTANT */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* fond semi-transparent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* au-dessus de tout */
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#postContainer{
+    display: flex;
+}

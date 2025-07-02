@@ -1,0 +1,20 @@
+{
+  "pages": {
+    "settings": {
+      "title": "Paramètres",
+      "language": "Langue :",
+      "languageOptions": {
+        "fr": "Français",
+        "en": "Anglais"
+      },
+      "theme": "Thème :",
+      "themeOptions": {
+        "light": "Clair",
+        "dark": "Sombre"
+      }
+    },
+    "home": {
+      "title": "Bienvenue sur mon site web !"
+    }
+  }
+}
