@@ -14,7 +14,14 @@
       }
     },
     "home": {
-      "title": "Bienvenue sur mon site web !"
+      "menu": {
+        "aboutMe": "À propos",
+        "skills": "Compétences",
+        "interests": "Centres d’intérêt",
+        "contact": "Contact"
+      },
+      "profilDescription": "Alternant développeur d'application",
+      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
     }
   }
 }
