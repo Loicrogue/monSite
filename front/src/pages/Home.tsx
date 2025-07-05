@@ -1,8 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
-import Banner from '../components/modals/bannerComponent';
-
 const Home = () => {
   const { t } = useTranslation();
   const { isMobile, isTablet, isDesktop } = useResponsive();
@@ -17,7 +15,6 @@ const Home = () => {
         >
             {t('pages.home.title')}
         </h1>
-        <Banner />
         {/* {isMobile && <p className="text-center text-sm text-gray-500">Affichage Mobile</p>}
         {isTablet && <p className="text-center text-sm text-gray-500">Affichage Tablette</p>}
         {isDesktop && <p className="text-center text-sm text-gray-500">Affichage PC</p>} */}
