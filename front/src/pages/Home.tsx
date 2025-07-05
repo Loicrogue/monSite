@@ -1,24 +1,26 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import Menu from '../components/menuComponent';
 import Profil from '../components/profilComponent';
+import { motion } from 'framer-motion';
 
 const Home = () => {
-  const { t } = useTranslation();
 
   return (
-    <div className="fixed inset-0 bg-background-monSite overflow-auto">
-      <div className="flex flex-col item-center absolute inset-0 bg-container-monSite shadow-xl rounded-xl m-5">
-        <Menu />
-        <div className="flex flex-row h-full bg-child-container-monSite shadow-xl rounded-xl m-5">
-          <Profil />
-        </div>
-        {/* {isMobile && <p className="text-center text-sm text-gray-500">Affichage Mobile</p>}
-        {isTablet && <p className="text-center text-sm text-gray-500">Affichage Tablette</p>}
-        {isDesktop && <p className="text-center text-sm text-gray-500">Affichage PC</p>} */}
-      </div>
-    </div>
-  );
+		<div className="fixed inset-0 bg-background-monSite overflow-auto">
+			<motion.div 
+				initial={{ opacity: 0, y: 30 }} 
+				animate={{ opacity: 1, y: 0 }} 
+				exit={{ opacity: 0, y: -30 }} 
+				transition={{ duration: 0.3 }} 
+				className="flex flex-col item-center absolute inset-0 bg-container-monSite shadow-xl rounded-xl m-5"
+			>
+				<Menu />
+				<div className="flex flex-row h-full bg-child-container-monSite shadow-xl rounded-xl m-5">
+					<Profil />
+				</div>
+			</motion.div>        
+		</div>
+	);
 };
 
 export default Home;

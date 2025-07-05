@@ -13,6 +13,11 @@
         "dark": "Sombre"
       }
     },
+    "notFound": {
+      "title": "Page non trouvée",
+      "message": "Désolé, la page que vous cherchez n'existe pas.",
+      "backToHome": "Retour à l'accueil"
+    },
     "home": {
       "menu": {
         "aboutMe": "À propos",
