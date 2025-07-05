@@ -1,10 +1,17 @@
 import React from 'react';
 import banner from '../../assets/banner.png';
 
-const bannerComponent: React.FC = () => (
-    <div>
-        <img className='h-60 w-90' alt="banner.png" src={banner}/>
-    </div>
-);
+interface BannerComponentProps {
+    height?: string;
+    width?: string;
+}
 
-export default bannerComponent;
+const BannerComponent: React.FC<BannerComponentProps> = ({ height = '60', width = '90' }) => {
+    return (
+    <div>
+        <img className={`h-${height} w-${width}`} alt="banner.png" src={banner}/>
+    </div>
+    );
+};
+
+export default BannerComponent;
