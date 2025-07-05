@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
+// import Banner from '../components/modals/bannerComponent';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -9,7 +10,7 @@ const Home = () => {
   return (
     <div className="fixed inset-0 bg-background-monSite overflow-auto">
       <div className="absolute inset-0 bg-container-monSite shadow-xl rounded-xl m-5">
-        <h1 className={`font-bold text-center mt-4 
+        <h1 className={`font-bold text-monSite text-center mt-4 
             ${isMobile ? 'text-xs' : ''} 
             ${isTablet ? 'text-md' : ''} 
             ${isDesktop ? 'text-3xl' : ''}`}
