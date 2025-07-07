@@ -18,7 +18,7 @@ const Home = () => {
 				<div className="flex flex-row h-full bg-child-container-monSite shadow-xl rounded-xl m-5">
 					<Profil />
 				</div>
-			</motion.div>        
+			</motion.div>
 		</div>
 	);
 };

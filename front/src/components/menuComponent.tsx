@@ -8,7 +8,7 @@ const BannerComponent: React.FC = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="flex flex-row justify-start items-center w-full mt-5 ml-5 md-5 gap-5 text-monSite cursor-pointer">
+        <div className="flex flex-row items-center gap-5 mt-5 ml-5 mr-5 cursor-pointer bg-container-monSite text-monSite">
             <img 
             src={logo}
             alt="logo" 
