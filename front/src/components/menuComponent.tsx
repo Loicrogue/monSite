@@ -13,6 +13,7 @@ const BannerComponent: React.FC = () => {
             src={logo}
             alt="logo" 
             className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl shadow-gray-300/15 transition-transform duration-200 hover:scale-110"
+            onClick={() => navigate('/')}
             />
             <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/')}>
                 {t('pages.home.menu.aboutMe')}

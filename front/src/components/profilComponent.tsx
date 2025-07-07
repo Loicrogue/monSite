@@ -16,7 +16,7 @@ const ProfilComponent: React.FC = () => {
                 <img
                     src={profilPicture}
                     alt="profil picture"
-                    className="rounded-full w-100 h-100 shadow-xl shadow-gray-500/50"
+                    className="rounded-full w-95 h-95 shadow-xl shadow-gray-500/50"
                 />
             </div>
         </>
