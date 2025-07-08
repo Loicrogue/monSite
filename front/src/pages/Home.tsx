@@ -4,7 +4,6 @@ import Profil from '../components/profilComponent';
 import { motion } from 'framer-motion';
 
 const Home = () => {
-
   return (
 		<div className="fixed inset-0 bg-background-monSite overflow-auto">
 			<motion.div 

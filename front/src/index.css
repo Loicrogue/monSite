@@ -18,6 +18,15 @@
     --color-monSite: #FFFFFF;
 }
 
+.red {
+    --color-blue-monSite: #085967;
+    --color-background-monSite: #be0909;
+    --color-container-monSite: #2A2B28;
+    --color-child-container-monSite: #353632;
+    --color-child-child-container-monSite: #4f504f;
+    --color-monSite: #FFFFFF;
+}
+
 /* scrollbar commune des childs */
 .scrollbar-child-container-breezy::-webkit-scrollbar {
     width: 18px;
