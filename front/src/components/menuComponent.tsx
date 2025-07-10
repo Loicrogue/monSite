@@ -25,16 +25,16 @@ const BannerComponent: React.FC = () => {
                     onClick={() => navigate('/')}
                 />
                 <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/')}>
-                    {t('pages.home.menu.aboutMe')}
+                    {t('pages.menu.aboutMe')}
                 </span>
                 <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/skills')}>
-                    {t('pages.home.menu.skills')}
+                    {t('pages.menu.skills')}
                 </span>
                 <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/interests')}>
-                    {t('pages.home.menu.interests')}
+                    {t('pages.menu.interests')}
                 </span>
                 <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/contact')}>
-                    {t('pages.home.menu.contact')}
+                    {t('pages.menu.contact')}
                 </span>
                 <div className="ml-auto flex items-center gap-5">
                     <button 

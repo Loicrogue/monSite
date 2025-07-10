@@ -27,6 +27,15 @@
     --color-child-child-container-monSite: #4f504f;
 }
 
+.blue {
+    --color-gray-monSite: #626363;
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #0960be;
+    --color-container-monSite: #2A2B28;
+    --color-child-container-monSite: #353632;
+    --color-child-child-container-monSite: #4f504f;
+}
+
 /* scrollbar commune des childs */
 .scrollbar-child-container-breezy::-webkit-scrollbar {
     width: 18px;

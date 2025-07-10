@@ -11,12 +11,14 @@ const ThemeModal: React.FC = () => {
         document.documentElement.classList.toggle('dark', theme === 'dark');
         document.documentElement.classList.toggle('light', theme === 'light');
         document.documentElement.classList.toggle('red', theme === 'red');
+        document.documentElement.classList.toggle('blue', theme === 'blue');
         localStorage.setItem('theme', theme);
     }, [theme]);
 
     const setLightTheme = () => setTheme('light');
     const setDarkTheme = () => setTheme('dark');
     const setRedTheme = () => setTheme('red');
+    const setBlueTheme = () => setTheme('blue');
 
     return (
         <div>
@@ -31,8 +33,12 @@ const ThemeModal: React.FC = () => {
                     onClick={setDarkTheme}
                 />
                 <button 
-                    className="w-8 h-8 bg-red-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    className="w-8 h-8 border-2 border-monSite bg-red-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
                     onClick={setRedTheme}
+                ></button>
+                <button 
+                    className="w-8 h-8 border-2 border-monSite bg-blue-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    onClick={setBlueTheme}
                 ></button>
             </div>
         </div>

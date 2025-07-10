@@ -18,15 +18,18 @@
       "message": "Désolé, la page que vous cherchez n'existe pas.",
       "backToHome": "Retour à l'accueil"
     },
-    "home": {
-      "menu": {
-        "aboutMe": "À propos",
-        "skills": "Compétences",
-        "interests": "Centres d’intérêt",
-        "contact": "Contact"
-      },
+    "menu": {
+      "aboutMe": "À propos",
+      "skills": "Compétences",
+      "interests": "Centres d’intérêt",
+      "contact": "Contact"
+    },
+    "home": {      
       "profilDescription": "Alternant développeur d'application",
       "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
+    },
+    "skills": {      
+      "title": "Page des compétences"
     }
   }
 }
