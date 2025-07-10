@@ -1,0 +1,32 @@
+{
+  "pages": {
+    "settings": {
+      "title": "Parametres",
+      "language": "Language :",
+      "languageOptions": {
+        "fr": "French",
+        "en": "English"
+      },
+      "theme": "Theme :",
+      "themeOptions": {
+        "light": "Light",
+        "dark": "Dark"
+      }
+    },
+    "notFound": {
+      "title": "Page not found",
+      "message": "Sorry, the page you are looking for does not exist.",
+      "backToHome": "Back to home"
+    },
+    "home": {
+      "menu": {
+        "aboutMe": "About me",
+        "skills": "Skills",
+        "interests": "Interests",
+        "contact": "Contact"
+      },
+      "profilDescription": "Application developer apprentice",
+      "otherDescription": "This website is a personal project to showcase my skills and projects."
+    }
+  }
+}

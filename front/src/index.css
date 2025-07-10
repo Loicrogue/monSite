@@ -1,21 +1,30 @@
 @import 'tailwindcss';
 
 @theme {
-    --color-green-breezy: #65EAA1;
-    --color-background-breezy: #E6E4DF;
-    --color-container-breezy: #F4F2E8;
-    --color-child-container-breezy: #FBFAF2;
-    --color-child-child-container-breezy: #FBFAF2;
-    --color-breezy: #222222;
+    --color-gray-monSite: #626363;
+    --color-monSite: #222222;
+    --color-background-monSite: #E6E4DF;
+    --color-container-monSite: #F4F2E8;
+    --color-child-container-monSite: #FBFAF2;
+    --color-child-child-container-monSite: #FBFAF2;
 }
 
 .dark {
-    --color-green-breezy: #017344;
-    --color-background-breezy: #1E1F1C;
-    --color-container-breezy: #2A2B28;
-    --color-child-container-breezy: #353632;
-    --color-child-child-container-breezy: #4f504f;
-    --color-breezy: #FFFFFF;
+    --color-gray-monSite: #626363;
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #1E1F1C;
+    --color-container-monSite: #2A2B28;
+    --color-child-container-monSite: #353632;
+    --color-child-child-container-monSite: #4f504f;
+}
+
+.red {
+    --color-gray-monSite: #626363;
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #be0909;
+    --color-container-monSite: #2A2B28;
+    --color-child-container-monSite: #353632;
+    --color-child-child-container-monSite: #4f504f;
 }
 
 /* scrollbar commune des childs */
