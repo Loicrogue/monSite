@@ -1,0 +1,8 @@
+const useTheme = () => {
+    const theme = localStorage.getItem('theme') || 'light';
+	document.documentElement.classList.toggle('light', theme === 'light');
+	document.documentElement.classList.toggle('dark', theme === 'dark');
+	document.documentElement.classList.toggle('red', theme === 'red');    
+};
+
+export default useTheme;

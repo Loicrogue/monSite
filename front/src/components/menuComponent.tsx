@@ -21,7 +21,7 @@ const BannerComponent: React.FC = () => {
                 <img 
                     src={logo}
                     alt="logo" 
-                    className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl shadow-gray-300/15 transition-transform duration-200 hover:scale-110"
+                    className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110"
                     onClick={() => navigate('/')}
                 />
                 <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/')}>

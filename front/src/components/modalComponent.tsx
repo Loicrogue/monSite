@@ -42,7 +42,7 @@ const ModalComponent: React.FC<ModalProps> = ({ isOpen, height = '90%', width = 
             <div ref={modalRef} className="bg-child-container-monSite rounded-lg shadow-lg relative flex flex-col" style={{ width, height }}>
                 <div className="p-4 mb-5 relative">
                     <button className="absolute top-2 left-2 text-gray-500 hover:text-black" onClick={onClose}>
-                        <XMarkIcon className="size-8 border-2 rounded-full border-green-monSite cursor-pointer text-green-monSite hover:bg-green-monSite hover:text-child-container-monSite bg-child-container-monSite transition duration-300" />
+                        <XMarkIcon className="size-8 border-2 rounded-full border-gray-monSite cursor-pointer text-gray-monSite hover:bg-gray-monSite hover:text-child-container-monSite bg-child-container-monSite transition duration-300" />
                     </button>
                 </div>
                 <div className={`p-4 ${canScroll ? 'overflow-y-auto scrollbar-child-container-monSite' : ''} flex-1 ml-4 mr-4`}>

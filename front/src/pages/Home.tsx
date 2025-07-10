@@ -1,13 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Menu from '../components/menuComponent';
 import Profil from '../components/profilComponent';
-import { motion } from 'framer-motion';
+import useTheme from '../hooks/useTheme';
 
 const Home = () => {
-	const theme = localStorage.getItem('theme') || 'light';
-	document.documentElement.classList.toggle('light', theme === 'light');
-	document.documentElement.classList.toggle('dark', theme === 'dark');
-	document.documentElement.classList.toggle('red', theme === 'red');
+	useTheme();
   	return (
 		<div className="fixed inset-0 bg-background-monSite overflow-auto">
 			<motion.div 

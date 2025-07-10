@@ -3,19 +3,18 @@ import { useTranslation } from 'react-i18next';
 
 type Lang = { code: 'fr' | 'en'; name: string; flag: string };
 
-const languages: Lang[] = [
-  { code: 'fr', name: 'Français', flag: 'https://flagcdn.com/w80/fr.png' },
-  { code: 'en', name: 'English',  flag: 'https://flagcdn.com/w80/gb.png' },
-];
-
 const LanguageModal: React.FC = () => {
   const { t, i18n } = useTranslation();
+
+  const languages: Lang[] = [
+    { code: 'fr', name: t('pages.settings.languageOptions.fr'), flag: 'https://flagcdn.com/w80/fr.png' },
+    { code: 'en', name: t('pages.settings.languageOptions.en'), flag: 'https://flagcdn.com/w80/gb.png' },
+  ];
 
   const [lang, setLang] = useState<'fr' | 'en'>(
     () => (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr',
   );
 
-  /* Applique la langue sélectionnée */
   useEffect(() => {
     i18n.changeLanguage(lang);
     document.documentElement.lang = lang;
