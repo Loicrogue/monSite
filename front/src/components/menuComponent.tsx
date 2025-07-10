@@ -2,16 +2,18 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import { AiOutlineSetting} from 'react-icons/ai';
+import { AiOutlineBgColors } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
-import LanguageSelector from './languageSelector';
-import ModalComponent from '../components/modalComponent';
-import ThemeModal from '../components/modals/themeModal';
+import ModalComponent from './modalComponent';
+import ThemeModal from './modals/themeModal';
+import LanguageModal from './modals/languageModal';
 
 const BannerComponent: React.FC = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     
-    const [isModalOpen, setIsModalOpen] = React.useState(false);
+    const [isModalThemeOpen, setIsModalThemeOpen] = React.useState(false);
+    const [isModalLanguageOpen, setIsModalLanguageOpen] = React.useState(false);
 
     return (
         <>
@@ -37,15 +39,23 @@ const BannerComponent: React.FC = () => {
                 <div className="ml-auto flex items-center gap-5">
                     <button 
                         className="text-monSite transition-transform duration-200 hover:scale-120 cursor-pointer"
-                        onClick={() => setIsModalOpen(true)}
+                        onClick={() => setIsModalThemeOpen(true)}
+                    >
+                        <AiOutlineBgColors className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer' />
+                    </button>
+                    <button 
+                        className="text-monSite transition-transform duration-200 hover:scale-120 cursor-pointer"
+                        onClick={() => setIsModalLanguageOpen(true)}
                     >
                         <AiOutlineSetting className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer hover:animate-spin' />
                     </button>
-                    <LanguageSelector onSelect={(langCode: string) => console.log("Langue choisie :", langCode)} />
                 </div>
             </div>
-            <ModalComponent isOpen={isModalOpen} height="18%" width="25%" onClose={() => setIsModalOpen(false)}>
+            <ModalComponent isOpen={isModalThemeOpen} height="18%" width="25%" onClose={() => setIsModalThemeOpen(false)}>
                 <ThemeModal />
+            </ModalComponent>
+            <ModalComponent isOpen={isModalLanguageOpen} height="18%" width="25%" onClose={() => setIsModalLanguageOpen(false)}>
+                <LanguageModal />
             </ModalComponent>
         </>
     );

@@ -1,4 +1,3 @@
-// src/utils/useResponsive.ts
 import { useState, useEffect } from 'react';
 import breakpoints from '../utils/breakpoint';
 

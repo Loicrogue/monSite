@@ -4,7 +4,11 @@ import Profil from '../components/profilComponent';
 import { motion } from 'framer-motion';
 
 const Home = () => {
-  return (
+	const theme = localStorage.getItem('theme') || 'light';
+	document.documentElement.classList.toggle('light', theme === 'light');
+	document.documentElement.classList.toggle('dark', theme === 'dark');
+	document.documentElement.classList.toggle('red', theme === 'red');
+  	return (
 		<div className="fixed inset-0 bg-background-monSite overflow-auto">
 			<motion.div 
 				initial={{ opacity: 0, y: 30 }} 
