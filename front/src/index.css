@@ -19,7 +19,7 @@
 }
 
 .red {
-    --color-gray-monSite: #626363;
+    --color-gray-monSite: #be0909;
     --color-monSite: #FFFFFF;
     --color-background-monSite: #be0909;
     --color-container-monSite: #2A2B28;
@@ -28,7 +28,7 @@
 }
 
 .blue {
-    --color-gray-monSite: #626363;
+    --color-gray-monSite: #0960be;
     --color-monSite: #FFFFFF;
     --color-background-monSite: #0960be;
     --color-container-monSite: #2A2B28;
