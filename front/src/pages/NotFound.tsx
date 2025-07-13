@@ -23,7 +23,7 @@ function NotFound() {
                             <span className="font-bold text-monSite text-3xl mb-10 select-none">{t('pages.notFound.title')}</span>
                             <span className="text-monSite text-lg mb-8 select-none text-center w-full">{t('pages.notFound.message')}</span>
                             <button
-                                className="cursor-pointer "
+                                className="cursor-pointer bg-special-monSite text-white px-4 py-2 rounded-lg transition-transform duration-200 hover:scale-110"
                                 
                                 onClick={() => navigate("/")}
                             >

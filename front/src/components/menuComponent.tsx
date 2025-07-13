@@ -17,14 +17,14 @@ const BannerComponent: React.FC = () => {
 
     return (
         <>
-            <div className="flex flex-row items-center mt-5 ml-5 mr-5 bg-container-monSite text-monSite">
+            <div className="flex flex-row items-center gap-5 mt-5 ml-5 mr-5 bg-container-monSite text-monSite">
                 <img 
                     src={logo}
                     alt="logo" 
                     className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110 cursor-pointer"
                     onClick={() => navigate('/')}
                 />
-                <div className='flex flex-row w-1/3'>
+                <div className='flex flex-row gap-5'>
                     {[
                         { path: '/', label: t('pages.menu.aboutMe') },
                         { path: '/skills', label: t('pages.menu.skills') },
@@ -35,7 +35,7 @@ const BannerComponent: React.FC = () => {
                         return (
                             <span
                                 key={path}
-                                className={`flex w-1/4 text-xl justify-center transition-transform duration-200 hover:scale-110 cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
+                                className={`flex text-xl justify-center transition-transform duration-200 hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
                                 onClick={() => navigate(path)}
                             >
                                 {label}
