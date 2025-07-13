@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
-import { AiOutlineSetting} from 'react-icons/ai';
 import { AiOutlineBgColors } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import ModalComponent from './modalComponent';
@@ -14,6 +13,10 @@ const BannerComponent: React.FC = () => {
     
     const [isModalThemeOpen, setIsModalThemeOpen] = React.useState(false);
     const [isModalLanguageOpen, setIsModalLanguageOpen] = React.useState(false);
+
+    // Récupérer la langue actuelle et le drapeau
+    const lang = (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr';
+    const flag = lang === 'fr' ? 'https://flagcdn.com/w80/fr.png' : 'https://flagcdn.com/w80/gb.png';
 
     return (
         <>
@@ -50,12 +53,12 @@ const BannerComponent: React.FC = () => {
                     >
                         <AiOutlineBgColors className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer' />
                     </button>
-                    <button 
-                        className="text-monSite transition-transform duration-200 hover:scale-120 cursor-pointer"
+                    <img
+                        src={flag}
+                        alt={lang}
+                        className="w-16 h-9 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
                         onClick={() => setIsModalLanguageOpen(true)}
-                    >
-                        <AiOutlineSetting className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer hover:animate-spin' />
-                    </button>
+                    />
                 </div>
             </div>
             <ModalComponent isOpen={isModalThemeOpen} height="18%" width="25%" onClose={() => setIsModalThemeOpen(false)}>
