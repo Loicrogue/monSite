@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Menu from '../components/menuComponent';
-import Profil from '../components/profilComponent';
+import AboutMeComponent from '../components/aboutMeComponent';
 import useTheme from '../hooks/useTheme';
 
 const AboutMe = () => {
@@ -17,7 +17,7 @@ const AboutMe = () => {
 			>
 				<Menu />
 				<div className="flex flex-row h-full bg-child-container-monSite shadow-xl rounded-xl m-5">
-					<Profil />
+					<AboutMeComponent />
 				</div>
 			</motion.div>
 		</div>

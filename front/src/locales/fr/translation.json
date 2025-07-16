@@ -29,6 +29,9 @@
       "profilDescription": "Alternant développeur d'application",
       "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
     },
+    "aboutMe": {      
+      "title": "À propos de moi"
+    },
     "skills": {      
       "title": "Page des compétences"
     }
