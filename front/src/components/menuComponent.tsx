@@ -29,7 +29,8 @@ const BannerComponent: React.FC = () => {
                 />
                 <div className='flex flex-row gap-5'>
                     {[
-                        { path: '/', label: t('pages.menu.aboutMe') },
+                        { path: '/', label: t('pages.menu.homepage') },
+                        { path: '/aboutMe', label: t('pages.menu.aboutMe') },
                         { path: '/skills', label: t('pages.menu.skills') },
                         { path: '/interests', label: t('pages.menu.interests') },
                         { path: '/contact', label: t('pages.menu.contact') },
@@ -38,7 +39,7 @@ const BannerComponent: React.FC = () => {
                         return (
                             <span
                                 key={path}
-                                className={`flex text-xl justify-center transition-transform duration-200 hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
+                                className={`flex text-xl justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
                                 onClick={() => navigate(path)}
                             >
                                 {label}
