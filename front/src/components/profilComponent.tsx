@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import profilPicture from '../assets/profil_picture2.png';
+import profilPicture from '../assets/pp/profil_picture.png';
 
 const ProfilComponent: React.FC = () => {
     const { t } = useTranslation();

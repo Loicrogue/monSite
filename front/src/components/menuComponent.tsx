@@ -1,7 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
-import { AiOutlineSetting} from 'react-icons/ai';
 import { AiOutlineBgColors } from 'react-icons/ai';
 import { useNavigate } from 'react-router-dom';
 import ModalComponent from './modalComponent';
@@ -15,27 +14,39 @@ const BannerComponent: React.FC = () => {
     const [isModalThemeOpen, setIsModalThemeOpen] = React.useState(false);
     const [isModalLanguageOpen, setIsModalLanguageOpen] = React.useState(false);
 
+    // Récupérer la langue actuelle et le drapeau
+    const lang = (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr';
+    const flag = lang === 'fr' ? 'https://flagcdn.com/w80/fr.png' : 'https://flagcdn.com/w80/gb.png';
+
     return (
         <>
-            <div className="flex flex-row items-center gap-5 mt-5 ml-5 mr-5 cursor-pointer bg-container-monSite text-monSite">
+            <div className="flex flex-row items-center gap-5 mt-5 ml-5 mr-5 bg-container-monSite text-monSite">
                 <img 
                     src={logo}
                     alt="logo" 
-                    className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110"
+                    className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110 cursor-pointer"
                     onClick={() => navigate('/')}
                 />
-                <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/')}>
-                    {t('pages.home.menu.aboutMe')}
-                </span>
-                <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/skills')}>
-                    {t('pages.home.menu.skills')}
-                </span>
-                <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/interests')}>
-                    {t('pages.home.menu.interests')}
-                </span>
-                <span className="transition-transform duration-200 hover:scale-110" onClick={() => navigate('/contact')}>
-                    {t('pages.home.menu.contact')}
-                </span>
+                <div className='flex flex-row gap-5'>
+                    {[
+                        { path: '/', label: t('pages.menu.homepage') },
+                        { path: '/aboutMe', label: t('pages.menu.aboutMe') },
+                        { path: '/skills', label: t('pages.menu.skills') },
+                        { path: '/interests', label: t('pages.menu.interests') },
+                        { path: '/contact', label: t('pages.menu.contact') },
+                    ].map(({ path, label }) => {
+                        const isActive = window.location.pathname === path;
+                        return (
+                            <span
+                                key={path}
+                                className={`flex text-xl justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
+                                onClick={() => navigate(path)}
+                            >
+                                {label}
+                            </span>
+                        );
+                    })}
+                </div>
                 <div className="ml-auto flex items-center gap-5">
                     <button 
                         className="text-monSite transition-transform duration-200 hover:scale-120 cursor-pointer"
@@ -43,12 +54,12 @@ const BannerComponent: React.FC = () => {
                     >
                         <AiOutlineBgColors className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer' />
                     </button>
-                    <button 
-                        className="text-monSite transition-transform duration-200 hover:scale-120 cursor-pointer"
+                    <img
+                        src={flag}
+                        alt={lang}
+                        className="w-16 h-9 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
                         onClick={() => setIsModalLanguageOpen(true)}
-                    >
-                        <AiOutlineSetting className='text-3xl text-monSite transition-transform duration-300 hover:scale-110 cursor-pointer hover:animate-spin' />
-                    </button>
+                    />
                 </div>
             </div>
             <ModalComponent isOpen={isModalThemeOpen} height="18%" width="25%" onClose={() => setIsModalThemeOpen(false)}>
