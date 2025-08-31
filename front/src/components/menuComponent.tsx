@@ -29,7 +29,6 @@ const BannerComponent: React.FC = () => {
                 />
                 <div className='flex flex-row gap-5'>
                     {[
-                        { path: '/', label: t('pages.menu.homepage') },
                         { path: '/aboutMe', label: t('pages.menu.aboutMe') },
                         { path: '/skills', label: t('pages.menu.skills') },
                         { path: '/interests', label: t('pages.menu.interests') },
