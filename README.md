@@ -1,54 +1,35 @@
-# React + TypeScript + Vite
+# 💼 Mon Site Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue sur mon site vitrine personnel ! Ce portfolio a pour but de me présenter, de partager mes compétences techniques et humaines, et de faciliter le contact pour des opportunités professionnelles ou des collaborations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📄 Pages du site
 
-## Expanding the ESLint configuration
+### 👤 À propos
+Cette page vous permet d’en apprendre plus sur moi : mon parcours, mes motivations, et ma vision du développement.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛠️ Compétences
+Vous y trouverez mes compétences techniques (langages, frameworks, outils) ainsi que mes compétences transversales (travail en équipe, gestion de projet, etc.).
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
-```
+### 🎯 Centres d’intérêts
+Je partage ici ce qui me passionne au-delà du code : technologies, innovation, sport, lecture, ou encore projets personnels.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📬 Contact
+Une page simple pour me contacter par e-mail ou via les réseaux professionnels. N’hésitez pas à me laisser un message !
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
-```
+## 🚀 Objectifs du projet
+
+- Créer un site vitrine moderne et responsive
+- Mettre en avant mes compétences et ma personnalité
+- Faciliter le contact avec les visiteurs intéressés par mon profil
+
+---
+
+## 🛠️ Technologies utilisées
+
+- **HTML / CSS / JavaScript**
+- **React**
+- **Vite**

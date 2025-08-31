@@ -1,0 +1,39 @@
+{
+  "pages": {
+    "settings": {
+      "title": "Paramètres",
+      "language": "Langue :",
+      "languageOptions": {
+        "fr": "Français",
+        "en": "Anglais"
+      },
+      "theme": "Thème :",
+      "themeOptions": {
+        "light": "Clair",
+        "dark": "Sombre"
+      }
+    },
+    "notFound": {
+      "title": "Page non trouvée",
+      "message": "Désolé, la page que vous cherchez n'existe pas.",
+      "backToHome": "Retour à l'accueil"
+    },
+    "menu": {
+      "homepage": "Accueil",
+      "aboutMe": "À propos",
+      "skills": "Compétences",
+      "interests": "Centres d’intérêt",
+      "contact": "Contact"
+    },
+    "home": {      
+      "profilDescription": "Alternant développeur d'application",
+      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
+    },
+    "aboutMe": {      
+      "title": "À propos de moi"
+    },
+    "skills": {      
+      "title": "Page des compétences"
+    }
+  }
+}
