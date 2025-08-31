@@ -29,6 +29,9 @@
       "profilDescription": "Application developer apprentice",
       "otherDescription": "This website is a personal project to showcase my skills and projects."
     },
+    "aboutMe": {      
+      "title": "About Me"
+    },
     "skills": {      
       "title": "Skills page"
     }
