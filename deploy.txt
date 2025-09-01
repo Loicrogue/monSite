@@ -1,7 +1,15 @@
-Procédure de déploiement via Netlify CLI :
+Étapes mise en production sur Netlify :
+-> prérequis : avoir un compte Netlify
 
-1) Se placer dans dossier \front
+1) Dans ton projet web, installe le Netlify CLI
+$ npm install -g netlify-cli
 
-2) Executer la commande : ntl deploy --prod
+2) Ouvre un bash dans ton dossier de projet (dans \front)
 
-3) Récupérer l'URL générée
+3) Initialise la création de ton nouveau site vers Netlify (suivre les étapes de configs proposées)
+$ ntl init
+
+3) Déploie le site en production
+$ ntl deploy --prod
+
+4) Le lien du site est détaillé à la fin de la mise en prod.
