@@ -1,7 +1,7 @@
 Procédure de déploiement via Netlify CLI :
 
-1) Se placer sur dans dossier \front
+1) Se placer dans dossier \front
 
-2) Executer la commande : ntl deploy
+2) Executer la commande : ntl deploy --prod
 
-3) Récupérer l'URL généré
+3) Récupérer l'URL générée
