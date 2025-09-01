@@ -27,7 +27,8 @@
     },
     "home": {      
       "profilDescription": "Alternant développeur d'application",
-      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
+      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets.",
+      "incommingProgress": "Certains pages sont en cours de développement, revenez bientôt !"
     },
     "aboutMe": {      
       "title": "À propos de moi"

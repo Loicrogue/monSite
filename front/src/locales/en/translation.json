@@ -27,7 +27,8 @@
     },
     "home": {      
       "profilDescription": "Application developer apprentice",
-      "otherDescription": "This website is a personal project to showcase my skills and projects."
+      "otherDescription": "This website is a personal project to showcase my skills and projects.",
+      "incommingProgress": "Some pages are under development, come back soon!"
     },
     "aboutMe": {      
       "title": "About Me"

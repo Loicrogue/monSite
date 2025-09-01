@@ -11,6 +11,7 @@ const ProfilComponent: React.FC = () => {
                 <h1 className='font-bold text-5xl'>Loïc HOARAU</h1>
                 <h1 className='text-3xl'>{t('pages.home.profilDescription')}</h1>
                 <h1 className='text-xl'>{t('pages.home.otherDescription')}</h1>
+                <h1 className='text-xl'>{t('pages.home.incommingProgress')}</h1>
             </div>
             <div className='flex flex-col items-center justify-center w-full m-5'>
                 <img
