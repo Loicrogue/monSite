@@ -1,19 +1,23 @@
 import { useState, useEffect } from 'react';
-import breakpoints from '../utils/breakpoint';
 
 const useResponsive = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    
     useEffect(() => {
       const handleResize = () => setWindowWidth(window.innerWidth);
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const isMobile = windowWidth <= breakpoints.mobileMax;
-    const isTablet = windowWidth > breakpoints.mobileMax && windowWidth <= breakpoints.tabletMax;
-    const isDesktop = windowWidth >= breakpoints.desktopMin;
+    const mobileMax = 700;
+    const tabletMax = 1024;
+    const desktopMin = 1025;
 
-    return { isMobile, isTablet, isDesktop };
+    const isMobile = windowWidth <= mobileMax;
+    const isTablet = windowWidth > mobileMax && windowWidth <= tabletMax;
+    const isDesktop = windowWidth >= desktopMin;
+
+    return { isMobile, isTablet, isDesktop, windowWidth };
 };
 
 export default useResponsive;
