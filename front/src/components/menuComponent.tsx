@@ -54,34 +54,39 @@ const MenuComponent: React.FC = () => {
                     {isMobile ? (
                         // Mode mobile → liste déroulante
                         <div className="relative" ref={menuRef}>
-                            <button className="text-3xl p-2 cursor-pointer" onClick={() => setIsMenuOpen((prev) => !prev)}>
-                                <GiHamburgerMenu />
-                            </button>
+                        <button
+                            className="text-3xl p-2 cursor-pointer"
+                            onClick={() => setIsMenuOpen((prev) => !prev)}
+                        >
+                            <GiHamburgerMenu />
+                        </button>
 
-                            {isMenuOpen && (
-                                <div className="absolute left-0 mt-2 w-40 bg-white text-monSite rounded-lg shadow-lg flex flex-col">
-                                    {[
-                                        { path: '/aboutMe', label: t('pages.menu.aboutMe') },
-                                        { path: '/skills', label: t('pages.menu.skills') },
-                                        { path: '/interests', label: t('pages.menu.interests') },
-                                        { path: '/contact', label: t('pages.menu.contact') },
-                                    ].map(({ path, label }) => {
-                                        const isActive = window.location.pathname === path;
-                                        return (
-                                        <span
-                                            key={path}
-                                            className={`px-4 py-2 hover:bg-gray-200 cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
-                                            onClick={() => {
-                                                navigate(path);
-                                                setIsMenuOpen(false); // referme le menu
-                                            }}
-                                        >
-                                            {label}
-                                        </span>
-                                        );
-                                    })}
-                                </div>
-                            )}
+                        {isMenuOpen && (
+                            <div className="absolute left-0 mt-2 w-40 border border-background-monSite bg-container-monSite text-monSite rounded-lg shadow-lg flex flex-col">
+                            {[
+                                { path: '/aboutMe', label: t('pages.menu.aboutMe') },
+                                { path: '/skills', label: t('pages.menu.skills') },
+                                { path: '/interests', label: t('pages.menu.interests') },
+                                { path: '/contact', label: t('pages.menu.contact') },
+                            ].map(({ path, label }) => {
+                                const isActive = window.location.pathname === path;
+
+                                return (
+                                <span
+                                    key={path}
+                                    className={`px-4 py-2 cursor-pointer transition-colors duration-200 
+                                    ${isActive ? 'text-container-monSite bg-monSite rounded-lg' : 'hover:text-container-monSite hover:bg-monSite hover:rounded-lg'}`}
+                                    onClick={() => {
+                                    navigate(path);
+                                    setIsMenuOpen(false);
+                                    }}
+                                >
+                                    {label}
+                                </span>
+                                );
+                            })}
+                            </div>
+                        )}
                         </div>
                     ) : (
                         // Mode tablette / desktop → liens alignés

@@ -9,7 +9,7 @@ const useResponsive = () => {
       return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    const mobileMax = 700;
+    const mobileMax = 710;
     const tabletMax = 1024;
     const desktopMin = 1025;
 
