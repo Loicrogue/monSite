@@ -9,11 +9,13 @@ import ThemeModal from './modals/themeModal';
 import LanguageModal from './modals/languageModal';
 import useResponsive from '../hooks/useResponsive';
 
-const BannerComponent: React.FC = () => {
+const MenuComponent: React.FC = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const { isMobile, isTablet } = useResponsive();
 	const texteSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
+	const modalHeightSizeClass = isMobile ? "15%" : isTablet ? "15%" : "15%";
+	const modalWidthSizeClass = isMobile ? "60%" : isTablet ? "40%" : "25%";
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const menuRef = useRef<HTMLDivElement>(null); // ref sur le conteneur menu
     
@@ -50,7 +52,7 @@ const BannerComponent: React.FC = () => {
                 />
                 <div>
                     {isMobile ? (
-                        // Mode mobile → menu burger
+                        // Mode mobile → liste déroulante
                         <div className="relative" ref={menuRef}>
                             <button className="text-3xl p-2 cursor-pointer" onClick={() => setIsMenuOpen((prev) => !prev)}>
                                 <GiHamburgerMenu />
@@ -119,14 +121,14 @@ const BannerComponent: React.FC = () => {
                     />
                 </div>
             </div>
-            <ModalComponent isOpen={isModalThemeOpen} height="18%" width="25%" onClose={() => setIsModalThemeOpen(false)}>
+            <ModalComponent isOpen={isModalThemeOpen} height={`${modalHeightSizeClass}`} width={`${modalWidthSizeClass}`} onClose={() => setIsModalThemeOpen(false)} title={t('pages.settings.theme')}>
                 <ThemeModal />
             </ModalComponent>
-            <ModalComponent isOpen={isModalLanguageOpen} height="18%" width="25%" onClose={() => setIsModalLanguageOpen(false)}>
+            <ModalComponent isOpen={isModalLanguageOpen} height={`${modalHeightSizeClass}`} width={`${modalWidthSizeClass}`} onClose={() => setIsModalLanguageOpen(false)} title={t('pages.settings.language')}>
                 <LanguageModal />
             </ModalComponent>
         </>
     );
 };
 
-export default BannerComponent;
+export default MenuComponent;
