@@ -10,6 +10,9 @@ function NotFound() {
     const { t } = useTranslation();
     const { isMobile, isTablet } = useResponsive();
 	const marginClass = isMobile ? "m-2" : isTablet ? "m-3" : "m-5";
+    const titleSizeClass = isMobile ? "text-xl" : isTablet ? "text-2xl" : "text-3xl";
+	const subTitleSizeClass = isMobile ? "text-l" : isTablet ? "text-xl" : "text-l";
+
     return (
         <div className="fixed inset-0 bg-background-monSite overflow-auto">
             <div className={`absolute inset-0 bg-container-monSite shadow-xl rounded-xl ${marginClass}`}>
@@ -22,8 +25,8 @@ function NotFound() {
                 >
                     <div className="flex h-full rounded-xl shadow-xl bg-child-container-monSite overflow-hidden">
                         <div className="w-full flex flex-col items-center justify-center p-8">
-                            <span className="font-bold text-monSite text-3xl mb-10 select-none text-center w-full">{t('pages.notFound.title')}</span>
-                            <span className="text-monSite text-lg mb-8 select-none text-center w-full">{t('pages.notFound.message')}</span>
+                            <span className={`font-bold text-monSite ${titleSizeClass} mb-10 select-none text-center w-full`}>{t('pages.notFound.title')}</span>
+                            <span className={`text-monSite ${subTitleSizeClass} mb-8 select-none text-center w-full`}>{t('pages.notFound.message')}</span>
                             <button
                                 className="cursor-pointer bg-background-monSite text-monSite px-4 py-2 rounded-lg transition-transform duration-200 hover:scale-110"
                                 
