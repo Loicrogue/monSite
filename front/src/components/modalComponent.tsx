@@ -6,7 +6,7 @@ interface ModalProps {
     width?: string;
     onClose: () => void;
     children: React.ReactNode;
-    title?: string; // <--- Ajout ici
+    title?: string;
 }
 
 const ModalComponent: React.FC<ModalProps> = ({ 
@@ -15,7 +15,7 @@ const ModalComponent: React.FC<ModalProps> = ({
     width = '95%', 
     onClose, 
     children,
-    title // <--- Récupération ici
+    title
 }) => {
     const modalRef = useRef<HTMLDivElement>(null);
     const [mouseDownOutside, setMouseDownOutside] = useState(false);
@@ -50,14 +50,12 @@ const ModalComponent: React.FC<ModalProps> = ({
                 className="bg-child-container-monSite rounded-lg shadow-lg relative flex flex-col" 
                 style={{ width, height }}
             >
-                {/* Header avec titre dynamique */}
                 {title && (
                     <div className="p-4 border-b border-gray-300">
                         <h2 className="text-xl font-bold text-monSite">{title}</h2>
                     </div>
                 )}
 
-                {/* Contenu scrollable */}
                 <div className="flex-1 overflow-y-auto p-4 scrollbar-child-container-monSite">
                     <div className="space-y-4">
                         {children}

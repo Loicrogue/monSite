@@ -14,7 +14,7 @@ const MenuComponent: React.FC = () => {
     const navigate = useNavigate();
     const { isMobile, isTablet } = useResponsive();
 	const texteSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
-	const modalHeightSizeClass = isMobile ? "15%" : isTablet ? "15%" : "15%";
+	const modalHeightSizeClass = isMobile ? "145px" : isTablet ? "145px" : "145px";
 	const modalWidthSizeClass = isMobile ? "60%" : isTablet ? "40%" : "25%";
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const menuRef = useRef<HTMLDivElement>(null); // ref sur le conteneur menu
