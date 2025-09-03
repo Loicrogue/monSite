@@ -20,7 +20,7 @@ const Home = () => {
 				className={`flex flex-col item-center absolute inset-0 bg-container-monSite shadow-xl rounded-xl ${marginClass}`}
 			>
 				<Menu />
-				<div className={`flex flex-row h-full bg-child-container-monSite shadow-xl rounded-xl ${marginClass}`}>
+				<div className={`flex flex-row h-full overflow-y-auto scrollbar-child-container-monSite bg-child-container-monSite shadow-xl rounded-xl ${marginClass}`}>
 					<Profil />
 				</div>
 			</motion.div>
