@@ -1,39 +1,59 @@
 @import 'tailwindcss';
 
 @theme {
-    --color-special-monSite: #a8a8a8;
     --color-monSite: #222222;
     --color-background-monSite: #E6E4DF;
     --color-container-monSite: #F4F2E8;
     --color-child-container-monSite: #FBFAF2;
-    --color-child-child-container-monSite: #FBFAF2;
 }
 
 .dark {
-    --color-special-monSite: #626363;
     --color-monSite: #FFFFFF;
     --color-background-monSite: #1E1F1C;
     --color-container-monSite: #2A2B28;
     --color-child-container-monSite: #353632;
-    --color-child-child-container-monSite: #4f504f;
 }
 
 .red {
-    --color-special-monSite: #be0909;
     --color-monSite: #FFFFFF;
-    --color-background-monSite: #be0909;
-    --color-container-monSite: #2A2B28;
-    --color-child-container-monSite: #353632;
-    --color-child-child-container-monSite: #4f504f;
+    --color-background-monSite: #950707;
+    --color-container-monSite: #ab2d2d;
+    --color-child-container-monSite: #bf4c4c;
+}
+
+.orange {
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #955307;
+    --color-container-monSite: #ab702d;
+    --color-child-container-monSite: #bf874c;
+}
+
+.yellow {
+    --color-monSite: #222222;
+    --color-background-monSite: #958e07;
+    --color-container-monSite: #a9ab2d;
+    --color-child-container-monSite: #b7bf4c;
+}
+
+.green {
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #1c9507;
+    --color-container-monSite: #42ab2d;
+    --color-child-container-monSite: #4cbf5f;
 }
 
 .blue {
-    --color-special-monSite: #0960be;
     --color-monSite: #FFFFFF;
     --color-background-monSite: #0960be;
-    --color-container-monSite: #2A2B28;
-    --color-child-container-monSite: #353632;
-    --color-child-child-container-monSite: #4f504f;
+    --color-container-monSite: #1d71cb;
+    --color-child-container-monSite: #347bc7;
+}
+
+.purple {
+    --color-monSite: #FFFFFF;
+    --color-background-monSite: #630795;
+    --color-container-monSite: #792dab;
+    --color-child-container-monSite: #994cbf;
 }
 
 /* scrollbar commune des childs */

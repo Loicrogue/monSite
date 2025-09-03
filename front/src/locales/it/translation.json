@@ -1,0 +1,42 @@
+{
+  "pages": {
+    "settings": {
+      "title": "Impostazioni",
+      "language": "Lingua:",
+      "languageOptions": {
+        "fr": "Francese",
+        "en": "Inglese",
+        "it": "Italiano",
+        "es": "Spagnolo"
+      },
+      "theme": "Tema:",
+      "themeOptions": {
+        "light": "Chiaro",
+        "dark": "Scuro"
+      }
+    },
+    "notFound": {
+      "title": "Pagina non trovata",
+      "message": "Spiacente, la pagina che cerchi non esiste.",
+      "backToHome": "Torna alla home"
+    },
+    "menu": {
+      "homepage": "Home",
+      "aboutMe": "Chi sono",
+      "skills": "Competenze",
+      "interests": "Interessi",
+      "contact": "Contatti"
+    },
+    "home": {      
+      "profilDescription": "Sviluppatore di applicazioni in alternanza",
+      "otherDescription": "Questo sito web è un progetto personale per mostrare le mie competenze e i miei progetti.",
+      "incommingProgress": "Alcune pagine sono in fase di sviluppo, torna presto!"
+    },
+    "aboutMe": {      
+      "title": "Chi sono"
+    },
+    "skills": {      
+      "title": "Pagina delle competenze"
+    }
+  }
+}

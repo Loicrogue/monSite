@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-type Lang = { code: 'fr' | 'en'; name: string; flag: string };
+type Lang = { code: 'fr' | 'en' | 'it' | 'es'; name: string; flag: string };
 
 const LanguageModal: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -9,10 +9,12 @@ const LanguageModal: React.FC = () => {
   const languages: Lang[] = [
       { code: 'fr', name: t('pages.settings.languageOptions.fr'), flag: 'https://flagcdn.com/w80/fr.png' },
       { code: 'en', name: t('pages.settings.languageOptions.en'), flag: 'https://flagcdn.com/w80/gb.png' },
+      { code: 'it', name: t('pages.settings.languageOptions.it'), flag: 'https://flagcdn.com/w80/it.png' },
+      { code: 'es', name: t('pages.settings.languageOptions.es'), flag: 'https://flagcdn.com/w80/es.png' },
   ];
 
-  const [lang, setLang] = useState<'fr' | 'en'>(
-      () => (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr',
+  const [lang, setLang] = useState<'fr' | 'en' | 'it' | 'es'>(
+      () => (localStorage.getItem('i18nextLng') as 'fr' | 'en' | 'it' | 'es') || 'fr',
   );
 
   useEffect(() => {

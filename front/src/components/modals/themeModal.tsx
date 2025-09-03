@@ -5,10 +5,14 @@ const ThemeModal: React.FC = () => {
     const [theme, setTheme] = useState<string>(() => localStorage.getItem('theme') || 'light');
 
     useEffect(() => {
-        document.documentElement.classList.toggle('dark', theme === 'dark');
         document.documentElement.classList.toggle('light', theme === 'light');
-        document.documentElement.classList.toggle('red', theme === 'red');
+        document.documentElement.classList.toggle('dark', theme === 'dark');
+        document.documentElement.classList.toggle('red', theme === 'red');    
+        document.documentElement.classList.toggle('orange', theme === 'orange');
+        document.documentElement.classList.toggle('yellow', theme === 'yellow');
+        document.documentElement.classList.toggle('green', theme === 'green');
         document.documentElement.classList.toggle('blue', theme === 'blue');
+        document.documentElement.classList.toggle('purple', theme === 'purple');
         localStorage.setItem('theme', theme);
     }, [theme]);
 
@@ -37,10 +41,39 @@ const ThemeModal: React.FC = () => {
 
             <div className="basis-1/4 flex justify-center mt-2 mb-2">
                 <button 
+                    className="w-8 h-8 border-2 border-monSite bg-orange-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    onClick={() => setTheme('orange')}
+                />
+            </div>
+
+            <div className="basis-1/4 flex justify-center mt-2 mb-2">
+                <button 
+                    className="w-8 h-8 border-2 border-monSite bg-yellow-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    onClick={() => setTheme('yellow')}
+                />
+            </div>
+
+            <div className="basis-1/4 flex justify-center mt-2 mb-2">
+                <button 
+                    className="w-8 h-8 border-2 border-monSite bg-green-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    onClick={() => setTheme('green')}
+                />
+            </div>
+
+            <div className="basis-1/4 flex justify-center mt-2 mb-2">
+                <button 
                     className="w-8 h-8 border-2 border-monSite bg-blue-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
                     onClick={() => setTheme('blue')}
                 />
             </div>
+
+            <div className="basis-1/4 flex justify-center mt-2 mb-2">
+                <button 
+                    className="w-8 h-8 border-2 border-monSite bg-purple-500 transition-transform duration-200 hover:scale-110 cursor-pointer rounded-full"
+                    onClick={() => setTheme('purple')}
+                />
+            </div>
+
         </div>
     );
 

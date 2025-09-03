@@ -5,7 +5,9 @@
       "language": "Langue :",
       "languageOptions": {
         "fr": "Français",
-        "en": "Anglais"
+        "en": "Anglais",
+        "it": "Italien",
+        "es": "Espagnol"
       },
       "theme": "Thème :",
       "themeOptions": {
