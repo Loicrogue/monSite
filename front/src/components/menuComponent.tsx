@@ -67,7 +67,7 @@ const MenuComponent: React.FC = () => {
                                 { path: '/aboutMe', label: t('pages.menu.aboutMe') },
                                 { path: '/skills', label: t('pages.menu.skills') },
                                 { path: '/interests', label: t('pages.menu.interests') },
-                                { path: '/contact', label: t('pages.menu.contact') },
+                                { path: '/myProjects', label: t('pages.menu.myProjects') },
                             ].map(({ path, label }) => {
                                 const isActive = window.location.pathname === path;
 
@@ -95,7 +95,7 @@ const MenuComponent: React.FC = () => {
                                 { path: '/aboutMe', label: t('pages.menu.aboutMe') },
                                 { path: '/skills', label: t('pages.menu.skills') },
                                 { path: '/interests', label: t('pages.menu.interests') },
-                                { path: '/contact', label: t('pages.menu.contact') },
+                                { path: '/myProjects', label: t('pages.menu.myProjects') },
                             ].map(({ path, label }) => {
                                 const isActive = window.location.pathname === path;
                                 return (
