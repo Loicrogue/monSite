@@ -2,7 +2,7 @@
   "pages": {
     "settings": {
       "title": "Configuración",
-      "language": "Idioma:",
+      "language": "Idioma :",
       "languageOptions": {
         "fr": "Francés",
         "en": "Inglés",
@@ -18,7 +18,8 @@
     "notFound": {
       "title": "Página no encontrada",
       "message": "Lo sentimos, la página que buscas no existe.",
-      "backToHome": "Volver al inicio"
+      "backToHome": "Volver al inicio",
+      "workInProgress": "Trabajo en curso, vuelva pronto 👍"
     },
     "menu": {
       "homepage": "Inicio",
@@ -27,16 +28,22 @@
       "interests": "Intereses",
       "myProjects": "Mis proyectos"
     },
-    "home": {      
+    "home": {
       "profilDescription": "Desarrollador de aplicaciones en formación",
       "otherDescription": "Este sitio web es un proyecto personal para mostrar mis habilidades y proyectos.",
       "incommingProgress": "Algunas páginas están en desarrollo, ¡vuelve pronto!"
     },
-    "aboutMe": {      
-      "title": "Sobre mí"
+    "aboutMe": {
+        
     },
-    "skills": {      
-      "title": "Página de habilidades"
+    "skills": {
+      
+    },
+    "interests": {
+      
+    },
+    "myProjects": {
+      
     }
   }
 }

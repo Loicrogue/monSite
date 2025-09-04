@@ -18,7 +18,6 @@ const SkillsComponent: React.FC = () => {
     
     return (
         <div className='flex flex-col w-full items-center text-monSite p-5'>
-            <span className="text-center text-monSite text-2xl font-bold w-full p-5 block">{t('pages.skills.title')}</span>
             <div className="grid grid-cols-4 gap-y-10 gap-x-6 justify-items-center items-center py-8">
                 {/* Row 1 */}
                 <div className="flex flex-col items-center">

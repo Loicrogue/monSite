@@ -2,14 +2,14 @@
   "pages": {
     "settings": {
       "title": "Impostazioni",
-      "language": "Lingua:",
+      "language": "Lingua :",
       "languageOptions": {
         "fr": "Francese",
         "en": "Inglese",
         "it": "Italiano",
         "es": "Spagnolo"
       },
-      "theme": "Tema:",
+      "theme": "Tema :",
       "themeOptions": {
         "light": "Chiaro",
         "dark": "Scuro"
@@ -18,7 +18,8 @@
     "notFound": {
       "title": "Pagina non trovata",
       "message": "Spiacente, la pagina che cerchi non esiste.",
-      "backToHome": "Torna alla home"
+      "backToHome": "Torna alla home",
+      "workInProgress": "Lavoro in corso, torna presto 👍"
     },
     "menu": {
       "homepage": "Home",
@@ -32,11 +33,17 @@
       "otherDescription": "Questo sito web è un progetto personale per mostrare le mie competenze e i miei progetti.",
       "incommingProgress": "Alcune pagine sono in fase di sviluppo, torna presto!"
     },
-    "aboutMe": {      
-      "title": "Chi sono"
+    "aboutMe": {
+        
     },
-    "skills": {      
-      "title": "Pagina delle competenze"
+    "skills": {
+      
+    },
+    "interests": {
+      
+    },
+    "myProjects": {
+      
     }
   }
 }

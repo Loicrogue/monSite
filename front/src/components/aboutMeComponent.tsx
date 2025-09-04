@@ -7,7 +7,6 @@ const AboutMeComponent: React.FC = () => {
     
     return (
         <div className='flex flex-col w-full items-center text-monSite p-5'>
-            <span className="text-center text-monSite text-2xl font-bold w-full p-5 block">{t('pages.aboutMe.title')}</span>
             <motion.div 
 				initial={{ opacity: 0, x: -500 }}
                 animate={{ opacity: 1, x: 0 }}

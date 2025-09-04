@@ -18,7 +18,8 @@
     "notFound": {
       "title": "Page non trouvée",
       "message": "Désolé, la page que vous cherchez n'existe pas.",
-      "backToHome": "Retour à l'accueil"
+      "backToHome": "Retour à l'accueil",
+      "workInProgress": "Travail en cours, revenez bientôt 👍"
     },
     "menu": {
       "homepage": "Accueil",
@@ -32,11 +33,17 @@
       "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets.",
       "incommingProgress": "Certains pages sont en cours de développement, revenez bientôt !"
     },
-    "aboutMe": {      
-      "title": "À propos de moi"
+    "aboutMe": {
+        
     },
-    "skills": {      
-      "title": "Page des compétences"
+    "skills": {
+      
+    },
+    "interests": {
+      
+    },
+    "myProjects": {
+      
     }
   }
 }
