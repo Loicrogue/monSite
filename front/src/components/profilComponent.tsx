@@ -9,7 +9,7 @@ const ProfilComponent: React.FC = () => {
 	const titleSizeClass = isMobile ? "text-2xl pb-2" : isTablet ? "text-3xl" : "text-5xl";
 	const subTitleSizeClass = isMobile ? "text-xl pb-2" : isTablet ? "text-xl" : "text-3xl";
 	const textSizeClass = isMobile ? "text-m pb-2" : isTablet ? "text-l" : "text-xl";
-    const pictureSizeClass = isMobile || isTablet ? "w-65 h-65" : "w-95 h-95";
+    const pictureSizeClass = isMobile ? "w-50 h-50" : isTablet ? "w-60 h-60" : "w-95 h-95";
 
     return (
         <>            

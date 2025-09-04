@@ -51,7 +51,7 @@ const ModalComponent: React.FC<ModalProps> = ({
                 style={{ width, height }}
             >
                 {title && (
-                    <div className="p-4 border-b border-gray-300">
+                    <div className="p-4 border-b border-monSite">
                         <h2 className="text-xl font-bold text-monSite">{title}</h2>
                     </div>
                 )}
