@@ -1,0 +1,23 @@
+/* 
+  # Empêcher l’iframe (clickjacking)
+  X-Frame-Options: DENY
+
+  # Bloque certaines attaques de type MIME sniffing
+  X-Content-Type-Options: nosniff
+
+  # Politique de confidentialité des referers
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # Protection XSS basique
+  X-XSS-Protection: 1; mode=block
+
+  # Content Security Policy
+  Content-Security-Policy: 
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' 'unsafe-inline';
+    img-src 'self' data: https://flagcdn.com;
+    font-src 'self' data:;
+    connect-src 'self';
+    frame-ancestors 'none';
+    upgrade-insecure-requests;
