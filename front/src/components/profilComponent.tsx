@@ -6,9 +6,9 @@ import useResponsive from '../hooks/useResponsive';
 const ProfilComponent: React.FC = () => {
     const { t } = useTranslation();
     const { isMobile, isTablet } = useResponsive();
-	const titleSizeClass = isMobile ? "text-2xl pb-2" : isTablet ? "text-3xl" : "text-5xl";
-	const subTitleSizeClass = isMobile ? "text-xl pb-2" : isTablet ? "text-xl" : "text-3xl";
-	const textSizeClass = isMobile ? "text-m pb-2" : isTablet ? "text-l" : "text-xl";
+	const titleSizeClass = isMobile ? "text-2xl pb-2" : isTablet ? "text-3xl pb-2" : "text-5xl pb-2";
+	const subTitleSizeClass = isMobile ? "text-xl pb-2" : isTablet ? "text-xl pb-2" : "text-3xl pb-2";
+	const textSizeClass = isMobile ? "text-m " : isTablet ? "text-l" : "text-xl";
     const pictureSizeClass = isMobile ? "w-50 h-50" : isTablet ? "w-60 h-60" : "w-95 h-95";
 
     return (
@@ -19,7 +19,6 @@ const ProfilComponent: React.FC = () => {
                         <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
                         <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
                         <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
-                        <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.incommingProgress')}</h1>
                     </div>
                     <div className='flex flex-col items-center justify-center w-full'>
                         <img
@@ -38,7 +37,6 @@ const ProfilComponent: React.FC = () => {
                                 <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
                                 <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
                                 <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
-                                <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.incommingProgress')}</h1>
                             </div>
                             <div className='flex items-center justify-center w-full'>
                                 <img
@@ -56,7 +54,6 @@ const ProfilComponent: React.FC = () => {
                         <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
                         <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
                         <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
-                        <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.incommingProgress')}</h1>
                     </div>
                     <div className='flex items-center justify-center w-full m-5'>
                         <img
