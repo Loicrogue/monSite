@@ -34,7 +34,9 @@
       "incommingProgress": "Certains pages sont en cours de développement, revenez bientôt !"
     },
     "aboutMe": {
-        
+      "text1": "Bonjour ! Je m'appelle Loïc, je suis actuellement en début de 2ème année de cycle ingénieur en 3 ans en informatique. Je suis passionné par le développement d'application web et mobile, et j'aime créer des applications innovantes qui répondent aux besoins des utilisateurs.",
+      "text2": "En dehors de mes études, j'aime explorer de nouvelles technologies et apprendre de nouvelles compétences. Je suis également un grand amateur de jeux vidéo, ce qui m'a inspiré à développer des applications interactives et ludiques.",
+      "text3": "Je suis toujours à la recherche de nouvelles opportunités pour collaborer sur des projets passionnants et pour continuer à développer mes compétences en programmation. N'hésitez pas à me contacter si vous souhaitez en savoir plus sur moi ou sur mes projets !"
     },
     "skills": {
       

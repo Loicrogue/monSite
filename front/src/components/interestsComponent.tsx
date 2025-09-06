@@ -1,15 +1,20 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 
 const interestsComponent: React.FC = () => {
     const { t } = useTranslation();
     
     return (
-        <div className='flex flex-col w-full items-center text-monSite p-5'>
-            <div className="justify-items-center py-8">
-                <span>{t('pages.notFound.workInProgress')}</span>
-            </div>
-        </div>
+        <motion.div 
+            initial={{ opacity: 0, x: -500 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="justify-items-center w-full p-5"
+        >
+            <span className='flex w-full justify-center text-monSite'>{t('pages.notFound.workInProgress')}</span>
+        </motion.div>
+        
     );
 };
 

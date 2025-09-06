@@ -13,7 +13,7 @@ const MenuComponent: React.FC = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
     const { isMobile, isTablet } = useResponsive();
-	const texteSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
+	const textSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
 	const modalHeightSizeClass = isMobile ? "190px" : isTablet ? "190px" : "190px";
 	const modalWidthSizeClass = isMobile ? "60%" : isTablet ? "40%" : "25%";
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -101,7 +101,7 @@ const MenuComponent: React.FC = () => {
                                 return (
                                 <span
                                     key={path}
-                                    className={`flex ${texteSizeClass} justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
+                                    className={`flex ${textSizeClass} justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
                                     onClick={() => navigate(path)}
                                 >
                                     {label}
