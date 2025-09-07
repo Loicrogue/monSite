@@ -39,7 +39,10 @@
       "text3": "Siempre estoy buscando nuevas oportunidades para colaborar en proyectos emocionantes y para seguir desarrollando mis habilidades de programación."
     },
     "skills": {
-      
+      "programmingLanguages": "Lenguajes de programación",
+      "frameworksAndLibraries": "Frameworks y bibliotecas",
+      "databases": "Bases de datos",
+      "toolsAndPlatforms": "Herramientas y plataformas"
     },
     "interests": {
       
