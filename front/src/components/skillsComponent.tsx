@@ -60,7 +60,7 @@ const SkillsComponent: React.FC = () => {
       <div className='flex flex-col w-full'>
         <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
           <div className="w-full text-center mb-4 border-b-1 border-monSite pb-4">
-            <h2 className={`font-bold ${isMobile || isTablet ? "text-2xl" : "text-4xl"}`}>{t('pages.skills.programmingLanguages')}</h2>
+            <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>{t('pages.skills.programmingLanguages')}</h2>
           </div>
           <div
             className={`grid ${
@@ -87,7 +87,7 @@ const SkillsComponent: React.FC = () => {
         </div>
         <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
           <div className="w-full text-center mb-4 border-b-1 border-monSite pb-4">
-            <h2 className={`font-bold ${isMobile || isTablet ? "text-2xl" : "text-4xl"}`}>{t('pages.skills.frameworksAndLibraries')}</h2>
+            <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>{t('pages.skills.frameworksAndLibraries')}</h2>
           </div>
           <div
             className={`grid ${
@@ -114,7 +114,7 @@ const SkillsComponent: React.FC = () => {
         </div>
         <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
           <div className="w-full text-center mb-4 border-b-1 border-monSite pb-4">
-            <h2 className={`font-bold ${isMobile || isTablet ? "text-2xl" : "text-4xl"}`}>{t('pages.skills.databases')}</h2>
+            <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>{t('pages.skills.databases')}</h2>
           </div>
           <div
             className={`grid ${
@@ -141,7 +141,7 @@ const SkillsComponent: React.FC = () => {
         </div>
         <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
           <div className="w-full text-center mb-4 border-b-1 border-monSite pb-4">
-            <h2 className={`font-bold ${isMobile || isTablet ? "text-2xl" : "text-4xl"}`}>{t('pages.skills.toolsAndPlatforms')}</h2>
+            <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>{t('pages.skills.toolsAndPlatforms')}</h2>
           </div>
           <div
             className={`grid ${
