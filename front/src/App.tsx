@@ -1,7 +1,7 @@
-import { BrowserRouter } from 'react-router-dom';
-import AnimatedRoutes from './AnimatedRoutes';
 // @ts-expect-error react
 import React, { useEffect } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AnimatedRoutes from './AnimatedRoutes';
 
 function App() {
   useEffect(() => {

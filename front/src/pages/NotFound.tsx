@@ -14,7 +14,7 @@ function NotFound() {
 	const subTitleSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
 
     return (
-        <div className="fixed inset-0 bg-background-monSite overflow-y-auto scrollbar-child-container-monSite">
+        <div className="fixed inset-0 bg-background-monSite overflow-y-auto scrollbar-child-container-monSite select-none">
             <div className={`absolute inset-0 bg-container-monSite shadow-xl rounded-xl ${marginClass}`}>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
@@ -25,8 +25,8 @@ function NotFound() {
                 >
                     <div className="flex h-full rounded-xl shadow-xl bg-child-container-monSite overflow-y-auto scrollbar-child-container-monSite">
                         <div className="w-full flex flex-col items-center justify-center p-8">
-                            <span className={`font-bold text-monSite ${titleSizeClass} mb-4 select-none text-center w-full`}>{t('pages.notFound.title')}</span>
-                            <span className={`text-monSite ${subTitleSizeClass} mb-4 select-none text-center w-full`}>{t('pages.notFound.message')}</span>
+                            <span className={`font-bold text-monSite ${titleSizeClass} mb-4 text-center w-full`}>{t('pages.notFound.title')}</span>
+                            <span className={`text-monSite ${subTitleSizeClass} mb-4 text-center w-full`}>{t('pages.notFound.message')}</span>
                             <button
                                 className="cursor-pointer bg-background-monSite text-monSite px-4 py-2 rounded-lg transition-transform duration-200 hover:scale-110"
                                 
