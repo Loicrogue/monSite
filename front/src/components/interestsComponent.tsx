@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
-import BackgroundMusic from './backgroundMusicComponent';
 
 const InterestsComponent: React.FC = () => {
     const { t } = useTranslation();
@@ -17,11 +16,6 @@ const InterestsComponent: React.FC = () => {
             <span className='flex w-full justify-center text-monSite'>
                 {t('pages.notFound.workInProgress')}
             </span>
-
-            {/* Bouton pour lancer/arrêter la musique */}
-            <div className="flex justify-center mt-4">
-                <BackgroundMusic />
-            </div>
         </motion.div>
     );
 };
