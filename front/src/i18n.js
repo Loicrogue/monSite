@@ -5,7 +5,6 @@ import Backend from 'i18next-http-backend';
 import frTranslation from './locales/fr/translation.json';
 import enTranslation from './locales/en/translation.json';
 import itTranslation from './locales/it/translation.json';
-import esTranslation from './locales/es/translation.json';
 
 i18n
   .use(Backend)
@@ -25,9 +24,6 @@ i18n
       },
       it: {
         translation: itTranslation
-      },
-      es: {
-        translation: esTranslation
       }
     }
   });
