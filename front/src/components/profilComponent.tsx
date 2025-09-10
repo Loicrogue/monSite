@@ -13,7 +13,7 @@ const ProfilComponent: React.FC = () => {
 
     return (
         <>            
-            {isMobile ? (
+            {isMobile || isTablet ? (
                 <div className='flex flex-col item-center w-full gap-5'>
                     <div className="flex flex-col justify-center w-full p-10 gap-4">
                         <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
@@ -27,7 +27,7 @@ const ProfilComponent: React.FC = () => {
                             className={`rounded-full ${pictureSizeClass} shadow-xl shadow-gray-500/50`}
                         />
                     </div>
-                    <div className="flex justify-center w-full p-10 gap-4">
+                    <div className="flex w-full p-10 gap-4">
                         <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.inviteToVisit')}</h1>
                     </div>
                 </div>
