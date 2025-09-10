@@ -14,8 +14,8 @@ const ProfilComponent: React.FC = () => {
     return (
         <>            
             {isMobile ? (
-                <div className='flex flex-col w-full'>
-                    <div className="flex flex-col justify-center w-full p-10">
+                <div className='flex flex-col item-center w-full gap-5'>
+                    <div className="flex flex-col justify-center w-full p-10 gap-4">
                         <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
                         <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
                         <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
@@ -27,26 +27,9 @@ const ProfilComponent: React.FC = () => {
                             className={`rounded-full ${pictureSizeClass} shadow-xl shadow-gray-500/50`}
                         />
                     </div>
-                    <div className='m-5 text-child-container-monSite'>aaa</div> {/* Pour ajouter un espace en bas sur mobile */} 
-                </div>
-            ) : isTablet ? (
-                <div className='flex flex-col w-full'>
-                    <div className='text-child-container-monSite'>aaa</div> {/* Pour ajouter un espace en haut sur tablette */}
-                        <div className='flex flex-row w-full items-center gap-5'>
-                            <div className="w-full pl-8 py-8">
-                                <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
-                                <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
-                                <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
-                            </div>
-                            <div className='flex items-center justify-center w-full'>
-                                <img
-                                    src={profilPicture}
-                                    alt="profil picture"
-                                    className={`rounded-full ${pictureSizeClass} shadow-xl shadow-gray-500/50`}
-                                />
-                            </div>
-                        </div>
-                    <div className='text-child-container-monSite'>aaa</div> {/* Pour ajouter un espace en bas sur tablette */}
+                    <div className="flex justify-center w-full p-10 gap-4">
+                        <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.inviteToVisit')}</h1>
+                    </div>
                 </div>
             ) : (
                 <div className='flex flex-row w-full items-center p-5 gap-5'>
@@ -54,6 +37,7 @@ const ProfilComponent: React.FC = () => {
                         <h1 className={`font-bold text-monSite ${titleSizeClass}`}>Loïc HOARAU</h1>
                         <h1 className={`text-monSite ${subTitleSizeClass}`}>{t('pages.home.profilDescription')}</h1>
                         <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.otherDescription')}</h1>
+                        <h1 className={`text-monSite ${textSizeClass}`}>{t('pages.home.inviteToVisit')}</h1>
                     </div>
                     <div className='flex items-center justify-center w-full m-5'>
                         <img
