@@ -16,7 +16,7 @@ const AboutMeComponent: React.FC = () => {
     { type: "text", value: t('pages.aboutMe.text1'), align: "left" },                                     // 2
     { type: "text", value: t('pages.aboutMe.text2'), align: "right" },                                    // 3
     { type: "image", src: games, align: "center" },                                                       // 4
-    { type: "image", src: searching, align: "center" },    // 5
+    { type: "image", src: searching, align: "center" },                                                   // 5
     { type: "text", value: t('pages.aboutMe.text3'), align: "left" },                                     // 6
   ];
 
