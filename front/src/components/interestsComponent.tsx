@@ -10,12 +10,14 @@ const InterestsComponent: React.FC = () => {
             initial={{ opacity: 0, x: -500 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="justify-items-center w-full p-5"
+            className="w-full py-5"
         >
-            {/* Affichage du texte */}
-            <span className='flex w-full justify-center text-monSite'>
-                {t('pages.notFound.workInProgress')}
-            </span>
+            <div className='flex flex-row'>
+                <div className="w-[200px] h-[60px] bg-monSite flex items-center justify-center text-black font-bold"
+                    style={{clipPath: "polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%)"}}>
+                Mon texte
+                </div>
+            </div>
         </motion.div>
     );
 };
