@@ -6,6 +6,8 @@
     --color-container-monSite: #F4F2E8;
     --color-child-container-monSite: #FBFAF2;
     --color-child-child-container-monSite: #FFFFFF;
+    --color-signets-monSite: #222222;
+    --color-background-signets-monSite: #E6E4DF;
 }
 
 .dark {
@@ -14,6 +16,8 @@
     --color-container-monSite: #2A2B28;
     --color-child-container-monSite: #353632;
     --color-child-child-container-monSite: #454543;
+    --color-signets-monSite: #222222;
+    --color-background-signets-monSite: #FFFFFF;
 }
 
 .red {

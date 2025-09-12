@@ -44,7 +44,11 @@
       "toolsAndPlatforms": "Strumenti e piattaforme"
     },
     "interests": {
-      
+      "signets": {
+        "1" : "Sviluppo web",
+        "2" : "Sviluppo mobile",
+        "3" : "videogiochi"
+      }
     },
     "myProjects": {
       

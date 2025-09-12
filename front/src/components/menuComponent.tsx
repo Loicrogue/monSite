@@ -62,7 +62,7 @@ const MenuComponent: React.FC = () => {
                         </button>
 
                         {isMenuOpen && (
-                            <div className="absolute left-0 mt-2 w-40 border border-background-monSite bg-container-monSite text-monSite rounded-lg shadow-lg flex flex-col">
+                            <div className="absolute z-99 left-0 mt-2 w-40 border border-background-monSite bg-container-monSite text-monSite rounded-lg shadow-lg flex flex-col">
                             {[
                                 { path: '/aboutMe', label: t('pages.menu.aboutMe') },
                                 { path: '/skills', label: t('pages.menu.skills') },
