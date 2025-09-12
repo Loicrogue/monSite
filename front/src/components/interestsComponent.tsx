@@ -14,12 +14,7 @@ const InterestsComponent: React.FC = () => {
     ];
 
   return (
-    <motion.div 
-        initial={{ opacity: 0, x: -500 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="flex flex-row justify-items-center w-full"
-    >
+    <div className="flex flex-row justify-items-center w-full">
         <motion.div
           initial={{ opacity: 0, x: -500 }}
           animate={{ opacity: 1, x: 0 }}
@@ -49,8 +44,8 @@ const InterestsComponent: React.FC = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, x: -500 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 500 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="w-17/20 h-full p-10"
         >
@@ -58,7 +53,7 @@ const InterestsComponent: React.FC = () => {
             aaa
           </div>
         </motion.div>
-    </motion.div>
+    </div>
   );
 };
 
