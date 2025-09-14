@@ -44,11 +44,17 @@
       "toolsAndPlatforms": "Strumenti e piattaforme"
     },
     "interests": {
-      "signets": {
-        "1" : "Sviluppo web",
-        "2" : "Sviluppo mobile",
-        "3" : "videogiochi"
-      }
+      "bookmarks": {
+        "1": "Segnalibri 1",
+        "2": "Segnalibri 2",
+        "3": "Segnalibri 3"
+      },
+      "contents": {
+        "1": "Ecco il contenuto del segnalibro 1",
+        "2": "Ecco il contenuto del segnalibro 2",
+        "3": "Ecco il contenuto del segnalibro 3"
+      },
+      "selectHint": "Clicca su un segnalibro per vedere il suo contenuto"
     },
     "myProjects": {
       

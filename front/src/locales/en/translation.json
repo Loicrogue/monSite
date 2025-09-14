@@ -44,11 +44,17 @@
       "toolsAndPlatforms": "Tools and platforms"
     },
     "interests": {
-      "signets": {
-        "1" : "Web development",
-        "2" : "Mobile development",
-        "3" : "Video games"
-      }
+      "bookmarks": {
+        "1": "Bookmarks 1",
+        "2": "Bookmarks 2",
+        "3": "Bookmarks 3"
+      },
+      "contents": {
+        "1": "Here is the bookmark content 1",
+        "2": "Here is the bookmark content 2",
+        "3": "Here is the bookmark content 3"
+      },
+      "selectHint": "Click on a bookmark to see its content"
     },
     "myProjects": {
       

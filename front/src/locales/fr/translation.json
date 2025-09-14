@@ -44,11 +44,17 @@
       "toolsAndPlatforms": "Outils et plateformes"
     },
     "interests": {
-      "signets": {
-        "1" : "Développement web",
-        "2" : "Développement mobile",
-        "3" : "Jeux vidéo"
-      }
+      "bookmarks": {
+        "1": "Signet 1",
+        "2": "Signet 2",
+        "3": "Signet 3"
+      },
+      "contents": {
+        "1": "Voici le contenu du signet 1",
+        "2": "Voici le contenu du signet 2",
+        "3": "Voici le contenu du signet 3"
+      },
+      "selectHint": "Clique sur un signet pour voir son contenu"
     },
     "myProjects": {
       
