@@ -70,17 +70,17 @@
 
 /* scrollbar commune des childs */
 .scrollbar-child-container-monSite::-webkit-scrollbar {
-    width: 14px;
+    width: 16px;
 }
 
 .scrollbar-child-container-monSite::-webkit-scrollbar-track {
     background: var(--color-child-container-monSite);
-    border-radius: 16px;
+    border-radius: 18px;
 }
 
 .scrollbar-child-container-monSite::-webkit-scrollbar-thumb {
     background: var(--color-child-child-container-monSite);
-    border-radius: 20px;
+    border-radius: 22px;
     border: 5px solid var(--color-container-monSite);
 }
 
