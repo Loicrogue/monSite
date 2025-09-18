@@ -9,6 +9,8 @@ const InterestsComponent: React.FC = () => {
   const paddingContentZoneClass = isTablet ? "py-5 pr-5" : "py-10 pr-10";
   const textSizeClass = isTablet ? "text-sm" : "text-l";
   const paddingLeftBookmarkTextClass = isTablet ? "pl-2" : "pl-5";
+  const widthBookmarkClass = isTablet ? "w-5/20" : "w-3/20";
+  const widthContentClass = isTablet ? "w-15/20" : "w-17/20";
 
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
@@ -78,7 +80,7 @@ const InterestsComponent: React.FC = () => {
                 initial={{ opacity: 0, x: -500 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className="w-3/20 h-full py-5"
+                className={`${widthBookmarkClass} h-full py-5`}
               >
                 <div className="flex flex-row">
                   <div className="flex flex-col gap-5 w-full">
@@ -108,7 +110,7 @@ const InterestsComponent: React.FC = () => {
                 initial={{ opacity: 0, y: 500 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, ease: "easeOut" }}
-                className={`w-17/20 h-full ${paddingContentZoneClass}`}
+                className={`${widthContentClass} h-full ${paddingContentZoneClass}`}
               >
                 <div className="flex flex-row h-full rounded-lg border border-black shadow-xl p-5">
                   {selectedId ? (
