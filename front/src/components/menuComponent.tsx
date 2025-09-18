@@ -14,7 +14,7 @@ const MenuComponent: React.FC = () => {
     const navigate = useNavigate();
     const { isMobile, isTablet } = useResponsive();
 	const textSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
-	const modalHeightSizeClass = isMobile ? "205px" : isTablet ? "205px" : "205px";
+	const modalHeightSizeClass = isMobile ? "205px" : "150px";
 	const modalWidthSizeClass = isMobile ? "60%" : isTablet ? "40%" : "25%";
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const menuRef = useRef<HTMLDivElement>(null); // ref sur le conteneur menu
@@ -126,7 +126,7 @@ const MenuComponent: React.FC = () => {
                     />
                 </div>
             </div>
-            <ModalComponent isOpen={isModalThemeOpen} height={`${modalHeightSizeClass}`} width={`${modalWidthSizeClass}`} onClose={() => setIsModalThemeOpen(false)} title={t('pages.settings.theme')}>
+            <ModalComponent isOpen={isModalThemeOpen} height="205px" width={`${modalWidthSizeClass}`} onClose={() => setIsModalThemeOpen(false)} title={t('pages.settings.theme')}>
                 <ThemeModal />
             </ModalComponent>
             <ModalComponent isOpen={isModalLanguageOpen} height={`${modalHeightSizeClass}`} width={`${modalWidthSizeClass}`} onClose={() => setIsModalLanguageOpen(false)} title={t('pages.settings.language')}>
