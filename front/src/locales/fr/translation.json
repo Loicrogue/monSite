@@ -45,9 +45,9 @@
     },
     "interests": {
       "bookmarks": {
-        "1": "Signet 1",
-        "2": "Signet 2",
-        "3": "Signet 3"
+        "1": "Developpement web",
+        "2": "Cybersécurité",
+        "3": "Hardware & Software"
       },
       "contents": {
         "1": "Voici le contenu du signet 1",

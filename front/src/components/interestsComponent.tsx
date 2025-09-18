@@ -29,17 +29,15 @@ const InterestsComponent: React.FC = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="w-full p-3 pb-0"
               >
-                <div className="flex flex-row w-full h-full justify-center gap-3">
+                <div className="flex flex-wrap justify-center gap-3 w-full">
                   {bookmarks.map((s) => (
                     <div
                       key={s.id}
                       onClick={() => setSelectedId(s.id)}
-                      className={`
-                        rounded-lg border border-monSite p-2 font-bold cursor-pointer w-full text-center text-sm
+                      className={`rounded-lg border border-monSite px-3 py-2 font-bold cursor-pointer text-center text-sm
                         ${selectedId === s.id 
                           ? "bg-monSite text-container-monSite" 
-                          : "bg-container-monSite text-monSite"}
-                      `}
+                          : "bg-container-monSite text-monSite"}`}
                     >
                       <span>{s.label}</span>
                     </div>
@@ -119,7 +117,7 @@ const InterestsComponent: React.FC = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4 }}
-                      className="text-lg text-monSite"
+                      className={`${textSizeClass} text-monSite`}
                     >
                       {bookmarks.find((s) => s.id === selectedId)?.content}
                     </motion.div>
