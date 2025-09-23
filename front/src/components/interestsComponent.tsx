@@ -22,7 +22,7 @@ const InterestsComponent: React.FC = () => {
 
   return (
     <>            
-        {isMobile ? (
+        {isMobile || isTablet ? (
             <div className="flex flex-col justify-items-center w-full">
               {/* Colonne des signets */}
               <motion.div
@@ -92,7 +92,8 @@ const InterestsComponent: React.FC = () => {
                         animate={{ width: selectedId === s.id ? "95%" : "80%" }}
                         whileHover={{ width: "95%" }}
                         transition={{ duration: 0.3 }}
-                        className={`h-[60px] bg-background-signets-monSite flex items-center ${paddingLeftBookmarkTextClass} text-signets-monSite font-bold cursor-pointer ${textSizeClass}`}
+                        className={`h-[60px] flex items-center ${paddingLeftBookmarkTextClass} 
+                        font-bold cursor-pointer ${textSizeClass} ${selectedId === s.id ? "bg-signets-monSite text-background-signets-monSite" : "bg-background-signets-monSite text-signets-monSite"}`}
                         style={{
                           clipPath:
                             "polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%)",
