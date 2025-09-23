@@ -45,9 +45,10 @@
     },
     "interests": {
       "bookmarks": {
-        "1": "Sviluppo web",
-        "2": "Sicurezza informatica",
-        "3": "Hardware e software"
+        "webDev": "Sviluppo web",
+        "cybersecurity": "Sicurezza informatica",
+        "hardSoft": "Hardware e Software",
+        "fitness": "Palestra"
       },
       "contents": {
         "1": "Ecco il contenuto del segnalibro 1",

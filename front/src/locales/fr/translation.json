@@ -45,14 +45,36 @@
     },
     "interests": {
       "bookmarks": {
-        "1": "Developpement web",
-        "2": "Cybersécurité",
-        "3": "Hardware & Software"
+        "webDev": "Developpement web",
+        "cybersecurity": "Cybersécurité",
+        "hardSoft": "Hardware & Software",
+        "fitness": "Musculation"
       },
       "contents": {
-        "1": "Voici le contenu du signet 1",
-        "2": "Voici le contenu du signet 2",
-        "3": "Voici le contenu du signet 3"
+        "webDev": {
+          "1": "Le développement web est le processus de création et de maintenance de sites web et d'applications web qui sont accessibles via Internet. Il englobe une variété de tâches, allant de la conception de l'interface utilisateur à la programmation côté serveur, en passant par la gestion des bases de données et l'optimisation des performances.",
+          "2": "Le développement web peut être divisé en deux catégories principales : le développement front-end et le développement back-end. Le développement front-end se concentre sur la partie visible d'un site web, c'est-à-dire l'interface utilisateur avec laquelle les utilisateurs interagissent. Cela inclut l'utilisation de langages tels que HTML, CSS et JavaScript pour créer des mises en page attrayantes et des fonctionnalités interactives.",
+          "3": "Le développement back-end, quant à lui, se concentre sur la partie serveur d'un site web. Il implique la création de la logique métier, la gestion des bases de données et l'intégration avec d'autres services. Les développeurs back-end utilisent des langages tels que Python, Ruby, PHP, Java et Node.js pour construire des applications robustes et évolutives.",
+          "4": "Le développement web est un domaine en constante évolution, avec de nouvelles technologies et tendances qui émergent régulièrement. Parmi les tendances actuelles, on trouve le développement d'applications web progressives (PWA), l'utilisation de frameworks JavaScript modernes tels que React, Angular et Vue.js, ainsi que l'adoption croissante du développement mobile-first pour garantir une expérience utilisateur optimale sur tous les appareils."
+        },
+        "cyberSecurity": {
+          "1": "La cybersécurité, également connue sous le nom de sécurité informatique, fait référence aux pratiques, technologies et processus conçus pour protéger les systèmes informatiques, les réseaux et les données contre les attaques, les dommages ou les accès non autorisés. Avec l'augmentation de la dépendance à la technologie dans notre vie quotidienne, la cybersécurité est devenue un aspect crucial de la protection des informations sensibles et de la garantie de la confidentialité, de l'intégrité et de la disponibilité des données.",
+          "2": "Les menaces courantes en matière de cybersécurité comprennent les logiciels malveillants (tels que les virus, les vers et les chevaux de Troie), le phishing, les attaques par déni de service (DDoS) et les violations de données. Pour se défendre contre ces menaces, les organisations et les individus mettent en œuvre diverses mesures de sécurité, telles que l'utilisation de pare-feu, de logiciels antivirus, de systèmes de détection d'intrusion et de protocoles de chiffrement.",
+          "3": "La sensibilisation à la cybersécurité est également essentielle pour prévenir les attaques. Cela inclut l'éducation des utilisateurs sur les meilleures pratiques en matière de sécurité, telles que la création de mots de passe forts, la reconnaissance des tentatives de phishing et la mise à jour régulière des logiciels pour corriger les vulnérabilités.",
+          "4": "En résumé, la cybersécurité est un domaine en constante évolution qui joue un rôle vital dans la protection des informations numériques et des infrastructures critiques contre les menaces croissantes dans le paysage numérique actuel."
+        },
+        "hardSoft": {
+          "1": "Le matériel informatique, souvent abrégé en matériel, fait référence aux composants physiques qui constituent un système informatique. Cela inclut des éléments tels que l'unité centrale de traitement (CPU), la mémoire (RAM), les dispositifs de stockage (disques durs, SSD), les périphériques d'entrée (claviers, souris) et les périphériques de sortie (écrans, imprimantes). Le matériel est essentiel pour le fonctionnement d'un ordinateur, car il exécute les instructions logicielles et permet aux utilisateurs d'interagir avec le système.",
+          "2": "Le logiciel, en revanche, fait référence aux programmes et aux applications qui s'exécutent sur un système informatique. Il peut s'agir de systèmes d'exploitation (comme Windows, macOS, Linux), de logiciels applicatifs (comme les suites bureautiques, les navigateurs web) ou de logiciels spécialisés (comme les outils de développement, les jeux vidéo). Le logiciel est responsable de la gestion des ressources matérielles et de la fourniture de fonctionnalités aux utilisateurs.",
+          "3": "L'interaction entre le matériel et le logiciel est cruciale pour le bon fonctionnement d'un système informatique. Le matériel fournit la puissance de traitement et les capacités nécessaires pour exécuter le logiciel, tandis que le logiciel exploite les capacités du matériel pour accomplir des tâches spécifiques. Ensemble, ils permettent aux utilisateurs d'effectuer une variété d'activités, allant de la navigation sur Internet à la création de contenu multimédia.",
+          "4": "Dans le domaine de l'informatique, il est important de comprendre les différences entre le matériel et le logiciel, ainsi que leur interaction. Cela permet aux professionnels de l'informatique de concevoir, de développer et de maintenir des systèmes informatiques efficaces et performants."
+        },
+        "fitness": {
+          "1": "La musculation, également connue sous le nom d'entraînement en résistance ou de musculation, est une forme d'exercice physique qui implique l'utilisation de la résistance pour stimuler la contraction musculaire. Cette résistance peut provenir de poids libres, de machines de musculation, de bandes de résistance ou même du poids corporel.",
+          "2": "L'objectif principal de la musculation est d'améliorer la force, l'endurance et la taille des muscles. En soumettant les muscles à une résistance progressive, on provoque des micro-déchirures dans les fibres musculaires. Lorsque ces fibres se réparent, elles deviennent plus fortes et plus grosses, ce qui conduit à une augmentation de la masse musculaire.",
+          "3": "La musculation offre de nombreux avantages, notamment l'amélioration de la composition corporelle, l'augmentation du métabolisme, le renforcement des os et des articulations, ainsi que l'amélioration de la santé mentale. Elle peut également aider à prévenir les blessures en renforçant les muscles et en améliorant la stabilité.",
+          "4": "Il est important de pratiquer la musculation de manière sûre et efficace. Cela inclut l'utilisation d'une bonne technique, le choix de poids appropriés, la progression graduelle des charges, ainsi que l'intégration de périodes de repos et de récupération dans le programme d'entraînement. Il est également recommandé de consulter un professionnel de la santé ou un entraîneur personnel avant de commencer un programme de musculation, surtout si vous êtes débutant ou si vous avez des conditions médicales préexistantes."
+        }
       },
       "selectHint": "Clique sur un signet pour voir son contenu"
     },

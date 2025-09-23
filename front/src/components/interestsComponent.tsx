@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
+import WebDev from "./interestsList/Webdev";
+import CyberSecurity from "./interestsList/Cybersecurity";
+import HardSoft from "./interestsList/HardSoft";
+import Fitness from "./interestsList/Fitness";
 
 const InterestsComponent: React.FC = () => {
   const { t } = useTranslation();
@@ -15,9 +19,10 @@ const InterestsComponent: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
 
   const bookmarks = [
-    { id: "1", label: t('pages.interests.bookmarks.1'), content: t('pages.notFound.workInProgress') }, // t('pages.interests.contents.1')
-    { id: "2", label: t('pages.interests.bookmarks.2'), content: t('pages.notFound.workInProgress') }, // t('pages.interests.contents.2')
-    { id: "3", label: t('pages.interests.bookmarks.3'), content: t('pages.notFound.workInProgress') }, // t('pages.interests.contents.3')
+    { id: "1", label: t("pages.interests.bookmarks.webDev"), content: <WebDev /> },
+    { id: "2", label: t("pages.interests.bookmarks.cybersecurity"), content: <CyberSecurity /> },
+    { id: "3", label: t("pages.interests.bookmarks.hardSoft"), content: <HardSoft /> },
+    { id: "4", label: t("pages.interests.bookmarks.fitness"), content: <Fitness /> },
   ];
 
   return (
@@ -61,7 +66,7 @@ const InterestsComponent: React.FC = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4 }}
-                      className="text-l text-monSite"
+                      className="text-l text-monSite overflow-y-auto scrollbar-child-container-monSite"
                     >
                       {bookmarks.find((s) => s.id === selectedId)?.content}
                     </motion.div>
@@ -120,7 +125,7 @@ const InterestsComponent: React.FC = () => {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4 }}
-                      className={`${textSizeClass} text-monSite`}
+                      className={`${textSizeClass} text-monSite overflow-y-auto scrollbar-child-container-monSite`}
                     >
                       {bookmarks.find((s) => s.id === selectedId)?.content}
                     </motion.div>

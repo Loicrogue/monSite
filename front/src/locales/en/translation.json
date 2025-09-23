@@ -45,9 +45,10 @@
     },
     "interests": {
       "bookmarks": {
-        "1": "Web Developpement",
-        "2": "Cybersecurity",
-        "3": "Hardware & Software"
+        "webDev": "Web Developpement",
+        "cybersecurity": "Cybersecurity",
+        "hardSoft": "Hardware & Software",
+        "fitness": "Weight Training"
       },
       "contents": {
         "1": "Here is the bookmark content 1",
