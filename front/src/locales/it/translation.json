@@ -51,9 +51,22 @@
         "fitness": "Palestra"
       },
       "contents": {
-        "1": "Ecco il contenuto del segnalibro 1",
-        "2": "Ecco il contenuto del segnalibro 2",
-        "3": "Ecco il contenuto del segnalibro 3"
+        "webDev": {
+          "1": "Mi piace progettare applicazioni web moderne e performanti. Il mio interesse si concentra sia sul front-end, dove l'esperienza utente è fondamentale, che sul back-end, dove la struttura e la sicurezza svolgono un ruolo centrale.",
+          "2": "Sono particolarmente interessato alle architetture di microservizi, all'ottimizzazione delle prestazioni e alla realizzazione di soluzioni robuste e scalabili."
+        },
+        "cybersecurity": {
+          "1": "La sicurezza informatica è per me un settore essenziale: capire come proteggere i sistemi, anticipare le minacce e analizzare le potenziali vulnerabilità.",
+          "2": "Il mio obiettivo è sempre quello di rafforzare la mia capacità di pensare come un attaccante per proteggere meglio i miei sviluppi, così come le mie attività personali."
+        },
+        "hardSoft": {
+          "1": "Comprendere l'interazione tra hardware e software è una passione. Mi piace esplorare l'architettura dei componenti, assemblare e ottimizzare le configurazioni, mentre studio come i sistemi operativi sfruttano le risorse disponibili.",
+          "2": "Mi permette di comprendere meglio le prestazioni, la compatibilità e di avere una visione completa del funzionamento di un computer, dal livello hardware fino alle applicazioni."
+        },
+        "fitness": {
+          "1": "Per me il bodybuilding è molto più di un semplice sport: è una disciplina che mi insegna la costanza, il rigore e la pazienza.",
+          "2": "Mi piace seguire i miei progressi, regolare i miei programmi e sperimentare nuovi metodi di allenamento. È un equilibrio tra sforzo fisico, mentale e stile di vita sano che mi dà energia e determinazione ogni giorno."
+        }
       },
       "selectHint": "Clicca su un segnalibro per vedere il suo contenuto"
     },

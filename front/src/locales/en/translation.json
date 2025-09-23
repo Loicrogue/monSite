@@ -51,9 +51,22 @@
         "fitness": "Weight Training"
       },
       "contents": {
-        "1": "Here is the bookmark content 1",
-        "2": "Here is the bookmark content 2",
-        "3": "Here is the bookmark content 3"
+        "webDev": {
+          "1": "I like to design modern and powerful web applications. My interest lies both in the front-end, where user experience is paramount, and in the back-end, where structure and security play a central role.",
+          "2": "I am particularly interested in micro-service architectures, performance optimization, and the implementation of robust and scalable solutions."
+        },
+        "cybersecurity": {
+          "1": "Cybersecurity is an essential area for me: understanding how to protect systems, anticipate threats, and analyze potential flaws." ,
+          "2": "My goal is always to strengthen my ability to think like an attacker to better secure my developments, as well as my personal activities."
+        },
+        "hardSoft": {
+          "1": "Understanding the interaction between hardware and software is a passion. I like to explore component architecture, assemble and optimize configurations, while studying how operating systems leverage available resources. " ,
+          "2": "This allows me to better understand the performance, compatibility, and to have a complete view of the operation of a computer, from the hardware layer to applications."
+        },
+        "fitness": {
+          "1": "For me, weightlifting is much more than just a sport: it is a discipline that teaches me consistency, rigor, and patience.",
+          "2": "I like to follow my progress, adjust my programs and experiment with new training methods. It is a balance between physical, mental and lifestyle effort that brings me energy and determination every day."
+        }
       },
       "selectHint": "Click on a bookmark to see its content"
     },
