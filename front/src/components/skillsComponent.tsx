@@ -64,7 +64,7 @@ const SkillCategory: React.FC<{
       </div>
       <div
         className={`grid ${
-          isMobile ? "grid-cols-2 gap-6 w-full" : "grid-cols-5 gap-x-6 gap-y-10 w-full mx-auto"
+          isMobile ? "grid-cols-2 gap-6 w-full" : isTablet ? "grid-cols-4 gap-x-6 gap-y-10 w-full mx-auto" : "grid-cols-5 gap-x-6 gap-y-10 w-full mx-auto"
         } justify-items-center py-8`}
       >
         {skills.map((skill, index) => (
@@ -95,35 +95,37 @@ const SkillsComponent: React.FC = () => {
   const textSizeClass = isMobile || isTablet ? "text-l" : "text-xl";
 
   return (
-    <div className="flex flex-col w-full">
-      <SkillCategory
-        title="pages.skills.programmingLanguages"
-        skills={programmingLanguagesSkills}
-        textSizeClass={textSizeClass}
-        isMobile={isMobile}
-        isTablet={isTablet}
-      />
-      <SkillCategory
-        title="pages.skills.frameworksAndLibraries"
-        skills={frameworksAndLibrariesSkills}
-        textSizeClass={textSizeClass}
-        isMobile={isMobile}
-        isTablet={isTablet}
-      />
-      <SkillCategory
-        title="pages.skills.databases"
-        skills={databasesSkills}
-        textSizeClass={textSizeClass}
-        isMobile={isMobile}
-        isTablet={isTablet}
-      />
-      <SkillCategory
-        title="pages.skills.toolsAndPlatforms"
-        skills={toolsAndPlatformsSkills}
-        textSizeClass={textSizeClass}
-        isMobile={isMobile}
-        isTablet={isTablet}
-      />
+    <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
+      <div className={`w-full grid ${isMobile ? "grid-cols-1" : "grid-cols-2"}`}>
+        <SkillCategory
+          title="pages.skills.programmingLanguages"
+          skills={programmingLanguagesSkills}
+          textSizeClass={textSizeClass}
+          isMobile={isMobile}
+          isTablet={isTablet}
+        />
+        <SkillCategory
+          title="pages.skills.frameworksAndLibraries"
+          skills={frameworksAndLibrariesSkills}
+          textSizeClass={textSizeClass}
+          isMobile={isMobile}
+          isTablet={isTablet}
+        />
+        <SkillCategory
+          title="pages.skills.databases"
+          skills={databasesSkills}
+          textSizeClass={textSizeClass}
+          isMobile={isMobile}
+          isTablet={isTablet}
+        />
+        <SkillCategory
+          title="pages.skills.toolsAndPlatforms"
+          skills={toolsAndPlatformsSkills}
+          textSizeClass={textSizeClass}
+          isMobile={isMobile}
+          isTablet={isTablet}
+        />
+      </div>
     </div>
   );
 };
