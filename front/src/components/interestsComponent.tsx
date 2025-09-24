@@ -41,10 +41,10 @@ const InterestsComponent: React.FC = () => {
                     <div
                       key={s.id}
                       onClick={() => setSelectedId(s.id)}
-                      className={`rounded-lg border border-monSite px-3 py-2 font-bold cursor-pointer text-center text-sm
+                      className={`rounded-lg border px-3 py-2 font-bold cursor-pointer text-center text-sm
                         ${selectedId === s.id 
-                          ? "bg-monSite text-container-monSite" 
-                          : "bg-container-monSite text-monSite"}`}
+                          ? "bg-monSite text-container-monSite border-container-monSite" 
+                          : "bg-container-monSite text-monSite border-monSite"}`}
                     >
                       <span>{s.label}</span>
                     </div>
@@ -63,7 +63,7 @@ const InterestsComponent: React.FC = () => {
                   {selectedId ? (
                     <motion.div
                       key={selectedId}
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4 }}
                       className="text-l text-monSite overflow-y-auto scrollbar-child-container-monSite"
@@ -98,7 +98,7 @@ const InterestsComponent: React.FC = () => {
                         whileHover={{ width: "95%" }}
                         transition={{ duration: 0.3 }}
                         className={`h-[60px] flex items-center ${paddingLeftBookmarkTextClass} 
-                        font-bold cursor-pointer px-10 ${textSizeClass} ${selectedId === s.id ? "bg-signets-monSite text-background-signets-monSite" : "bg-background-signets-monSite text-signets-monSite"}`}
+                        font-bold cursor-pointer px-10 ${textSizeClass} ${selectedId === s.id ? "bg-monSite text-container-monSite" : "bg-container-monSite text-monSite"}`}
                         style={{
                           clipPath:
                             "polygon(0 0, 100% 0, 80% 50%, 100% 100%, 0 100%)",
@@ -122,7 +122,7 @@ const InterestsComponent: React.FC = () => {
                   {selectedId ? (
                     <motion.div
                       key={selectedId}
-                      initial={{ opacity: 0, y: 20 }}
+                      initial={{ opacity: 0, y: 50 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.4 }}
                       className={`${textSizeClass} text-monSite overflow-y-auto scrollbar-child-container-monSite`}
