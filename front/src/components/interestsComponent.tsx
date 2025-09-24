@@ -78,15 +78,9 @@ const InterestsComponent: React.FC = () => {
               onClick={handleHintClick}
             >
               {selectedId ? (
-                <motion.div
-                  key={selectedId}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="text-l text-monSite overflow-y-auto scrollbar-child-container-monSite"
-                >
+                <div key={selectedId} className="w-full text-l text-monSite overflow-y-auto scrollbar-child-container-monSite">
                   {bookmarks.find((s) => s.id === selectedId)?.content}
-                </motion.div>
+                </div>
               ) : (
                 <span className="text-monSite italic">
                   {t("pages.interests.selectHint")}
@@ -140,15 +134,9 @@ const InterestsComponent: React.FC = () => {
               onClick={handleHintClick}
             >
               {selectedId ? (
-                <motion.div
-                  key={selectedId}
-                  initial={{ opacity: 0, y: 50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className={`${textSizeClass} text-monSite overflow-y-auto scrollbar-child-container-monSite`}
-                >
+                <div key={selectedId} className={`${textSizeClass} w-full text-monSite overflow-y-auto scrollbar-child-container-monSite`}>
                   {bookmarks.find((s) => s.id === selectedId)?.content}
-                </motion.div>
+                </div>
               ) : (
                 <span className="text-monSite italic">
                   {t("pages.interests.selectHint")}
