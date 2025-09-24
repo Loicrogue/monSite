@@ -68,7 +68,8 @@
           "2": "Mi piace seguire i miei progressi, regolare i miei programmi e sperimentare nuovi metodi di allenamento. È un equilibrio tra sforzo fisico, mentale e stile di vita sano che mi dà energia e determinazione ogni giorno."
         }
       },
-      "selectHint": "Clicca su un segnalibro per vedere il suo contenuto"
+      "selectHint": "Clicca su un segnalibro per vedere il suo contenuto",
+      "alertClic": "Seleziona un segnalibro !"
     },
     "myProjects": {
       

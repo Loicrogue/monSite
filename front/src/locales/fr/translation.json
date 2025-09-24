@@ -68,7 +68,8 @@
           "2": "J’aime suivre ma progression, ajuster mes programmes et expérimenter de nouvelles méthodes d’entraînement. C’est un équilibre entre effort physique, mental et hygiène de vie, qui m’apporte énergie et détermination au quotidien."
         }
       },
-      "selectHint": "Clique sur un signet pour voir son contenu"
+      "selectHint": "Clique sur un signet pour voir son contenu",
+      "alertClic": "Veuillez sélectionner un signet !"
     },
     "myProjects": {
       
