@@ -3,9 +3,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { motion } from 'framer-motion';
+import useTheme from '../hooks/useTheme';
 import useResponsive from '../hooks/useResponsive';
 
 function NotFound() {
+    useTheme();
     const navigate = useNavigate();
     const { t } = useTranslation();
     const { isMobile, isTablet } = useResponsive();
