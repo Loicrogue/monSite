@@ -30,12 +30,12 @@
     "home": {      
       "profilDescription": "Sviluppatore di applicazioni in alternanza",
       "otherDescription": "Questo sito web è un progetto personale per mostrare le mie competenze e i miei progetti.",
-      "inviteToVisit": "Ti invito a visitare le diverse pagine per saperne di più su di me e le mie realizzazioni."
+      "inviteToVisit": "TiVi invito a visitare le varie pagine per saperne di più su di me, sulle mie competenze e sulle mie esperienze."
     },
     "aboutMe": {
-      "text1": "Ciao! Mi chiamo Loïc, attualmente sono nelle prime fasi del mio secondo anno di un programma di ingegneria informatica della durata di 3 anni. Sono appassionato di sviluppo di applicazioni web e mobili e mi piace creare applicazioni innovative che soddisfano le esigenze degli utenti.",
-      "text2": "Al di fuori dei miei studi, mi piace esplorare nuove tecnologie e imparare nuove competenze. Sono anche un grande appassionato di videogiochi, che mi ha ispirato a sviluppare applicazioni interattive e divertenti.",
-      "text3": "Sono sempre alla ricerca di nuove opportunità per collaborare a progetti entusiasmanti e per continuare a sviluppare le mie competenze di programmazione."
+      "text1": "Ciao! Mi chiamo Loïc, Sono attualmente all'inizio del 2 o anno di ciclo di ingegneria in 3 anni in informatica. Sono appassionato di sviluppo di applicazioni web e mobile, sicurezza informatica e IT.",
+      "text2": "Ho acquisito solide competenze di programmazione, gestione dei progetti e lavoro di squadra grazie ai miei studi e alle mie esperienze professionali. Oltre a questo, mi piace esplorare nuove tecnologie e imparare nuove abilità.",
+      "text3": "Mi piace anche dedicare del tempo a collaborare su progetti interessanti, il che mi permette di continuare a sviluppare le mie capacità di programmazione."
     },
     "skills": {
       "programmingLanguages": "Linguaggi di programmazione",
@@ -56,11 +56,11 @@
           "2": "Sono particolarmente interessato alle architetture di microservizi, all'ottimizzazione delle prestazioni e alla realizzazione di soluzioni robuste e scalabili."
         },
         "cybersecurity": {
-          "1": "La sicurezza informatica è per me un settore essenziale: capire come proteggere i sistemi, anticipare le minacce e analizzare le potenziali vulnerabilità.",
-          "2": "Il mio obiettivo è sempre quello di rafforzare la mia capacità di pensare come un attaccante per proteggere meglio i miei sviluppi, così come le mie attività personali."
+          "1": "Per me, la sicurezza informatica è un settore fondamentale: capire come proteggere i sistemi, anticipare le minacce e analizzare le potenziali vulnerabilità di un sistema informatico.",
+          "2": "Il mio obiettivo è sempre quello di rafforzare la mia capacità di pensare come un attaccante per proteggere meglio i vari elementi che compongono un sistema informatico, e applico questo rigore anche alle mie attività personali."
         },
         "hardSoft": {
-          "1": "Comprendere l'interazione tra hardware e software è una passione. Mi piace esplorare l'architettura dei componenti, assemblare e ottimizzare le configurazioni, mentre studio come i sistemi operativi sfruttano le risorse disponibili.",
+          "1": "Comprendere l'interazione tra hardware e software è per me una passione nata dalla mia curiosità. Mi piace esplorare l'architettura dei componenti, assemblare e ottimizzare le configurazioni, mentre studio come i sistemi operativi sfruttano le risorse disponibili.",
           "2": "Mi permette di comprendere meglio le prestazioni, la compatibilità e di avere una visione completa del funzionamento di un computer, dal livello hardware fino alle applicazioni."
         },
         "fitness": {

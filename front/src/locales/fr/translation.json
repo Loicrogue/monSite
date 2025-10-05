@@ -30,12 +30,12 @@
     "home": {      
       "profilDescription": "Alternant développeur d'application",
       "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets.",
-      "inviteToVisit": "Je vous invite à visiter les différentes pages pour en savoir plus sur moi et mes réalisations."
+      "inviteToVisit": "Je vous invite à visiter les différentes pages pour en savoir plus sur moi, mes compétences ainsi que mes expériences."
     },
     "aboutMe": {
-      "text1": "Bonjour ! Je m'appelle Loïc, je suis actuellement en début de 2ème année de cycle ingénieur en 3 ans en informatique. Je suis passionné par le développement d'application web et mobile, et j'aime créer des applications innovantes qui répondent aux besoins des utilisateurs.",
-      "text2": "En dehors de mes études, j'aime explorer de nouvelles technologies et apprendre de nouvelles compétences. Je suis également un grand amateur de jeux vidéo, ce qui m'a inspiré à développer des applications interactives et ludiques.",
-      "text3": "Je suis toujours à la recherche de nouvelles opportunités pour collaborer sur des projets passionnants et pour continuer à développer mes compétences en programmation."
+      "text1": "Bonjour ! Je m'appelle Loïc, je suis actuellement en début de 2ème année de cycle ingénieur en 3 ans en informatique. Je suis passionné par le développement d'application web et mobile, la cybersécurité et l'informatique.",
+      "text2": "J'ai acquis des compétences solides en programmation, en gestion de projets et en travail d'équipe grâce à mes études et à mes expériences professionnelles. En dehors de celà, j'aime explorer de nouvelles technologies et apprendre de nouvelles compétences.",
+      "text3": "J'aime par ailleurs consacrer du temps à collaborer sur des projets passionnants, ce qui me permet de continuer à développer mes compétences en programmation."
     },
     "skills": {
       "programmingLanguages": "Langages de programmation",
@@ -56,11 +56,11 @@
           "2": "Je m’intéresse particulièrement aux architectures micro-services, à l’optimisation des performances, et à la mise en place de solutions robustes et scalables."
         },
         "cybersecurity": {
-          "1": "La cybersécurité est pour moi un domaine essentiel : comprendre comment protéger les systèmes, anticiper les menaces et analyser les failles potentielles.",
-          "2": "Mon objectif est de toujours renforcer ma capacité à penser comme un attaquant pour mieux sécuriser mes développements, ainsi que mes activités personnelles."
+          "1": "La cybersécurité est pour moi un domaine essentiel : comprendre comment protéger les systèmes, pourvoir anticiper les menaces et analyser les failles potentielles d'un système d'information.",
+          "2": "Mon objectif est de toujours renforcer ma capacité à penser comme un attaquant pour mieux sécuriser les différents éléments qui composent un système d'informatique, et j'applique aussi cette rigueur à mes activités personnelles."
         },
         "hardSoft": {
-          "1": "Comprendre l’interaction entre le matériel et le logiciel est une passion. J’aime explorer l’architecture des composants, assembler et optimiser des configurations, tout en étudiant comment les systèmes d’exploitation exploitent les ressources disponibles. ",
+          "1": "Comprendre l’interaction entre le matériel et le logiciel est pour moi une passion né de ma curiosité. J’aime explorer l’architecture des composants, assembler et optimiser des configurations, tout en étudiant comment les systèmes d’exploitation exploitent les ressources disponibles.",
           "2": "Cela me permet de mieux appréhender les performances, les compatibilités, et d’avoir une vision complète du fonctionnement d’un ordinateur, de la couche matérielle jusqu’aux applications."
         },
         "fitness": {
@@ -68,7 +68,7 @@
           "2": "J’aime suivre ma progression, ajuster mes programmes et expérimenter de nouvelles méthodes d’entraînement. C’est un équilibre entre effort physique, mental et hygiène de vie, qui m’apporte énergie et détermination au quotidien."
         }
       },
-      "selectHint": "Clique sur un signet pour voir son contenu",
+      "selectHint": "Cliquez sur un signet pour voir son contenu",
       "alertClic": "Veuillez sélectionner un signet !"
     },
     "myProjects": {

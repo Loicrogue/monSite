@@ -30,12 +30,12 @@
     "home": {
       "profilDescription": "Application developer apprentice",
       "otherDescription": "This website is a personal project to showcase my skills and projects.",
-      "inviteToVisit": "I invite you to visit the different pages to learn more about me and my achievements."
+      "inviteToVisit": "I invite you to visit the different pages to learn more about me, my skills as well as my experiences."
     },
     "aboutMe": {
-      "text1": "Hello! My name is Loïc, I am currently in the early stages of my 2nd year of a 3-year engineering program in computer science. I am passionate about web and mobile application development, and I enjoy creating innovative applications that meet users' needs.",
-      "text2": "Outside of my studies, I enjoy exploring new technologies and learning new skills. I am also a big fan of video games, which has inspired me to develop interactive and fun applications.",
-      "text3": "I am always looking for new opportunities to collaborate on exciting projects and to continue developing my programming skills."
+      "text1": "Hello! My name is Loïc, I am currently at the beginning of the 2nd year of a 3-year engineering cycle in computer science. I am passionate about web and mobile application development, cybersecurity, and computing.",
+      "text2": "I have acquired strong skills in programming, project management and teamwork through my studies and professional experiences. Apart from that, I like to explore new technologies and learn new skills.",
+      "text3": "I also like to spend time collaborating on exciting projects, which allows me to continue developing my programming skills."
     },
     "skills": {
       "programmingLanguages": "Programming languages",
@@ -56,11 +56,11 @@
           "2": "I am particularly interested in micro-service architectures, performance optimization, and the implementation of robust and scalable solutions."
         },
         "cybersecurity": {
-          "1": "Cybersecurity is an essential area for me: understanding how to protect systems, anticipate threats, and analyze potential flaws.",
-          "2": "My goal is always to strengthen my ability to think like an attacker to better secure my developments, as well as my personal activities."
+          "1": "Cybersecurity is for me an essential field: understanding how to protect systems, be able to anticipate threats and analyze potential flaws in an information system.",
+          "2": "My goal is to always strengthen my ability to think like an attacker to better secure the different elements that make up a computer system, and I also apply this rigor to my personal activities."
         },
         "hardSoft": {
-          "1": "Understanding the interaction between hardware and software is a passion. I like to explore component architecture, assemble and optimize configurations, while studying how operating systems leverage available resources. " ,
+          "1": "Understanding the interaction between hardware and software is for me a passion born from my curiosity. I like to explore component architecture, assemble and optimize configurations, while studying how operating systems leverage available resources." ,
           "2": "This allows me to better understand the performance, compatibility, and to have a complete view of the operation of a computer, from the hardware layer to applications."
         },
         "fitness": {
