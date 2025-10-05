@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
@@ -10,27 +10,14 @@ import Fitness from "./interestsList/Fitness";
 const InterestsComponent: React.FC = () => {
   const { t } = useTranslation();
   const { isMobile, isTablet } = useResponsive();
+
   const paddingContentZoneClass = isTablet ? "py-5 pr-5" : "py-10 pr-10";
   const textSizeClass = isTablet ? "text-sm" : "text-l";
   const paddingLeftBookmarkTextClass = isTablet ? "pl-2" : "pl-5";
   const widthBookmarkClass = isTablet ? "w-5/20" : "w-3/20";
   const widthContentClass = isTablet ? "w-15/20" : "w-17/20";
 
-  const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [hintClickCount, setHintClickCount] = useState<number>(0);
-
-  const handleHintClick = () => {
-    if (!selectedId) {
-      setHintClickCount((prev) => prev + 1);
-    }
-  };
-
-  useEffect(() => {
-    if (hintClickCount === 5) {
-      alert(t("pages.interests.alertClic"));
-      setHintClickCount(0);
-    }
-  }, [hintClickCount]);
+  const [selectedId, setSelectedId] = useState<string>("1");
 
   const bookmarks = [
     { id: "1", label: t("pages.interests.bookmarks.webDev"), content: <WebDev /> },
@@ -73,19 +60,10 @@ const InterestsComponent: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="w-full h-full p-3"
           >
-            <div 
-              className="flex flex-row h-full rounded-lg border border-black shadow-xl p-5"
-              onClick={handleHintClick}
-            >
-              {selectedId ? (
-                <div key={selectedId} className="w-full text-l text-monSite overflow-y-auto scrollbar-child-container-monSite">
-                  {bookmarks.find((s) => s.id === selectedId)?.content}
-                </div>
-              ) : (
-                <span className="text-monSite italic">
-                  {t("pages.interests.selectHint")}
-                </span>
-              )}
+            <div className="flex flex-row h-full rounded-lg border border-black shadow-xl p-5">
+              <div key={selectedId} className="w-full text-l text-monSite overflow-y-auto scrollbar-child-container-monSite">
+                {bookmarks.find((s) => s.id === selectedId)?.content}
+              </div>
             </div>
           </motion.div>
         </div>
@@ -129,19 +107,10 @@ const InterestsComponent: React.FC = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className={`${widthContentClass} h-full ${paddingContentZoneClass}`}
           >
-            <div 
-              className="flex flex-row h-full rounded-lg border border-black shadow-xl p-5"
-              onClick={handleHintClick}
-            >
-              {selectedId ? (
-                <div key={selectedId} className={`${textSizeClass} w-full text-monSite overflow-y-auto scrollbar-child-container-monSite`}>
-                  {bookmarks.find((s) => s.id === selectedId)?.content}
-                </div>
-              ) : (
-                <span className="text-monSite italic">
-                  {t("pages.interests.selectHint")}
-                </span>
-              )}
+            <div className="flex flex-row h-full rounded-lg border border-black shadow-xl p-5">
+              <div key={selectedId} className={`${textSizeClass} w-full text-monSite overflow-y-auto scrollbar-child-container-monSite`}>
+                {bookmarks.find((s) => s.id === selectedId)?.content}
+              </div>
             </div>
           </motion.div>
         </div>
