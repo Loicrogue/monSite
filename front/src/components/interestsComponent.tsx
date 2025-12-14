@@ -28,7 +28,7 @@ const InterestsComponent: React.FC = () => {
 
   return (
     <>            
-      {isMobile ? (
+      {isMobile || isTablet ? (
         <div className="flex flex-col justify-items-center w-full">
           {/* Colonne des signets */}
           <motion.div
