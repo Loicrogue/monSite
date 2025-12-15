@@ -17,7 +17,7 @@ const myProjectsComponent: React.FC = () => {
 
   // Réordonner si mobile : [1,2,4,3,5,6]
   const orderedItems = isMobile
-    ? [aboutItems[1], aboutItems[0], aboutItems[2], aboutItems[3], aboutItems[5], aboutItems[4]]
+    ? [aboutItems[0], aboutItems[1]]
     : aboutItems;
 
   return (
