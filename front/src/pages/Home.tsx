@@ -11,7 +11,7 @@ const Home = () => {
 	const { isMobile, isTablet } = useResponsive();
 	const marginClass = isMobile ? "m-2" : isTablet ? "m-3" : "m-5";
   	return (
-		<div className="fixed inset-0 bg-background-monSite overflow-auto select-none">
+		<div className="fixed inset-0 bg-background-monSite overflow-auto">
 			<motion.div 
 				initial={{ opacity: 0, y: 30 }} 
 				animate={{ opacity: 1, y: 0 }} 

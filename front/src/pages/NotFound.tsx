@@ -16,7 +16,7 @@ function NotFound() {
 	const subTitleSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
 
     return (
-        <div className="fixed inset-0 bg-background-monSite overflow-y-auto scrollbar-child-container-monSite select-none">
+        <div className="fixed inset-0 bg-background-monSite overflow-y-auto scrollbar-child-container-monSite">
             <div className={`absolute inset-0 bg-container-monSite shadow-xl rounded-xl ${marginClass}`}>
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}
