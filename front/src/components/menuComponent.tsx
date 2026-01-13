@@ -48,7 +48,7 @@ const MenuComponent: React.FC = () => {
                     src={logo}
                     alt="logo" 
                     className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110 cursor-pointer"
-                    onClick={() => navigate('/')}
+                    onClick={() => navigate(`/${lang}`)}
                 />
                 <div>
                     {isMobile ? (
@@ -69,7 +69,8 @@ const MenuComponent: React.FC = () => {
                                 { path: '/interests', label: t('pages.menu.interests') },
                                 { path: '/myProjects', label: t('pages.menu.myProjects') },
                             ].map(({ path, label }) => {
-                                const isActive = window.location.pathname === path;
+                                const fullPath = `/${lang}${path}`;
+                                const isActive = window.location.pathname === fullPath || window.location.pathname === path;
 
                                 return (
                                 <span
@@ -77,7 +78,7 @@ const MenuComponent: React.FC = () => {
                                     className={`px-4 py-2 cursor-pointer transition-colors duration-200 
                                     ${isActive ? 'text-container-monSite bg-monSite rounded-lg' : 'hover:text-container-monSite hover:bg-monSite hover:rounded-lg'}`}
                                     onClick={() => {
-                                    navigate(path);
+                                    navigate(fullPath);
                                     setIsMenuOpen(false);
                                     }}
                                 >
@@ -97,12 +98,13 @@ const MenuComponent: React.FC = () => {
                                 { path: '/interests', label: t('pages.menu.interests') },
                                 { path: '/myProjects', label: t('pages.menu.myProjects') },
                             ].map(({ path, label }) => {
-                                const isActive = window.location.pathname === path;
+                                const fullPath = `/${lang}${path}`;
+                                const isActive = window.location.pathname === fullPath || window.location.pathname === path;
                                 return (
                                 <span
                                     key={path}
                                     className={`flex ${textSizeClass} justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
-                                    onClick={() => navigate(path)}
+                                    onClick={() => navigate(fullPath)}
                                 >
                                     {label}
                                 </span>
