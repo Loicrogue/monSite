@@ -38,6 +38,15 @@
       "text3": "I am looking for an international company to do an internship in computer science, lasting 12 weeks from July 13 to October 2, 2026. Feel free to contact me for any further information"
     },
     "skills": {
+      "softSkillsTitle": "Soft skills",
+      "softSkillsItems": {
+        "softSkillsItems1": "Rigorous",
+        "softSkillsItems2": "Teamwork",
+        "softSkillsItems3": "Problem solving",
+        "softSkillsItems4": "Discreet",
+        "softSkillsItems5": "Conscientious"
+      },
+      "hardSkillsTitle": "Hard skills",
       "programmingLanguages": "Programming languages",
       "frameworksAndLibraries": "Frameworks and libraries",
       "databases": "Databases",

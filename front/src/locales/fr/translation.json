@@ -38,6 +38,15 @@
       "text3": "Je suis à la recherche d’une entreprise à l'international dans le but de réaliser un stage en informatique, d'une durée de 12 semaines du 13 juillet au 2 octobre 2026. N'hésitez pas à me contacter pour toute information complémentaire"
     },
     "skills": {
+      "softSkillsTitle": "Compétences comportementales",
+      "softSkillsItems": {
+        "softSkillsItems1": "Rigoureux",
+        "softSkillsItems2": "Travail en équipe",
+        "softSkillsItems3": "Résolution de problèmes",
+        "softSkillsItems4": "Discret",
+        "softSkillsItems5": "Consciencieux"
+      },
+      "hardSkillsTitle": "Compétences techniques",
       "programmingLanguages": "Langages de programmation",
       "frameworksAndLibraries": "Frameworks et bibliothèques",
       "databases": "Bases de données",

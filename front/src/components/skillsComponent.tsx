@@ -4,6 +4,14 @@ import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
 import tailwindLogo from '../assets/skills-items/tailwindCSS.png';
 
+const softsSkills = [
+  { label: "pages.skills.softSkillsItems.softSkillsItems1" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems2" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems3" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems4" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems5" },
+];
+
 const programmingLanguagesSkills = [
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", label: "HTML5" },
   { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", label: "CSS" },
@@ -47,8 +55,8 @@ const toolsAndPlatformsSkills = [
 
 // 🔹 Composant factorisé pour chaque catégorie
 const SkillCategory: React.FC<{
-  title: string;
-  skills: { src: string; label: string }[];
+  title?: string;
+  skills: { src?: string; label: string }[];
   textSizeClass: string;
   isMobile: boolean;
   isTablet: boolean;
@@ -57,11 +65,13 @@ const SkillCategory: React.FC<{
 
   return (
     <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
-      <div className="w-full text-center mb-4 border-b border-monSite pb-4">
-        <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>
-          {t(title)}
-        </h2>
-      </div>
+      {title && (
+        <div className="w-full text-center mb-4 border-b border-monSite pb-4">
+          <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>
+            {t(title)}
+          </h2>
+        </div>
+      )}
       <div
         className={`grid ${
           isMobile ? "grid-cols-2 gap-6 w-full" : isTablet ? "grid-cols-4 gap-x-6 gap-y-10 w-full mx-auto" : "grid-cols-5 gap-x-6 gap-y-10 w-full mx-auto"
@@ -75,11 +85,13 @@ const SkillCategory: React.FC<{
             transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
             className="flex flex-col items-center w-full"
           >
-            <img
-              src={skill.src}
-              alt={skill.label}
-              className={`${isMobile || isTablet ? "w-15 h-15" : "w-20 h-20"}`}
-            />
+            {skill.src && (
+              <img
+                src={skill.src}
+                alt={skill.label}
+                className={`${isMobile || isTablet ? "w-15 h-15" : "w-20 h-20"}`}
+              />
+            )}
             <span className={`mt-2 ${textSizeClass} text-center`}>
               {t(skill.label)}
             </span>
@@ -93,38 +105,57 @@ const SkillCategory: React.FC<{
 const SkillsComponent: React.FC = () => {
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? "text-l" : "text-xl";
+  const { t } = useTranslation();
 
   return (
-    <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
-      <div className={`w-full grid ${isMobile ? "grid-cols-1" : "grid-cols-2"}`}>
-        <SkillCategory
-          title="pages.skills.programmingLanguages"
-          skills={programmingLanguagesSkills}
-          textSizeClass={textSizeClass}
-          isMobile={isMobile}
-          isTablet={isTablet}
-        />
-        <SkillCategory
-          title="pages.skills.frameworksAndLibraries"
-          skills={frameworksAndLibrariesSkills}
-          textSizeClass={textSizeClass}
-          isMobile={isMobile}
-          isTablet={isTablet}
-        />
-        <SkillCategory
-          title="pages.skills.databases"
-          skills={databasesSkills}
-          textSizeClass={textSizeClass}
-          isMobile={isMobile}
-          isTablet={isTablet}
-        />
-        <SkillCategory
-          title="pages.skills.toolsAndPlatforms"
-          skills={toolsAndPlatformsSkills}
-          textSizeClass={textSizeClass}
-          isMobile={isMobile}
-          isTablet={isTablet}
-        />
+    <div className="flex flex-col w-full">
+      <p className={`font-bold text-center my-8 ${isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-4xl"} text-monSite`}>
+        {t("pages.skills.softSkillsTitle")}
+      </p>
+      <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
+        <div className={`w-full grid grid-cols-1"`}>
+          <SkillCategory
+            skills={softsSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+        </div>
+      </div>
+      <p className={`font-bold text-center my-8 ${isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-4xl"} text-monSite`}>
+        {t("pages.skills.hardSkillsTitle")}
+      </p>
+      <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
+        <div className={`w-full grid ${isMobile ? "grid-cols-1" : "grid-cols-2"}`}>
+          <SkillCategory
+            title="pages.skills.programmingLanguages"
+            skills={programmingLanguagesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.frameworksAndLibraries"
+            skills={frameworksAndLibrariesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.databases"
+            skills={databasesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.toolsAndPlatforms"
+            skills={toolsAndPlatformsSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+        </div>
       </div>
     </div>
   );
