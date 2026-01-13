@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import hardsoft_1 from '../../assets/interests/hardsoft_1.jpg'
-import hardsoft_2 from '../../assets/interests/hardsoft_2.jpg'
+import hardsoft_1 from '../../../assets/interests/hardsoft_1.jpg'
+import hardsoft_2 from '../../../assets/interests/hardsoft_2.jpg'
 import InterestSection from '../InterestSection';
 
 const HardSoft: React.FC = () => {

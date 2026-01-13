@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
-import WebDev from "./interestsList/Webdev";
-import CyberSecurity from "./interestsList/Cybersecurity";
-import HardSoft from "./interestsList/HardSoft";
-import Fitness from "./interestsList/Fitness";
+import WebDev from "./interestsList/interestsItems/Webdev";
+import CyberSecurity from "./interestsList/interestsItems/Cybersecurity";
+import HardSoft from "./interestsList/interestsItems/HardSoft";
+import Fitness from "./interestsList/interestsItems/Fitness";
 
 const InterestsComponent: React.FC = () => {
   const { t } = useTranslation();
