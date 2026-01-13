@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import fitness_1 from '../../assets/interests/fitness_1.jpg'
 import fitness_2 from '../../assets/interests/fitness_2.jpg'
-import InterestSection from './InterestSection';
+import InterestSection from '../InterestSection';
 
 const Fitness: React.FC = () => {
   const { t } = useTranslation();

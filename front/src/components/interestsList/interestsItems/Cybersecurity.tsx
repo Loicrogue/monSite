@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import cyber_1 from '../../assets/interests/cyber_1.jpg'
 import cyber_2 from '../../assets/interests/cyber_2.jpg'
-import InterestSection from './InterestSection';
+import InterestSection from '../InterestSection';
 
 const CyberSecurity: React.FC = () => {
   const { t } = useTranslation();

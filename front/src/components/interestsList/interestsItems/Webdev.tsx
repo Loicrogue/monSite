@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import web_1 from '../../assets/interests/web_1.jpg'
 import web_2 from '../../assets/interests/web_2.jpg'
-import InterestSection from './InterestSection';
+import InterestSection from '../InterestSection';
 
 const WebDev: React.FC = () => {
   const { t } = useTranslation();
