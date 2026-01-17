@@ -7,6 +7,28 @@ const ContactComponent: React.FC = () => {
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? 'text-l' : 'text-xl';
 
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (response.ok) {
+        window.location.href = '/contact-success';
+      } else {
+        console.error('Erreur lors de la soumission du formulaire');
+      }
+    } catch (error) {
+      console.error('Erreur réseau:', error);
+    }
+  };
+
   return (
     <div className="max-w-xl mx-auto p-4">
       <h2 className={`mb-6 font-bold text-center ${textSizeClass}`}>
@@ -16,14 +38,14 @@ const ContactComponent: React.FC = () => {
       <form
         name="contact"
         method="POST"
-        action="contact-success"
+        action="/"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
+        onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="redirect" value="/contact-success" />
-
 
         {/* Honeypot anti-spam */}
         <p hidden>
