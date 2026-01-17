@@ -16,7 +16,7 @@ const ContactComponent: React.FC = () => {
       <form
         name="contact"
         method="POST"
-        action="/contact-success"
+        action="contact-success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
