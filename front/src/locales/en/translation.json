@@ -91,6 +91,11 @@
         "message": "Message",
         "send": "Send"
       }
+    },
+    "contactSuccess": {
+      "title": "Thank you for your message 🙌",
+      "message": "Your message has been sent successfully. I will get back to you shortly.",
+      "backToHome": "Back to home"
     }
   }
 }

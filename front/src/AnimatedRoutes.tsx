@@ -10,6 +10,7 @@ import Skills from './pages/Skills.tsx';
 import Interests from './pages/Interests.tsx';
 import MyProjects from './pages/MyProjects.tsx';
 import Contact from './pages/Contact.tsx';
+import ContactSuccess from './pages/ContactSuccess.tsx';
 
 function AnimatedRoutes() {
     const location = useLocation();
@@ -33,6 +34,7 @@ function AnimatedRoutes() {
                     <Route path="interests" element={<Interests />} />
                     <Route path="myProjects" element={<MyProjects />} />
                     <Route path="contact" element={<Contact />} />
+                    <Route path="contact-success" element={<ContactSuccess />} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </AnimatePresence>
@@ -66,8 +68,9 @@ function AnimatedRoutes() {
             <Route path="interests" element={<RedirectToPreferred to="interests" />} />
             <Route path="myProjects" element={<RedirectToPreferred to="myProjects" />} />
             <Route path="contact" element={<RedirectToPreferred to="contact" />} />
+            <Route path="contact-success" element={<ContactSuccess />} />
             <Route path=":lang/*" element={<LangRoutesWrapper />} />
-            <Route path="*" element={<RedirectToPreferred to="" />} />
+            <Route path="*" element={<RedirectToPreferred to="*" />} />
         </Routes>
     );
 }
