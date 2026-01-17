@@ -4,6 +4,7 @@ import useResponsive from '../hooks/useResponsive';
 
 const ContactComponent: React.FC = () => {
   const { t } = useTranslation();
+  const lang = window.location.pathname.split('/')[1] || 'fr';
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? 'text-l' : 'text-xl';
 
@@ -20,7 +21,7 @@ const ContactComponent: React.FC = () => {
       });
 
       if (response.ok) {
-        window.location.href = '/contact-success';
+        window.location.href = `/${lang}/contact-success`;
       } else {
         console.error('Erreur lors de la soumission du formulaire');
       }
@@ -45,7 +46,7 @@ const ContactComponent: React.FC = () => {
         onSubmit={handleSubmit}
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value="/contact-success" />
+        <input type="hidden" name="redirect" value={`/${lang}/contact-success`} />
 
         {/* Honeypot anti-spam */}
         <p hidden>
