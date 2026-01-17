@@ -22,6 +22,8 @@ const ContactComponent: React.FC = () => {
         className="flex flex-col gap-4"
       >
         <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="redirect" value="contact-success" />
+
 
         {/* Honeypot anti-spam */}
         <p hidden>
