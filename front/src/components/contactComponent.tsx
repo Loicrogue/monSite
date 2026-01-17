@@ -4,6 +4,7 @@ import useResponsive from '../hooks/useResponsive';
 
 const ContactComponent: React.FC = () => {
   const { t } = useTranslation();
+  const lang = window.location.pathname.split('/')[1] || 'fr';
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? 'text-l' : 'text-xl';
 
@@ -16,12 +17,12 @@ const ContactComponent: React.FC = () => {
       <form
         name="contact"
         method="POST"
+        action={`/${lang}/contact-success.html`}
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value="/fr/contact-success" />
 
         {/* Honeypot anti-spam */}
         <p hidden>
