@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
 
 const ContactComponent: React.FC = () => {
-  const { t, i18n  } = useTranslation();
+  const { t } = useTranslation();
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? 'text-l' : 'text-xl';
 
@@ -21,7 +21,7 @@ const ContactComponent: React.FC = () => {
         className="flex flex-col gap-4"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value={`/${i18n.language}/contact-success`} />
+        <input type="hidden" name="redirect" value="/contact-success" />
 
         {/* Honeypot anti-spam */}
         <p hidden>
