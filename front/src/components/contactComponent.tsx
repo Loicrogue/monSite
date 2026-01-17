@@ -60,7 +60,7 @@ const ContactComponent: React.FC = () => {
         </label>
 
         {/* reCAPTCHA Netlify */}
-        <div data-netlify-recaptcha="true"></div>
+        
 
         <button
           type="submit"
