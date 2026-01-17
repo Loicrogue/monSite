@@ -25,7 +25,8 @@
       "aboutMe": "Chi sono",
       "skills": "Competenze",
       "interests": "Interessi",
-      "myProjects": "Miei progetti"
+      "myProjects": "Miei progetti",
+      "contact": "Contatto"
     },
     "home": {      
       "profilDescription": "Sviluppatore di applicazioni in alternanza",
@@ -80,6 +81,16 @@
     },
     "myProjects": {
       "text1": "In primo luogo, puoi trovare un QR codice per condividere facilmente questo sito web:"
+    },
+    "contact": {
+      "title": "Contattami",
+      "description": "Non esitare a contattarmi per qualsiasi domanda o opportunità :",
+      "form": {
+        "name": "Nome",
+        "email": "Email",
+        "message": "Messaggio",
+        "send": "Invia"
+      }
     }
   }
 }

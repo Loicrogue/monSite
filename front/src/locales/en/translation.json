@@ -25,7 +25,8 @@
       "aboutMe": "About me",
       "skills": "Skills",
       "interests": "Interests",
-      "myProjects": "My projects"
+      "myProjects": "My projects",
+      "contact": "Contact"
     },
     "home": {
       "profilDescription": "Application developer apprentice",
@@ -80,6 +81,16 @@
     },
     "myProjects": {
       "text1": "Firstly, you can find a QR code to easily share this website:"
+    },
+    "contact": {
+      "title": "Contact me",
+      "description": "Feel free to contact me for any questions or opportunities :",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+      }
     }
   }
 }

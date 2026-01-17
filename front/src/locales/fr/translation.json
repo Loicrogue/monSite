@@ -25,7 +25,8 @@
       "aboutMe": "À propos",
       "skills": "Compétences",
       "interests": "Centres d’intérêt",
-      "myProjects": "Mes projets"
+      "myProjects": "Mes projets",
+      "contact": "Contact"
     },
     "home": {      
       "profilDescription": "Alternant développeur d'application",
@@ -80,6 +81,16 @@
     },
     "myProjects": {
       "text1": "Tout d’abord, vous pouvez trouver un QR code pour partager facilement ce site web :"
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "description": "N'hésitez pas à me contacter pour toute question ou opportunité :",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer"
+      }
     }
   }
 }
