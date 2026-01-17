@@ -3,12 +3,10 @@ import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
 
 const ContactComponent: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+  const lang = window.location.pathname.split('/')[1] || 'fr';
   const { isMobile, isTablet } = useResponsive();
   const textSizeClass = isMobile || isTablet ? 'text-l' : 'text-xl';
-
-  // Langue actuelle pour le redirect
-  const lang = i18n.language || 'fr';
 
   return (
     <div className="max-w-xl mx-auto p-4">
@@ -19,18 +17,12 @@ const ContactComponent: React.FC = () => {
       <form
         name="contact"
         method="POST"
+        action={`/${lang}/contact-success`}
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
       >
         <input type="hidden" name="form-name" value="contact" />
-
-        {/* 🔹 Redirection vers ta page React (Netlify ne montrera jamais sa page) */}
-        <input
-          type="hidden"
-          name="redirect"
-          value={`/${lang}/contact-success`}
-        />
 
         {/* Honeypot anti-spam */}
         <p hidden>
