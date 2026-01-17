@@ -67,7 +67,7 @@ const SkillCategory: React.FC<{
     <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
       {title && (
         <div className="w-full text-center mb-4 border-b border-monSite pb-4">
-          <h2 className={`font-bold ${isMobile || isTablet ? "text-l" : "text-2xl"}`}>
+          <h2 className={`${isMobile || isTablet ? "text-l" : "text-xl"}`}>
             {t(title)}
           </h2>
         </div>
@@ -109,7 +109,7 @@ const SkillsComponent: React.FC = () => {
 
   return (
     <div className="flex flex-col w-full">
-      <p className={`font-bold text-center my-8 ${isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-4xl"} text-monSite`}>
+      <p className={`font-bold text-center my-8 ${isMobile || isTablet ? "text-xl" : "text-2xl"} text-monSite`}>
         {t("pages.skills.softSkillsTitle")}
       </p>
       <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
@@ -122,7 +122,7 @@ const SkillsComponent: React.FC = () => {
           />
         </div>
       </div>
-      <p className={`font-bold text-center my-8 ${isMobile ? "text-2xl" : isTablet ? "text-3xl" : "text-4xl"} text-monSite`}>
+      <p className={`font-bold text-center my-8 ${isMobile || isTablet ? "text-xl" : "text-2xl"} text-monSite`}>
         {t("pages.skills.hardSkillsTitle")}
       </p>
       <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
