@@ -16,12 +16,12 @@ const ContactComponent: React.FC = () => {
       <form
         name="contact"
         method="POST"
+        action="contact-success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value="/contact-success" />
 
         {/* Honeypot anti-spam */}
         <p hidden>
