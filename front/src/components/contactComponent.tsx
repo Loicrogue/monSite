@@ -1,6 +1,33 @@
 import React from 'react';
+import { motion, type Variants } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import useResponsive from '../hooks/useResponsive';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.25,
+    },
+  },
+};
+
+const itemVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: -500,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.8,
+      // équivalent strictement typé de "easeOut"
+      ease: [0.16, 1, 0.3, 1],
+    },
+  },
+};
 
 const ContactComponent: React.FC = () => {
   const { t } = useTranslation();
@@ -17,7 +44,7 @@ const ContactComponent: React.FC = () => {
       const response = await fetch(form.action, {
         method: 'POST',
         body: data,
-        headers: { 'Accept': 'application/json' },
+        headers: { Accept: 'application/json' },
       });
 
       if (response.ok) {
@@ -32,11 +59,19 @@ const ContactComponent: React.FC = () => {
 
   return (
     <div className="max-w-xl mx-auto p-4">
-      <h2 className={`mb-6 font-bold text-center ${textSizeClass}`}>
+      <motion.h2
+        className={`mb-6 font-bold text-center ${textSizeClass}`}
+        initial={{ opacity: 0, x: -500 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.16, 1, 0.3, 1],
+        }}
+      >
         {t('pages.contact.title')}
-      </h2>
+      </motion.h2>
 
-      <form
+      <motion.form
         name="contact"
         method="POST"
         action="/"
@@ -44,9 +79,16 @@ const ContactComponent: React.FC = () => {
         data-netlify-honeypot="bot-field"
         className="flex flex-col gap-4"
         onSubmit={handleSubmit}
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
       >
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="redirect" value={`/${lang}/contact-success`} />
+        <input
+          type="hidden"
+          name="redirect"
+          value={`/${lang}/contact-success`}
+        />
 
         {/* Honeypot anti-spam */}
         <p hidden>
@@ -55,7 +97,7 @@ const ContactComponent: React.FC = () => {
           </label>
         </p>
 
-        <label className="flex flex-col gap-1">
+        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
           <span>{t('pages.contact.form.name')}</span>
           <input
             type="text"
@@ -63,9 +105,9 @@ const ContactComponent: React.FC = () => {
             required
             className="p-2 border rounded"
           />
-        </label>
+        </motion.label>
 
-        <label className="flex flex-col gap-1">
+        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
           <span>{t('pages.contact.form.email')}</span>
           <input
             type="email"
@@ -73,9 +115,9 @@ const ContactComponent: React.FC = () => {
             required
             className="p-2 border rounded"
           />
-        </label>
+        </motion.label>
 
-        <label className="flex flex-col gap-1">
+        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
           <span>{t('pages.contact.form.message')}</span>
           <textarea
             name="message"
@@ -83,18 +125,24 @@ const ContactComponent: React.FC = () => {
             required
             className="p-2 border rounded resize-none"
           />
-        </label>
+        </motion.label>
 
         {/* reCAPTCHA Netlify */}
-        <div data-netlify-recaptcha="true"></div>
+        <motion.div
+          data-netlify-recaptcha="true"
+          variants={itemVariants}
+        />
 
-        <button
+        <motion.button
           type="submit"
           className="mt-4 p-2 font-semibold rounded border"
+          variants={itemVariants}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
         >
           {t('pages.contact.form.send')}
-        </button>
-      </form>
+        </motion.button>
+      </motion.form>
     </div>
   );
 };
