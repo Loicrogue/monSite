@@ -60,7 +60,7 @@ const ContactComponent: React.FC = () => {
   return (
     <div className="max-w-xl mx-auto p-4">
       <motion.h2
-        className={`mb-6 font-bold text-center ${textSizeClass}`}
+        className={`mb-6 font-bold text-monSite text-center ${textSizeClass}`}
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{
@@ -97,7 +97,7 @@ const ContactComponent: React.FC = () => {
           </label>
         </p>
 
-        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
+        <motion.label className="flex flex-col gap-1 text-monSite" variants={itemVariants}>
           <span>{t('pages.contact.form.name')}</span>
           <input
             type="text"
@@ -107,7 +107,7 @@ const ContactComponent: React.FC = () => {
           />
         </motion.label>
 
-        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
+        <motion.label className="flex flex-col gap-1 text-monSite" variants={itemVariants}>
           <span>{t('pages.contact.form.email')}</span>
           <input
             type="email"
@@ -117,7 +117,7 @@ const ContactComponent: React.FC = () => {
           />
         </motion.label>
 
-        <motion.label className="flex flex-col gap-1" variants={itemVariants}>
+        <motion.label className="flex flex-col gap-1 text-monSite" variants={itemVariants}>
           <span>{t('pages.contact.form.message')}</span>
           <textarea
             name="message"
@@ -135,7 +135,7 @@ const ContactComponent: React.FC = () => {
 
         <motion.button
           type="submit"
-          className="mt-4 p-2 font-semibold rounded border"
+          className="mt-4 p-2 cursor-pointer font-semibold text-monSite rounded border"
           variants={itemVariants}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
