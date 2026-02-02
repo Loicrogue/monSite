@@ -26,7 +26,7 @@ const MyProjectsComponent: React.FC = () => {
   const [isModalProjectItemOpen, setIsModalProjectItemOpen] = React.useState(false);
   const [selectedProject, setSelectedProject] = React.useState<Project | null>(null);
 
-  const modalHeightSizeClass = isMobile ? "500px" : "800px";
+  const modalHeightSizeClass = "80%";
   const modalWidthSizeClass = isMobile ? "80%" : "60%";
 
   const aboutItems: Project[] = [
