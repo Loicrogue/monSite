@@ -63,7 +63,7 @@ const MyProjectsComponent: React.FC = () => {
             initial={{ opacity: 0, x: index % 2 == 0 ? -500 : 500 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut", delay: index * 0.35 }}
-            className="flex p-4 cursor-pointer hover:scale-103 transition-transform items-center justify-center flex-col bg-white rounded-lg shadow-lg"
+            className="flex p-4 cursor-pointer hover:scale-103 transition-transform items-center justify-center flex-col bg-child-child-container-monSite rounded-lg shadow-lg"
             onClick={() => {
               setSelectedProject(item);
               setIsModalProjectItemOpen(true);

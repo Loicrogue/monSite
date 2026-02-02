@@ -35,11 +35,13 @@ const ProjectItemModal: React.FC<Props> = ({ project }) => {
             onClick={() => {window.open(project.githubLink);}}
         >
             {t('pages.myProjects.seeTheProject')}
-            <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="GitHub"
-                className={`${isMobile ? "w-5 h-5" : isTablet ? "w-8 h-8" : "w-10 h-10"}`}
-              />
+            <div className='rounded-lg bg-child-child-container-monSite'>
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                    alt="GitHub"
+                    className={`${isMobile ? "w-5 h-5" : isTablet ? "w-8 h-8" : "w-10 h-10"}`}
+                    />
+            </div>
         </button>
     </div>
   );
