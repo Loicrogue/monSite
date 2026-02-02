@@ -80,7 +80,27 @@
       }
     },
     "myProjects": {
-      "text1": "In primo luogo, puoi trovare un QR codice per condividere facilmente questo sito web:"
+      "seeTheProject": "Vedi il progetto su GitHub",
+      "breezy": {
+        "title": "Progetto di sviluppo web avanzato - Breezy",
+        "description": "Dovevamo sviluppare un'applicazione web per la gestione di un'agenzia di viaggi. L'applicazione consente agli utenti di cercare e prenotare viaggi, mentre gli amministratori possono gestire le prenotazioni, le destinazioni e gli account utente. Il progetto si è concentrato sulla creazione di un'interfaccia reattiva e facile da usare, oltre all'implementazione di un processo di pagamento sicuro."
+      },
+      "easySave": {
+        "title": "Progetto di sistemi embedded - EasySave",
+        "description": "Abbiamo sviluppato un sistema di backup dei file utilizzando un Raspberry Pi. Il sistema esegue automaticamente il backup dei file importanti dai dispositivi collegati a un disco rigido esterno. Include funzionalità come backup programmati, versioning dei file e un'interfaccia web per la gestione delle impostazioni di backup e il monitoraggio dello stato dei backup."
+      },
+      "bojob": {
+        "title": "Progetto di sviluppo web - BoJob",
+        "description": "Abbiamo creato un'applicazione di bacheca di lavoro che consente agli utenti di cercare offerte di lavoro, pubblicare offerte di lavoro e gestire i propri profili. L'applicazione è stata costruita utilizzando i principi della programmazione orientata agli oggetti per garantire modularità e manutenibilità. Le funzionalità chiave includono l'autenticazione degli utenti, i filtri di ricerca del lavoro e un pannello di amministrazione per la gestione delle offerte di lavoro."
+      },
+      "station_meteo": {
+        "title": "Progetto di sistemi embedded - Stazione meteorologica",
+        "description": "Abbiamo progettato e implementato una stazione meteorologica utilizzando Arduino. La stazione raccoglie dati come temperatura, umidità e pressione atmosferica utilizzando vari sensori. I dati vengono quindi visualizzati su uno schermo LCD e possono essere trasmessi a un server web per il monitoraggio remoto. Il progetto ha coinvolto sia l'assemblaggio hardware che la programmazione software per garantire una raccolta e una visualizzazione accurate dei dati."
+      },
+      "sunny_enterprise": {
+        "title": "Progetto programmazione orientata agli oggetti - Sunny Enterprise",
+        "description": "Abbiamo sviluppato un sistema di gestione dei database per una piccola impresa per gestire le informazioni sui clienti, gli ordini e l'inventario. Il sistema è stato costruito utilizzando SQL e include funzionalità come moduli di inserimento dati, strumenti di reporting e funzionalità di backup dei dati. Il progetto si è concentrato sulla creazione di un'interfaccia efficiente e facile da usare per la gestione dei dati aziendali."
+      }
     },
     "contact": {
       "title": "Contattami",

@@ -80,7 +80,27 @@
       }
     },
     "myProjects": {
-      "text1": "Tout d’abord, vous pouvez trouver un QR code pour partager facilement ce site web :"
+      "seeTheProject": "Voir le projet sur GitHub",
+      "breezy": {
+        "title": "Projet Développement web avancé - Breezy",
+        "description": "Le projet Breezy vise à développer un réseau social léger et réactif, inspiré de Twitter/X, mais optimisé pour des environnements à faibles ressources. L’objectif est de concevoir une application qui permet de publier des messages courts, d’interagir avec les autres utilisateurs, et de maintenir une expérience utilisateur rapide et fluide."
+      },
+      "easySave": {
+        "title": "Projet Génie Logiciel - EasySave",
+        "description": "Nous devions développé un système qui automatise les sauvegardes tout en assurant leur sécurisation. L’interface devait être pensée pour être intuitive, facilitant l’utilisation sans nécessiter de formation complexe. Nous devions intégré des modes de sauvegarde complète et différentiel pour s’adapter aux besoins spécifiques de chaque entreprise."
+      },
+      "bojob": {
+        "title": "Projet Dev web - BojoB",
+        "description": "Nous avons réalisé un site web pour des étudiants afin de faciliter leurs recherches de stage en entreprise. Le site permet aux étudiants de créer un profil, de rechercher des offres de stage, et de postuler directement en ligne. Les entreprises peuvent également publier leurs offres et gérer les candidatures reçues."
+      },
+      "station_meteo": {
+        "title": "Projet Système embarqué - Station Météo",
+        "description": "Nous avons réalisé un programme pour une Arduino afin de récupérée les valeurs de plusieurs capteurs et de les afficher en console. Plusieurs mode de fonctionnement était prévu : standard, config, éco et maintenance."
+      },
+      "sunny_enterprise": {
+        "title": "Projet POO - Sunny Enterprise",
+        "description": "Nous devions réaliser une application qui permette aux personnels d'une entreprise de pouvoir modifier sa base de données en entrant différentes informations tels qu’un nouveau client ou bien des commandes."
+      }
     },
     "contact": {
       "title": "Contactez-moi",

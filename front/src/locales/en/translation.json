@@ -80,7 +80,27 @@
       }
     },
     "myProjects": {
-      "text1": "Firstly, you can find a QR code to easily share this website:"
+      "seeTheProject": "See the project on GitHub",
+      "breezy": {
+        "title": "Advanced Web Development Project - Breezy",
+        "description": "We had to develop a web application for managing a travel agency. The application allows users to search for and book trips, while administrators can manage bookings, destinations, and user accounts. The project focused on creating a responsive and user-friendly interface, as well as implementing secure payment processing."
+      },
+      "easySave": {
+        "title": "Embedded Systems Project - EasySave",
+        "description": "We developed a file backup system using a Raspberry Pi. The system automatically backs up important files from connected devices to an external hard drive. It includes features such as scheduled backups, file versioning, and a web interface for managing backup settings and monitoring the status of backups."
+      },
+      "bojob": {
+        "title": "Web Development Project - BoJob",
+        "description": "We created a job board application that allows users to search for job listings, post job offers, and manage their profiles. The application was built using object-oriented programming principles to ensure modularity and maintainability. Key features include user authentication, job search filters, and an admin panel for managing job postings."
+      },
+      "station_meteo": {
+        "title": "Embedded Systems Project - Weather Station",
+        "description": "We designed and implemented a weather station using Arduino. The station collects data such as temperature, humidity, and atmospheric pressure using various sensors. The data is then displayed on an LCD screen and can be transmitted to a web server for remote monitoring. The project involved both hardware assembly and software programming to ensure accurate data collection and display."
+      },
+      "sunny_enterprise": {
+        "title": "OOP Project - Sunny Enterprise",
+        "description": "We developed a database management system for a small business to handle customer information, orders, and inventory. The system was built using SQL and included features such as data entry forms, reporting tools, and data backup functionality. The project focused on creating an efficient and user-friendly interface for managing business data."
+      }
     },
     "contact": {
       "title": "Contact me",
