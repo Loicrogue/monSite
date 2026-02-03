@@ -35,7 +35,7 @@ const ProjectItemModal: React.FC<Props> = ({ project }) => {
         >
             <a href={project.githubLink} className='flex items-center gap-2'>
                 {t('pages.myProjects.seeTheProject')}
-                <div className='rounded-lg bg-child-container-monSite'>
+                <div className='rounded-lg bg-child-child-container-monSite'>
                     <img
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
                         alt="GitHub"
