@@ -32,16 +32,17 @@ const ProjectItemModal: React.FC<Props> = ({ project }) => {
         <button
             type="button"
             className={`cursor-pointer flex items-center gap-2 bg-background-monSite text-monSite ${isMobile || isTablet ? "text-m" : "text-lg"} p-2 rounded-lg transition-transform duration-200 hover:scale-110`}
-            onClick={() => {window.open(project.githubLink);}}
         >
-            {t('pages.myProjects.seeTheProject')}
-            <div className='rounded-lg bg-child-child-container-monSite'>
-                <img
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                    alt="GitHub"
-                    className={`${isMobile ? "w-5 h-5" : isTablet ? "w-8 h-8" : "w-10 h-10"}`}
-                    />
-            </div>
+            <a href={project.githubLink} className='flex items-center gap-2'>
+                {t('pages.myProjects.seeTheProject')}
+                <div className='rounded-lg bg-child-child-container-monSite'>
+                    <img
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub"
+                        className={`${isMobile ? "w-5 h-5" : isTablet ? "w-8 h-8" : "w-10 h-10"}`}
+                        />
+                </div>
+            </a>
         </button>
     </div>
   );
