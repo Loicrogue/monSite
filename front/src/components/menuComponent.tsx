@@ -125,7 +125,7 @@ const MenuComponent: React.FC = () => {
                     <img
                         src={flag}
                         alt={lang}
-                        className="w-16 h-9 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
+                        className="w-16 h-10 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
                         onClick={() => setIsModalLanguageOpen(true)}
                     />
                 </div>

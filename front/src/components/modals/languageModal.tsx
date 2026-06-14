@@ -25,39 +25,20 @@ const LanguageModal: React.FC = () => {
   }, [lang, i18n]);
 
   return (
-    <>
-        {isMobile ? (
-                <div className="flex flex-wrap w-full justify-center">
-                    {languages.map(({ code, flag, name }) => (
-                        <div key={code} className="basis-1/2 flex justify-center mt-2 mb-2">
-                        <img
-                            src={flag}
-                            alt={name}
-                            className={`w-16 h-10 object-cover cursor-pointer rounded-md shadow transition-transform duration-200 
-                                        hover:scale-110 border-2 
-                                        ${code === lang ? 'border-monSite ring-2 ring-monSite' : 'border-transparent'}`}
-                            onClick={() => setLang(code)}
-                        />
-                        </div>
-                    ))}
-                </div>
-            ) : (
-                <div className="flex flex-wrap w-full justify-center">
-                    {languages.map(({ code, flag, name }) => (
-                        <div key={code} className="basis-1/3 flex justify-center mt-2 mb-2">
-                        <img
-                            src={flag}
-                            alt={name}
-                            className={`w-16 h-10 object-cover cursor-pointer rounded-md shadow transition-transform duration-200 
-                                        hover:scale-110 border-2 
-                                        ${code === lang ? 'border-monSite ring-2 ring-monSite' : 'border-transparent'}`}
-                            onClick={() => setLang(code)}
-                        />
-                        </div>
-                    ))}
-                </div>
-            )}
-    </>
+    <div className="flex flex-wrap w-full justify-center">
+      {languages.map(({ code, flag, name }) => (
+        <div key={code} className={`${isMobile ? 'basis-1/2' : 'basis-1/3'} basis-1/2 flex justify-center mt-2 mb-2`}>
+          <img
+              src={flag}
+              alt={name}
+              className={`w-16 h-10 object-cover cursor-pointer rounded-md shadow transition-transform duration-200 
+                          hover:scale-110 border-2 
+                          ${code === lang ? 'border-monSite ring-2 ring-monSite' : 'border-transparent'}`}
+              onClick={() => setLang(code)}
+          />
+          </div>
+      ))}
+    </div>
   );
 };
 
