@@ -62,7 +62,7 @@ const MyProjectsComponent: React.FC = () => {
             key={index}
             initial={{ opacity: 0, x: index % 2 == 0 ? -500 : 500 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, delay: index * 0.2 }}         
+            transition={{ duration: 0.5, delay: index * 0.2 }}         
             className="flex p-4 cursor-pointer hover:scale-103 transition-transform items-center justify-center flex-col bg-child-child-container-monSite rounded-lg shadow-lg"
             onClick={() => {
               setSelectedProject(item);
