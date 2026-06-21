@@ -81,6 +81,10 @@
     },
     "myProjects": {
       "seeTheProject": "Voir le projet sur GitHub",
+      "france_geo_quiz": {
+        "title": "Projet perso - France Géo Quiz",
+        "description": "Application web interactive pour apprendre la géographie française"
+      },
       "breezy": {
         "title": "Projet Développement web avancé - Breezy",
         "description": "Le projet Breezy vise à développer un réseau social léger et réactif, inspiré de Twitter/X, mais optimisé pour des environnements à faibles ressources. L’objectif est de concevoir une application qui permet de publier des messages courts, d’interagir avec les autres utilisateurs, et de maintenir une expérience utilisateur rapide et fluide."

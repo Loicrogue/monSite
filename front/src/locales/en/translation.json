@@ -81,6 +81,10 @@
     },
     "myProjects": {
       "seeTheProject": "See the project on GitHub",
+      "france_geo_quiz": {
+        "title": "Personal project - France Geo Quiz",
+        "description": "Interactive web application to learn French geography"
+      },
       "breezy": {
         "title": "Advanced Web Development Project - Breezy",
         "description": "We had to develop a web application for managing a travel agency. The application allows users to search for and book trips, while administrators can manage bookings, destinations, and user accounts. The project focused on creating a responsive and user-friendly interface, as well as implementing secure payment processing."

@@ -5,9 +5,10 @@ import useResponsive from '../hooks/useResponsive';
 import ModalComponent from './modalComponent';
 import ProjectItemModal from './modals/projectItemModal';
 
-import bojob from '../assets/myProjects/bojob.png';
+import france_geo_quiz from '../assets/myProjects/france_geo_quiz.png';
 import breezy from '../assets/myProjects/breezy.png';
 import easySave from '../assets/myProjects/easySave.png';
+import bojob from '../assets/myProjects/bojob.png';
 import station_meteo from '../assets/myProjects/station_meteo.jpg';
 import sunny_enterprise from '../assets/myProjects/sunny_enterprise.png';
 
@@ -30,26 +31,36 @@ const MyProjectsComponent: React.FC = () => {
   const modalWidthSizeClass = isMobile ? "80%" : "60%";
 
   const aboutItems: Project[] = [
+    { title: t('pages.myProjects.france_geo_quiz.title'), 
+      description: t('pages.myProjects.france_geo_quiz.description'), 
+      imgSrc: france_geo_quiz, 
+      githubLink: "https://github.com/Loicrogue/france-geo-quiz" 
+    },
     { title: t('pages.myProjects.breezy.title'), 
       description: t('pages.myProjects.breezy.description'), 
       imgSrc: breezy, 
-      githubLink: "https://github.com/Loicrogue/Projet-Developpement-web-avance_Breezy" },
+      githubLink: "https://github.com/Loicrogue/Projet-Developpement-web-avance_Breezy" 
+    },
     { title: t('pages.myProjects.easySave.title'), 
       description: t('pages.myProjects.easySave.description'), 
       imgSrc: easySave, 
-      githubLink: "https://github.com/Loicrogue/Projet-Genie-logiciel_EasySave" },
+      githubLink: "https://github.com/Loicrogue/Projet-Genie-logiciel_EasySave" 
+    },
     { title: t('pages.myProjects.bojob.title'), 
       description: t('pages.myProjects.bojob.description'), 
       imgSrc: bojob, 
-      githubLink: "https://github.com/Loicrogue/Projet-dev-web-BojoB" },
+      githubLink: "https://github.com/Loicrogue/Projet-dev-web-BojoB" 
+    },
     { title: t('pages.myProjects.station_meteo.title'), 
       description: t('pages.myProjects.station_meteo.description'), 
       imgSrc: station_meteo, 
-      githubLink: "https://github.com/Loicrogue/Projet-Systeme-embarque_Station-meteo" },
+      githubLink: "https://github.com/Loicrogue/Projet-Systeme-embarque_Station-meteo" 
+    },
     { title: t('pages.myProjects.sunny_enterprise.title'), 
       description: t('pages.myProjects.sunny_enterprise.description'), 
       imgSrc: sunny_enterprise, 
-      githubLink: "https://github.com/Loicrogue/Projet-POO_Sunny-Enterprise" },
+      githubLink: "https://github.com/Loicrogue/Projet-POO_Sunny-Enterprise" 
+    },
   ];
 
   return (
