@@ -17,6 +17,7 @@ type Project = {
   description: string;
   imgSrc: string;
   githubLink: string;
+  websiteLink?: string;
 };
 
 const MyProjectsComponent: React.FC = () => {
@@ -34,7 +35,8 @@ const MyProjectsComponent: React.FC = () => {
     { title: t('pages.myProjects.france_geo_quiz.title'), 
       description: t('pages.myProjects.france_geo_quiz.description'), 
       imgSrc: france_geo_quiz, 
-      githubLink: "https://github.com/Loicrogue/france-geo-quiz" 
+      githubLink: "https://github.com/Loicrogue/france-geo-quiz",
+      websiteLink: "https://france-geo-quiz.netlify.app/"
     },
     { title: t('pages.myProjects.breezy.title'), 
       description: t('pages.myProjects.breezy.description'), 

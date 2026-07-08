@@ -81,6 +81,7 @@
     },
     "myProjects": {
       "seeTheProject": "Voir le projet sur GitHub",
+      "visitTheWebsite": "Voir le site web",
       "france_geo_quiz": {
         "title": "Projet perso - France Géo Quiz",
         "description": "Application web interactive pour apprendre la géographie française"

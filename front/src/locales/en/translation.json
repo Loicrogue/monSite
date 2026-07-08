@@ -81,6 +81,7 @@
     },
     "myProjects": {
       "seeTheProject": "See the project on GitHub",
+      "visitTheWebsite": "Visit the website",
       "france_geo_quiz": {
         "title": "Personal project - France Geo Quiz",
         "description": "Interactive web application to learn French geography"
