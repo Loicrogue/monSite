@@ -2,11 +2,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Menu from '../components/menuComponent';
-import Profil from '../components/profilComponent';
+import MyProjectsComponent from '../components/myProjectsComponent';
 import useTheme from '../hooks/useTheme';
 import useResponsive from '../hooks/useResponsive';
 
-const Home = () => {
+const MyProjects = () => {
 	useTheme();
 	const { isMobile, isTablet } = useResponsive();
 	const marginClass = isMobile ? "m-2" : isTablet ? "m-3" : "m-5";
@@ -21,11 +21,11 @@ const Home = () => {
 			>
 				<Menu />
 				<div className={`flex flex-row h-full overflow-y-auto scrollbar-child-container-monSite bg-child-container-monSite shadow-xl rounded-xl ${marginClass}`}>
-					<Profil />
+					<MyProjectsComponent />
 				</div>
 			</motion.div>
 		</div>
 	);
 };
 
-export default Home;
+export default MyProjects;

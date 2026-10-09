@@ -1,22 +1,45 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import logo from '../assets/logo.png';
 import { AiOutlineBgColors } from 'react-icons/ai';
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useNavigate } from 'react-router-dom';
 import ModalComponent from './modalComponent';
 import ThemeModal from './modals/themeModal';
 import LanguageModal from './modals/languageModal';
+import useResponsive from '../hooks/useResponsive';
 
-const BannerComponent: React.FC = () => {
+const MenuComponent: React.FC = () => {
     const { t } = useTranslation();
     const navigate = useNavigate();
+    const { isMobile, isTablet } = useResponsive();
+	const textSizeClass = isMobile ? "text-l" : isTablet ? "text-l" : "text-xl";
+	const modalHeightSizeClass = isMobile ? "205px" : "150px";
+	const modalWidthSizeClass = isMobile ? "60%" : isTablet ? "40%" : "25%";
+    const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const menuRef = useRef<HTMLDivElement>(null); // ref sur le conteneur menu
     
     const [isModalThemeOpen, setIsModalThemeOpen] = React.useState(false);
     const [isModalLanguageOpen, setIsModalLanguageOpen] = React.useState(false);
 
-    // Récupérer la langue actuelle et le drapeau
-    const lang = (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr';
-    const flag = lang === 'fr' ? 'https://flagcdn.com/w80/fr.png' : 'https://flagcdn.com/w80/gb.png';
+    // Fermer le menu si clic à l’extérieur
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+                setIsMenuOpen(false);
+            }
+        };
+        if (isMenuOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isMenuOpen]);
+
+    // Récupére la langue actuelle et le drapeau
+    const lang = (localStorage.getItem('i18nextLng') as 'fr' | 'en' | 'it' | 'es') || 'fr';
+    const flag = lang === 'fr' ? 'https://flagcdn.com/w80/fr.png' : lang === 'en' ? 'https://flagcdn.com/w80/gb.png' : lang === 'it' ? 'https://flagcdn.com/w80/it.png' : 'https://flagcdn.com/w80/es.png';
 
     return (
         <>
@@ -25,26 +48,72 @@ const BannerComponent: React.FC = () => {
                     src={logo}
                     alt="logo" 
                     className="w-20 h-auto rounded-full border-monSite border-1 shadow-xl transition-transform duration-200 hover:scale-110 cursor-pointer"
-                    onClick={() => navigate('/')}
+                    onClick={() => navigate(`/${lang}`)}
                 />
-                <div className='flex flex-row gap-5'>
-                    {[
-                        { path: '/aboutMe', label: t('pages.menu.aboutMe') },
-                        { path: '/skills', label: t('pages.menu.skills') },
-                        { path: '/interests', label: t('pages.menu.interests') },
-                        { path: '/contact', label: t('pages.menu.contact') },
-                    ].map(({ path, label }) => {
-                        const isActive = window.location.pathname === path;
-                        return (
-                            <span
-                                key={path}
-                                className={`flex text-xl justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
-                                onClick={() => navigate(path)}
-                            >
-                                {label}
-                            </span>
-                        );
-                    })}
+                <div>
+                    {isMobile ? (
+                        // Mode mobile → liste déroulante
+                        <div className="relative" ref={menuRef}>
+                        <button
+                            className="text-3xl p-2 cursor-pointer"
+                            onClick={() => setIsMenuOpen((prev) => !prev)}
+                        >
+                            <GiHamburgerMenu />
+                        </button>
+
+                        {isMenuOpen && (
+                            <div className="absolute z-99 left-0 mt-2 w-40 border border-background-monSite bg-container-monSite text-monSite rounded-lg shadow-lg flex flex-col">
+                            {[
+                                { path: '/aboutMe', label: t('pages.menu.aboutMe') },
+                                { path: '/skills', label: t('pages.menu.skills') },
+                                { path: '/interests', label: t('pages.menu.interests') },
+                                { path: '/myProjects', label: t('pages.menu.myProjects') },
+                                { path: '/contact', label: t('pages.menu.contact') },
+                            ].map(({ path, label }) => {
+                                const fullPath = `/${lang}${path}`;
+                                const isActive = window.location.pathname === fullPath || window.location.pathname === path;
+
+                                return (
+                                <span
+                                    key={path}
+                                    className={`px-4 py-2 cursor-pointer transition-colors duration-200 
+                                    ${isActive ? 'text-container-monSite bg-monSite rounded-lg' : 'hover:text-container-monSite hover:bg-monSite hover:rounded-lg'}`}
+                                    onClick={() => {
+                                    navigate(fullPath);
+                                    setIsMenuOpen(false);
+                                    }}
+                                >
+                                    {label}
+                                </span>
+                                );
+                            })}
+                            </div>
+                        )}
+                        </div>
+                    ) : (
+                        // Mode tablette / desktop → liens alignés
+                        <div className="flex flex-row gap-5">
+                            {[
+                                { path: '/aboutMe', label: t('pages.menu.aboutMe') },
+                                { path: '/skills', label: t('pages.menu.skills') },
+                                { path: '/interests', label: t('pages.menu.interests') },
+                                { path: '/myProjects', label: t('pages.menu.myProjects') },
+                                { path: '/contact', label: t('pages.menu.contact') },
+                            ].map(({ path, label }) => {
+                                const fullPath = `/${lang}${path}`;
+                                const isActive = window.location.pathname === fullPath || window.location.pathname === path;
+                                return (
+                                <span
+                                    key={path}
+                                    className={`flex ${textSizeClass} justify-center hover:underline cursor-pointer ${isActive ? 'font-bold underline' : ''}`}
+                                    onClick={() => navigate(fullPath)}
+                                >
+                                    {label}
+                                </span>
+                                );
+                            })}
+                        </div>
+                    )}
                 </div>
                 <div className="ml-auto flex items-center gap-5">
                     <button 
@@ -56,19 +125,19 @@ const BannerComponent: React.FC = () => {
                     <img
                         src={flag}
                         alt={lang}
-                        className="w-16 h-9 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
+                        className="w-16 h-10 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow hover:scale-120"
                         onClick={() => setIsModalLanguageOpen(true)}
                     />
                 </div>
             </div>
-            <ModalComponent isOpen={isModalThemeOpen} height="18%" width="25%" onClose={() => setIsModalThemeOpen(false)}>
+            <ModalComponent isOpen={isModalThemeOpen} height="205px" width={`${modalWidthSizeClass}`} onClose={() => setIsModalThemeOpen(false)} title={t('pages.settings.theme')}>
                 <ThemeModal />
             </ModalComponent>
-            <ModalComponent isOpen={isModalLanguageOpen} height="18%" width="25%" onClose={() => setIsModalLanguageOpen(false)}>
+            <ModalComponent isOpen={isModalLanguageOpen} height={`${modalHeightSizeClass}`} width={`${modalWidthSizeClass}`} onClose={() => setIsModalLanguageOpen(false)} title={t('pages.settings.language')}>
                 <LanguageModal />
             </ModalComponent>
         </>
     );
 };
 
-export default BannerComponent;
+export default MenuComponent;

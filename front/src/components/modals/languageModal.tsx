@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import useResponsive from '../../hooks/useResponsive';
 
-type Lang = { code: 'fr' | 'en'; name: string; flag: string };
+type Lang = { code: 'fr' | 'en' | 'it'; name: string; flag: string };
 
 const LanguageModal: React.FC = () => {
   const { t, i18n } = useTranslation();
+    const { isMobile } = useResponsive();
 
   const languages: Lang[] = [
     { code: 'fr', name: t('pages.settings.languageOptions.fr'), flag: 'https://flagcdn.com/w80/fr.png' },
     { code: 'en', name: t('pages.settings.languageOptions.en'), flag: 'https://flagcdn.com/w80/gb.png' },
+    { code: 'it', name: t('pages.settings.languageOptions.it'), flag: 'https://flagcdn.com/w80/it.png' },
   ];
 
-  const [lang, setLang] = useState<'fr' | 'en'>(
-    () => (localStorage.getItem('i18nextLng') as 'fr' | 'en') || 'fr',
+  const [lang, setLang] = useState<'fr' | 'en' | 'it'>(
+    () => (localStorage.getItem('i18nextLng') as 'fr' | 'en' | 'it') || 'fr'
   );
 
   useEffect(() => {
@@ -21,27 +24,20 @@ const LanguageModal: React.FC = () => {
     localStorage.setItem('i18nextLng', lang);
   }, [lang, i18n]);
 
-  const choose = (code: 'fr' | 'en') => () => setLang(code);
-
   return (
-    <div>
-      <h2 className="text-2xl font-bold text-monSite mb-4">
-        {t('pages.settings.language')}
-      </h2>
-
-      <div className="flex w-full justify-around items-center">
-        {languages.map(({ code, flag, name }) => (
+    <div className="flex flex-wrap w-full justify-center">
+      {languages.map(({ code, flag, name }) => (
+        <div key={code} className={`${isMobile ? 'basis-1/2' : 'basis-1/3'} basis-1/2 flex justify-center mt-2 mb-2`}>
           <img
-            key={code}
-            src={flag}
-            alt={name}
-            className={`w-16 h-9 object-cover transition-transform duration-200 cursor-pointer rounded-md shadow
-                        ${code === lang ? 'ring-2 ring-monSite' : ''}
-                        hover:scale-110`}
-            onClick={choose(code)}
+              src={flag}
+              alt={name}
+              className={`w-16 h-10 object-cover cursor-pointer rounded-md shadow transition-transform duration-200 
+                          hover:scale-110 border-2 
+                          ${code === lang ? 'border-monSite ring-2 ring-monSite' : 'border-transparent'}`}
+              onClick={() => setLang(code)}
           />
-        ))}
-      </div>
+          </div>
+      ))}
     </div>
   );
 };

@@ -1,0 +1,126 @@
+{
+  "pages": {
+    "settings": {
+      "title": "Impostazioni",
+      "language": "Lingua :",
+      "languageOptions": {
+        "fr": "Francese",
+        "en": "Inglese",
+        "it": "Italiano"
+      },
+      "theme": "Tema :",
+      "themeOptions": {
+        "light": "Chiaro",
+        "dark": "Scuro"
+      }
+    },
+    "notFound": {
+      "title": "Pagina non trovata",
+      "message": "Spiacente, la pagina che cerchi non esiste.",
+      "backToHome": "Torna alla home",
+      "workInProgress": "Lavoro in corso, torna presto 👍"
+    },
+    "menu": {
+      "homepage": "Home",
+      "aboutMe": "Chi sono",
+      "skills": "Competenze",
+      "interests": "Interessi",
+      "myProjects": "Miei progetti",
+      "contact": "Contatto"
+    },
+    "home": {      
+      "profilDescription": "Sviluppatore di applicazioni in alternanza",
+      "otherDescription": "Questo sito web è un progetto personale per mostrare le mie competenze e i miei progetti.",
+      "inviteToVisit": "TiVi invito a visitare le varie pagine per saperne di più su di me, sulle mie competenze e sulle mie esperienze."
+    },
+    "aboutMe": {
+      "text1": "Ciao! Mi chiamo Loïc, Sono attualmente al terzo anno di ciclo di ingegneria in 3 anni in informatica. Sono appassionato di sviluppo di applicazioni web e mobile, sicurezza informatica e IT.",
+      "text2": "Ho acquisito solide competenze di programmazione, gestione dei progetti e lavoro di squadra grazie ai miei studi e alle mie esperienze professionali. Oltre a questo, mi piace esplorare nuove tecnologie e imparare nuove abilità.",
+      "text3": "Attualmente sono alla ricerca di un'azienda e di una scuola in alternanza che offra corsi di laurea specialistica in informatica (livello Bac+6), della durata di circa un anno a partire da settembre 2027. Non esitate a contattarmi per qualsiasi ulteriore informazione."
+    },
+    "skills": {
+      "softSkillsTitle": "Competenze trasversali",
+      "softSkillsItems": {
+        "softSkillsItems1": "Rigoroso",
+        "softSkillsItems2": "lavoro di squadra",
+        "softSkillsItems3": "risoluzione dei problemi",
+        "softSkillsItems4": "Discreto",
+        "softSkillsItems5": "Coscienzioso"
+      },
+      "hardSkillsTitle": "Competenze tecniche",
+      "programmingLanguages": "Linguaggi di programmazione",
+      "frameworksAndLibraries": "Framework e librerie",
+      "databases": "Database",
+      "toolsAndPlatforms": "Strumenti e piattaforme"
+    },
+    "interests": {
+      "bookmarks": {
+        "webDev": "Sviluppo web",
+        "cybersecurity": "Sicurezza informatica",
+        "hardSoft": "Hardware e Software",
+        "fitness": "Palestra"
+      },
+      "contents": {
+        "webDev": {
+          "1": "Mi piace progettare applicazioni web moderne e performanti. Il mio interesse si concentra sia sul front-end, dove l'esperienza utente è fondamentale, che sul back-end, dove la struttura e la sicurezza svolgono un ruolo centrale.",
+          "2": "Sono particolarmente interessato alle architetture di microservizi, all'ottimizzazione delle prestazioni e alla realizzazione di soluzioni robuste e scalabili."
+        },
+        "cybersecurity": {
+          "1": "Per me, la sicurezza informatica è un settore fondamentale: capire come proteggere i sistemi, anticipare le minacce e analizzare le potenziali vulnerabilità di un sistema informatico.",
+          "2": "Il mio obiettivo è sempre quello di rafforzare la mia capacità di pensare come un attaccante per proteggere meglio i vari elementi che compongono un sistema informatico, e applico questo rigore anche alle mie attività personali."
+        },
+        "hardSoft": {
+          "1": "Comprendere l'interazione tra hardware e software è per me una passione nata dalla mia curiosità. Mi piace esplorare l'architettura dei componenti, assemblare e ottimizzare le configurazioni, mentre studio come i sistemi operativi sfruttano le risorse disponibili.",
+          "2": "Mi permette di comprendere meglio le prestazioni, la compatibilità e di avere una visione completa del funzionamento di un computer, dal livello hardware fino alle applicazioni."
+        },
+        "fitness": {
+          "1": "Per me il bodybuilding è molto più di un semplice sport: è una disciplina che mi insegna la costanza, il rigore e la pazienza.",
+          "2": "Mi piace seguire i miei progressi, regolare i miei programmi e sperimentare nuovi metodi di allenamento. È un equilibrio tra sforzo fisico, mentale e stile di vita sano che mi dà energia e determinazione ogni giorno."
+        }
+      }
+    },
+    "myProjects": {
+      "seeTheProject": "Vedi il progetto su GitHub",
+      "visitTheWebsite": "Vedere il sito web",
+      "france_geo_quiz": {
+        "title": "Progetto personale - France Geo Quiz",
+        "description": "Applicazione web interattiva per imparare la geografia francese"
+      },
+      "breezy": {
+        "title": "Progetto di sviluppo web avanzato - Breezy",
+        "description": "Dovevamo sviluppare un'applicazione web per la gestione di un'agenzia di viaggi. L'applicazione consente agli utenti di cercare e prenotare viaggi, mentre gli amministratori possono gestire le prenotazioni, le destinazioni e gli account utente. Il progetto si è concentrato sulla creazione di un'interfaccia reattiva e facile da usare, oltre all'implementazione di un processo di pagamento sicuro."
+      },
+      "easySave": {
+        "title": "Progetto di sistemi embedded - EasySave",
+        "description": "Abbiamo sviluppato un sistema di backup dei file utilizzando un Raspberry Pi. Il sistema esegue automaticamente il backup dei file importanti dai dispositivi collegati a un disco rigido esterno. Include funzionalità come backup programmati, versioning dei file e un'interfaccia web per la gestione delle impostazioni di backup e il monitoraggio dello stato dei backup."
+      },
+      "bojob": {
+        "title": "Progetto di sviluppo web - BoJob",
+        "description": "Abbiamo creato un'applicazione di bacheca di lavoro che consente agli utenti di cercare offerte di lavoro, pubblicare offerte di lavoro e gestire i propri profili. L'applicazione è stata costruita utilizzando i principi della programmazione orientata agli oggetti per garantire modularità e manutenibilità. Le funzionalità chiave includono l'autenticazione degli utenti, i filtri di ricerca del lavoro e un pannello di amministrazione per la gestione delle offerte di lavoro."
+      },
+      "station_meteo": {
+        "title": "Progetto di sistemi embedded - Stazione meteorologica",
+        "description": "Abbiamo progettato e implementato una stazione meteorologica utilizzando Arduino. La stazione raccoglie dati come temperatura, umidità e pressione atmosferica utilizzando vari sensori. I dati vengono quindi visualizzati su uno schermo LCD e possono essere trasmessi a un server web per il monitoraggio remoto. Il progetto ha coinvolto sia l'assemblaggio hardware che la programmazione software per garantire una raccolta e una visualizzazione accurate dei dati."
+      },
+      "sunny_enterprise": {
+        "title": "Progetto programmazione orientata agli oggetti - Sunny Enterprise",
+        "description": "Abbiamo sviluppato un sistema di gestione dei database per una piccola impresa per gestire le informazioni sui clienti, gli ordini e l'inventario. Il sistema è stato costruito utilizzando SQL e include funzionalità come moduli di inserimento dati, strumenti di reporting e funzionalità di backup dei dati. Il progetto si è concentrato sulla creazione di un'interfaccia efficiente e facile da usare per la gestione dei dati aziendali."
+      }
+    },
+    "contact": {
+      "title": "Contattami",
+      "description": "Non esitare a contattarmi per qualsiasi domanda o opportunità :",
+      "form": {
+        "name": "Nome",
+        "email": "Email",
+        "message": "Messaggio",
+        "send": "Invia"
+      }
+    },
+    "contactSuccess": {
+      "title": "Grazie per il tuo messaggio 🙌",
+      "message": "Il tuo messaggio è stato inviato con successo. Ti risponderò a breve.",
+      "backToHome": "Torna alla home"
+    }
+  }
+}

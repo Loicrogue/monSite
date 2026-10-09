@@ -1,62 +1,164 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
+import useResponsive from '../hooks/useResponsive';
+import tailwindLogo from '../assets/skills-items/tailwindCSS.png';
 
-import html from '../assets/skills-items/html-logo.png';
-import css from '../assets/skills-items/css-logo.png';
-import java from '../assets/skills-items/java-logo.png';
-import python from '../assets/skills-items/python-logo.png';
+const softsSkills = [
+  { label: "pages.skills.softSkillsItems.softSkillsItems1" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems2" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems3" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems4" },
+  { label: "pages.skills.softSkillsItems.softSkillsItems5" },
+];
 
-import react from '../assets/skills-items/react-logo.png';
-import mySQL from '../assets/skills-items/mySQL-logo.png';
+const programmingLanguagesSkills = [
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", label: "HTML5" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", label: "CSS" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg", label: "TypeScript" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", label: "JavaScript" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg", label: "Java" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", label: "Python" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", label: "C++" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg", label: "C#" },
+];
 
-import git from '../assets/skills-items/git-logo.png';
-import docker from '../assets/skills-items/docker-logo.png';
+const frameworksAndLibrariesSkills = [
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg", label: "Node.js" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg", label: "Next.js" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg", label: "React.js" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg", label: "Angular" },
+  { src: tailwindLogo, label: "Tailwind CSS" },
+];
 
+const databasesSkills = [
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", label: "MySQL" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg", label: "SQLite" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg", label: "PostgreSQL" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg", label: "MongoDB" },
+];
+
+const toolsAndPlatformsSkills = [
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", label: "Git" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", label: "GitHub" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg", label: "Docker" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg", label: "Visual Studio" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", label: "VS Code" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg", label: "Netlify" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vite/vite-original.svg", label: "Vite" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg", label: "Figma" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg", label: "Canva" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg", label: "Windows 10" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg", label: "Windows 11" },
+  { src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg", label: "Postman" },
+];
+
+// 🔹 Composant factorisé pour chaque catégorie
+const SkillCategory: React.FC<{
+  title?: string;
+  skills: { src?: string; label: string }[];
+  textSizeClass: string;
+  isMobile: boolean;
+  isTablet: boolean;
+}> = ({ title, skills, textSizeClass, isMobile, isTablet }) => {
+  const { t } = useTranslation();
+
+  return (
+    <div className="flex flex-col flex-1 p-5 text-monSite border-2 border-monSite rounded-lg mx-4 my-2">
+      {title && (
+        <div className="w-full text-center mb-4 border-b border-monSite pb-4">
+          <h2 className={`${isMobile || isTablet ? "text-l" : "text-xl"}`}>
+            {t(title)}
+          </h2>
+        </div>
+      )}
+      <div
+        className={`grid ${
+          isMobile ? "grid-cols-2 gap-6 w-full" : isTablet ? "grid-cols-4 gap-x-6 gap-y-10 w-full mx-auto" : "grid-cols-5 gap-x-6 gap-y-10 w-full mx-auto"
+        } justify-items-center py-8`}
+      >
+        {skills.map((skill, index) => (
+          <motion.div
+            key={skill.label}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut", delay: index * 0.15 }}
+            className="flex flex-col items-center w-full"
+          >
+            {skill.src && (
+              <img
+                src={skill.src}
+                alt={skill.label}
+                className={`${isMobile || isTablet ? "w-15 h-15" : "w-20 h-20"}`}
+              />
+            )}
+            <span className={`mt-2 ${textSizeClass} text-center`}>
+              {t(skill.label)}
+            </span>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const SkillsComponent: React.FC = () => {
-    const { t } = useTranslation();
-    
-    return (
-        <div className='flex flex-col w-full items-center text-monSite p-5'>
-            <span className="text-center text-monSite text-2xl font-bold w-full p-5 block">{t('pages.skills.title')}</span>
-            <div className="grid grid-cols-4 gap-y-10 gap-x-6 justify-items-center items-center py-8">
-                {/* Row 1 */}
-                <div className="flex flex-col items-center">
-                    <img src={html} alt="HTML5" className="w-20 h-20" />
-                    <span className="mt-2">HTML5</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={css} alt="CSS" className="w-20 h-20" />
-                    <span className="mt-2">CSS</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={java} alt="Java" className="w-20 h-20" />
-                    <span className="mt-2">Java</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={python} alt="Python" className="w-20 h-20" />
-                    <span className="mt-2">Python</span>
-                </div>
-                {/* Row 2 */}
-                <div className="flex flex-col items-center">
-                    <img src={react} alt="React" className="w-20 h-20" />
-                    <span className="mt-2">React</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={mySQL} alt="MySQL" className="w-20 h-20" />
-                    <span className="mt-2">MySQL</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={git} alt="Git" className="w-20 h-20" />
-                    <span className="mt-2">Git</span>
-                </div>
-                <div className="flex flex-col items-center">
-                    <img src={docker} alt="Docker" className="w-20 h-20" />
-                    <span className="mt-2">Docker</span>
-                </div>
-            </div>
+  const { isMobile, isTablet } = useResponsive();
+  const textSizeClass = isMobile || isTablet ? "text-l" : "text-xl";
+  const { t } = useTranslation();
+
+  return (
+    <div className="flex flex-col w-full">
+      <p className={`font-bold text-center my-8 ${isMobile || isTablet ? "text-xl" : "text-2xl"} text-monSite`}>
+        {t("pages.skills.softSkillsTitle")}
+      </p>
+      <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
+        <div className={`w-full grid grid-cols-1"`}>
+          <SkillCategory
+            skills={softsSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
         </div>
-    );
+      </div>
+      <p className={`font-bold text-center my-8 ${isMobile || isTablet ? "text-xl" : "text-2xl"} text-monSite`}>
+        {t("pages.skills.hardSkillsTitle")}
+      </p>
+      <div className={`flex ${isMobile ? "flex-col" : "flex-row"} w-full`}>
+        <div className={`w-full grid ${isMobile ? "grid-cols-1" : "grid-cols-2"}`}>
+          <SkillCategory
+            title="pages.skills.programmingLanguages"
+            skills={programmingLanguagesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.frameworksAndLibraries"
+            skills={frameworksAndLibrariesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.databases"
+            skills={databasesSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+          <SkillCategory
+            title="pages.skills.toolsAndPlatforms"
+            skills={toolsAndPlatformsSkills}
+            textSizeClass={textSizeClass}
+            isMobile={isMobile}
+            isTablet={isTablet}
+          />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default SkillsComponent;

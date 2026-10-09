@@ -5,7 +5,8 @@
       "language": "Langue :",
       "languageOptions": {
         "fr": "Français",
-        "en": "Anglais"
+        "en": "Anglais",
+        "it": "Italien"
       },
       "theme": "Thème :",
       "themeOptions": {
@@ -16,24 +17,110 @@
     "notFound": {
       "title": "Page non trouvée",
       "message": "Désolé, la page que vous cherchez n'existe pas.",
-      "backToHome": "Retour à l'accueil"
+      "backToHome": "Retour à l'accueil",
+      "workInProgress": "Travail en cours, revenez bientôt 👍"
     },
     "menu": {
       "homepage": "Accueil",
       "aboutMe": "À propos",
       "skills": "Compétences",
       "interests": "Centres d’intérêt",
+      "myProjects": "Mes projets",
       "contact": "Contact"
     },
     "home": {      
       "profilDescription": "Alternant développeur d'application",
-      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets."
+      "otherDescription": "Ce site web est un projet personnel pour mettre en valeur mes compétences et mes projets.",
+      "inviteToVisit": "Je vous invite à visiter les différentes pages pour en savoir plus sur moi, mes compétences ainsi que mes expériences."
     },
-    "aboutMe": {      
-      "title": "À propos de moi"
+    "aboutMe": {
+      "text1": "Bonjour ! Je m'appelle Loïc, je suis actuellement en 3ème année de cycle ingénieur en 3 ans en informatique. Je suis passionné par le développement d'application web et mobile, la cybersécurité et l'informatique.",
+      "text2": "J'ai acquis des compétences solides en programmation, en gestion de projets et en travail d'équipe grâce à mes études et à mes expériences professionnelles. En dehors de celà, j'aime explorer de nouvelles technologies et apprendre de nouvelles compétences.",
+      "text3": "Je suis actuellement à la recherche d'une entreprise et d'une école en alternance proposant des Master spécialisés en Informatique (niveau Bac+6), d’une durée d’un an environ à partir de septembre 2027. N'hésitez pas à me contacter pour toute information complémentaire."
     },
-    "skills": {      
-      "title": "Page des compétences"
+    "skills": {
+      "softSkillsTitle": "Compétences comportementales",
+      "softSkillsItems": {
+        "softSkillsItems1": "Rigoureux",
+        "softSkillsItems2": "Travail en équipe",
+        "softSkillsItems3": "Résolution de problèmes",
+        "softSkillsItems4": "Discret",
+        "softSkillsItems5": "Consciencieux"
+      },
+      "hardSkillsTitle": "Compétences techniques",
+      "programmingLanguages": "Langages de programmation",
+      "frameworksAndLibraries": "Frameworks et bibliothèques",
+      "databases": "Bases de données",
+      "toolsAndPlatforms": "Outils et plateformes"
+    },
+    "interests": {
+      "bookmarks": {
+        "webDev": "Developpement web",
+        "cybersecurity": "Cybersécurité",
+        "hardSoft": "Hardware & Software",
+        "fitness": "Musculation"
+      },
+      "contents": {
+        "webDev": {
+          "1": "J’aime concevoir des applications web modernes et performantes. Mon intérêt porte aussi bien sur le front-end, où l’expérience utilisateur est primordiale, que sur le back-end, où la structure et la sécurité jouent un rôle central.",
+          "2": "Je m’intéresse particulièrement aux architectures micro-services, à l’optimisation des performances, et à la mise en place de solutions robustes et scalables."
+        },
+        "cybersecurity": {
+          "1": "La cybersécurité est pour moi un domaine essentiel : comprendre comment protéger les systèmes, pourvoir anticiper les menaces et analyser les failles potentielles d'un système d'information.",
+          "2": "Mon objectif est de toujours renforcer ma capacité à penser comme un attaquant pour mieux sécuriser les différents éléments qui composent un système d'informatique, et j'applique aussi cette rigueur à mes activités personnelles."
+        },
+        "hardSoft": {
+          "1": "Comprendre l’interaction entre le matériel et le logiciel est pour moi une passion né de ma curiosité. J’aime explorer l’architecture des composants, assembler et optimiser des configurations, tout en étudiant comment les systèmes d’exploitation exploitent les ressources disponibles.",
+          "2": "Cela me permet de mieux appréhender les performances, les compatibilités, et d’avoir une vision complète du fonctionnement d’un ordinateur, de la couche matérielle jusqu’aux applications."
+        },
+        "fitness": {
+          "1": "La musculation est pour moi bien plus qu’un simple sport : c’est une discipline qui m’apprend la constance, la rigueur et la patience.",
+          "2": "J’aime suivre ma progression, ajuster mes programmes et expérimenter de nouvelles méthodes d’entraînement. C’est un équilibre entre effort physique, mental et hygiène de vie, qui m’apporte énergie et détermination au quotidien."
+        }
+      }
+    },
+    "myProjects": {
+      "seeTheProject": "Voir le projet sur GitHub",
+      "visitTheWebsite": "Voir le site web",
+      "france_geo_quiz": {
+        "title": "Projet perso - France Géo Quiz",
+        "description": "Application web interactive pour apprendre la géographie française"
+      },
+      "breezy": {
+        "title": "Projet Développement web avancé - Breezy",
+        "description": "Le projet Breezy vise à développer un réseau social léger et réactif, inspiré de Twitter/X, mais optimisé pour des environnements à faibles ressources. L’objectif est de concevoir une application qui permet de publier des messages courts, d’interagir avec les autres utilisateurs, et de maintenir une expérience utilisateur rapide et fluide."
+      },
+      "easySave": {
+        "title": "Projet Génie Logiciel - EasySave",
+        "description": "Nous devions développé un système qui automatise les sauvegardes tout en assurant leur sécurisation. L’interface devait être pensée pour être intuitive, facilitant l’utilisation sans nécessiter de formation complexe. Nous devions intégré des modes de sauvegarde complète et différentiel pour s’adapter aux besoins spécifiques de chaque entreprise."
+      },
+      "bojob": {
+        "title": "Projet Dev web - BojoB",
+        "description": "Nous avons réalisé un site web pour des étudiants afin de faciliter leurs recherches de stage en entreprise. Le site permet aux étudiants de créer un profil, de rechercher des offres de stage, et de postuler directement en ligne. Les entreprises peuvent également publier leurs offres et gérer les candidatures reçues."
+      },
+      "station_meteo": {
+        "title": "Projet Système embarqué - Station Météo",
+        "description": "Nous avons réalisé un programme pour une Arduino afin de récupérée les valeurs de plusieurs capteurs et de les afficher en console. Plusieurs mode de fonctionnement était prévu : standard, config, éco et maintenance."
+      },
+      "sunny_enterprise": {
+        "title": "Projet POO - Sunny Enterprise",
+        "description": "Nous devions réaliser une application qui permette aux personnels d'une entreprise de pouvoir modifier sa base de données en entrant différentes informations tels qu’un nouveau client ou bien des commandes."
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "description": "N'hésitez pas à me contacter pour toute question ou opportunité :",
+      "form": {
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer"
+      }
+    },
+    "contactSuccess": {
+      "title": "Merci pour votre message 🙌",
+      "message": "Votre message a bien été envoyé. Je vous répondrai rapidement.",
+      "backToHome": "Retour à l'accueil"
     }
   }
 }

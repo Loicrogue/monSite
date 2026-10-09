@@ -27,14 +27,14 @@ function NotFound() {
                 >
                     <div className="flex h-full rounded-xl shadow-xl bg-child-container-monSite overflow-y-auto scrollbar-child-container-monSite">
                         <div className="w-full flex flex-col items-center justify-center p-8">
-                            <span className={`font-bold text-monSite ${titleSizeClass} mb-4 text-center w-full`}>{t('pages.notFound.title')}</span>
-                            <span className={`text-monSite ${subTitleSizeClass} mb-4 text-center w-full`}>{t('pages.notFound.message')}</span>
+                            <span className={`font-bold text-monSite ${titleSizeClass} mb-4 text-center w-full`}>{t('pages.contactSuccess.title')}</span>
+                            <span className={`text-monSite ${subTitleSizeClass} mb-4 text-center w-full`}>{t('pages.contactSuccess.message')}</span>
                             <button
                                 className="cursor-pointer bg-background-monSite text-monSite px-4 py-2 rounded-lg transition-transform duration-200 hover:scale-110"
                                 
                                 onClick={() => navigate("/")}
                             >
-                                {t('pages.notFound.backToHome')}
+                                {t('pages.contactSuccess.backToHome')}
                             </button>
                         </div>
                     </div>

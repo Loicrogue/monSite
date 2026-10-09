@@ -2,12 +2,13 @@
   "pages": {
     "settings": {
       "title": "Parametres",
-      "language": "Language :",
+      "language": "Language:",
       "languageOptions": {
         "fr": "French",
-        "en": "English"
+        "en": "English",
+        "it": "Italian"
       },
-      "theme": "Theme :",
+      "theme": "Theme:",
       "themeOptions": {
         "light": "Light",
         "dark": "Dark"
@@ -16,24 +17,110 @@
     "notFound": {
       "title": "Page not found",
       "message": "Sorry, the page you are looking for does not exist.",
-      "backToHome": "Back to home"
+      "backToHome": "Back to home",
+      "workInProgress": "Work in progress, come back soon 👍"
     },
     "menu": {
       "homepage": "Home",
       "aboutMe": "About me",
       "skills": "Skills",
       "interests": "Interests",
+      "myProjects": "My projects",
       "contact": "Contact"
     },
-    "home": {      
+    "home": {
       "profilDescription": "Application developer apprentice",
-      "otherDescription": "This website is a personal project to showcase my skills and projects."
+      "otherDescription": "This website is a personal project to showcase my skills and projects.",
+      "inviteToVisit": "I invite you to visit the different pages to learn more about me, my skills as well as my experiences."
     },
-    "aboutMe": {      
-      "title": "About Me"
+    "aboutMe": {
+      "text1": "Hello! My name is Loïc, I am currently at the 3nd year of a 3-year engineering cycle in computer science. I am passionate about web and mobile application development, cybersecurity, and computing.",
+      "text2": "I have acquired strong skills in programming, project management and teamwork through my studies and professional experiences. Apart from that, I like to explore new technologies and learn new skills.",
+      "text3": "I am currently looking for a company and a work-study school offering specialized Master’s degrees in Computer Science (Bac+6 level), lasting about a year starting in September 2027. Do not hesitate to contact me for any further information."
     },
-    "skills": {      
-      "title": "Skills page"
+    "skills": {
+      "softSkillsTitle": "Soft skills",
+      "softSkillsItems": {
+        "softSkillsItems1": "Rigorous",
+        "softSkillsItems2": "Teamwork",
+        "softSkillsItems3": "Problem solving",
+        "softSkillsItems4": "Discreet",
+        "softSkillsItems5": "Conscientious"
+      },
+      "hardSkillsTitle": "Hard skills",
+      "programmingLanguages": "Programming languages",
+      "frameworksAndLibraries": "Frameworks and libraries",
+      "databases": "Databases",
+      "toolsAndPlatforms": "Tools and platforms"
+    },
+    "interests": {
+      "bookmarks": {
+        "webDev": "Web Developpement",
+        "cybersecurity": "Cybersecurity",
+        "hardSoft": "Hardware & Software",
+        "fitness": "Weight Training"
+      },
+      "contents": {
+        "webDev": {
+          "1": "I like to design modern and powerful web applications. My interest lies both in the front-end, where user experience is paramount, and in the back-end, where structure and security play a central role.",
+          "2": "I am particularly interested in micro-service architectures, performance optimization, and the implementation of robust and scalable solutions."
+        },
+        "cybersecurity": {
+          "1": "Cybersecurity is for me an essential field: understanding how to protect systems, be able to anticipate threats and analyze potential flaws in an information system.",
+          "2": "My goal is to always strengthen my ability to think like an attacker to better secure the different elements that make up a computer system, and I also apply this rigor to my personal activities."
+        },
+        "hardSoft": {
+          "1": "Understanding the interaction between hardware and software is for me a passion born from my curiosity. I like to explore component architecture, assemble and optimize configurations, while studying how operating systems leverage available resources." ,
+          "2": "This allows me to better understand the performance, compatibility, and to have a complete view of the operation of a computer, from the hardware layer to applications."
+        },
+        "fitness": {
+          "1": "For me, weightlifting is much more than just a sport: it is a discipline that teaches me consistency, rigor, and patience.",
+          "2": "I like to follow my progress, adjust my programs and experiment with new training methods. It is a balance between physical, mental and lifestyle effort that brings me energy and determination every day."
+        }
+      }
+    },
+    "myProjects": {
+      "seeTheProject": "See the project on GitHub",
+      "visitTheWebsite": "Visit the website",
+      "france_geo_quiz": {
+        "title": "Personal project - France Geo Quiz",
+        "description": "Interactive web application to learn French geography"
+      },
+      "breezy": {
+        "title": "Advanced Web Development Project - Breezy",
+        "description": "We had to develop a web application for managing a travel agency. The application allows users to search for and book trips, while administrators can manage bookings, destinations, and user accounts. The project focused on creating a responsive and user-friendly interface, as well as implementing secure payment processing."
+      },
+      "easySave": {
+        "title": "Embedded Systems Project - EasySave",
+        "description": "We developed a file backup system using a Raspberry Pi. The system automatically backs up important files from connected devices to an external hard drive. It includes features such as scheduled backups, file versioning, and a web interface for managing backup settings and monitoring the status of backups."
+      },
+      "bojob": {
+        "title": "Web Development Project - BoJob",
+        "description": "We created a job board application that allows users to search for job listings, post job offers, and manage their profiles. The application was built using object-oriented programming principles to ensure modularity and maintainability. Key features include user authentication, job search filters, and an admin panel for managing job postings."
+      },
+      "station_meteo": {
+        "title": "Embedded Systems Project - Weather Station",
+        "description": "We designed and implemented a weather station using Arduino. The station collects data such as temperature, humidity, and atmospheric pressure using various sensors. The data is then displayed on an LCD screen and can be transmitted to a web server for remote monitoring. The project involved both hardware assembly and software programming to ensure accurate data collection and display."
+      },
+      "sunny_enterprise": {
+        "title": "OOP Project - Sunny Enterprise",
+        "description": "We developed a database management system for a small business to handle customer information, orders, and inventory. The system was built using SQL and included features such as data entry forms, reporting tools, and data backup functionality. The project focused on creating an efficient and user-friendly interface for managing business data."
+      }
+    },
+    "contact": {
+      "title": "Contact me",
+      "description": "Feel free to contact me for any questions or opportunities :",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+      }
+    },
+    "contactSuccess": {
+      "title": "Thank you for your message 🙌",
+      "message": "Your message has been sent successfully. I will get back to you shortly.",
+      "backToHome": "Back to home"
     }
   }
 }
